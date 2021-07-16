@@ -1,0 +1,34 @@
+<?php
+
+namespace App\Http\Middleware;
+
+use Closure;
+use Illuminate\Support\Facades\Auth;
+use Illuminate\Support\Facades\Redirect;
+
+class AdminMiddleware {
+
+    /**
+     * Handle an incoming request.
+     *
+     * @param  \Illuminate\Http\Request  $request
+     * @param  \Closure  $next
+     * @return mixed
+     */
+    public function handle($request, Closure $next) {
+        if (Auth::user() && Auth::user()->user_type == '1') {
+            return $next($request);
+        }
+
+        if (Auth::user()) {
+            Auth::logout();
+            $request->session()->flash('error', 'Not authorised.');
+        }
+
+//        header("Location: " . config('app.url') . '/manage/dashboard');
+//           die;
+        return Redirect::to('manage/login');
+        //return redirect('login');
+    }
+
+}

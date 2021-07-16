@@ -1,0 +1,54 @@
+// Import Bootstrap Compass integration
+@import "bootstrap-scss/bootstrap-compass";
+
+// Import custom Bootstrap variables
+@import "bootstrap-scss/bootstrap-variables";
+
+// Import Bootstrap for Sass
+@import "bootstrap-scss/bootstrap";
+
+@import "custom-scss/resetcss";
+
+// Import animate scss
+@import "plugin-scss/animate.scss";
+
+// Import Select2 scss
+@import "plugin-scss/select2.scss";
+
+// Import slick scss
+@import "plugin-scss/slick";
+@import "plugin-scss/slick-theme.scss";
+
+//Import custom varialbles
+@import "custom-scss/custom-variable";
+
+// Import custom-mixing scss
+@import "custom-scss/custom-mixing";
+
+// Import common scss
+@import "custom-scss/common"; 
+
+// Import header scss
+@import "custom-scss/header"; 
+
+// Import footer scss
+@import "custom-scss/footer";
+
+//Import "home-page scss"
+@import "custom-scss/home-page";
+
+//Import "scss"
+
+@import "custom-scss/inner-page";
+@import "custom-scss/about-page";
+@import "custom-scss/donate-page";
+@import "custom-scss/video-page";
+@import "custom-scss/cart-page";
+@import "custom-scss/checkout-page";
+@import "custom-scss/invoice-page";
+@import "custom-scss/shop-page";
+@import "custom-scss/category-menu";
+
+
+//Import "scss"
+@import "custom-scss/front-page";

@@ -1,0 +1,445 @@
+.front-wrap {
+  @include fullwidth();
+  clear: both;
+  position: relative;
+
+  .logo {
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+
+    @include breakpoint(lg) {
+      text-align: center;
+    }
+    @include breakpoint(xs) {
+      transform: none;
+      float: $left;
+      position: relative;
+      left: 10px;
+      width: 40%;
+    }
+
+    img {
+      width: 277px;
+      position: inherit;
+
+      @include breakpoint(lg) {
+        width: 138px;
+      }
+      @include breakpoint(xs) {
+        max-width: 100%;
+      }
+    }
+  }
+
+  .menu {
+    padding: 0;
+    position: relative;
+    margin: 0;
+
+    @include breakpoint(xs) {
+      padding: 0;
+      position: relative;
+      margin: 0;
+      float: $right;
+      width: 60%;
+    }
+
+    li {
+      float: $left;
+      padding: 0 25px;
+      position: relative;
+      @include css3-transition(transition, all 0.3s ease);
+      @include breakpoint(xs) {
+        padding: 0 15px;
+      }
+      @include breakpoint(xxs) {
+        padding: 0 10px;
+      }
+      a {
+        display: inline-block;
+        font-size: 18px;
+        line-height: 70px;
+        color: $white;
+        text-transform: uppercase;
+        position: relative;
+        border-bottom: 2px solid transparent;
+        @include css3-transition(transition, all 0.3s ease);
+
+        @include breakpoint(lg) {
+          font-size: $fontMedium;
+          line-height: 40px;
+        }
+
+        em {
+          font-style: normal;
+          color: #65bcff;
+          padding: 0 10px 0 20px;
+        }
+        &:after {
+          position: absolute;
+          top: 80%;
+          left: 0;
+          width: 100%;
+          height: 1px;
+          background: $white;
+          content: "";
+          opacity: 0;
+          -webkit-transition: height 0.3s, opacity 0.3s, -webkit-transform 0.3s;
+          -moz-transition: height 0.3s, opacity 0.3s, -moz-transform 0.3s;
+          transition: height 0.3s, opacity 0.3s, transform 0.3s;
+          -webkit-transform: translateY(-10px);
+          -moz-transform: translateY(-10px);
+          transform: translateY(-10px);
+        }
+        &:hover::after,
+        &:focus::after {
+          height: 2px;
+          opacity: 1;
+          -webkit-transform: translateY(0px);
+          -moz-transform: translateY(0px);
+          transform: translateY(0px);
+        }
+      }
+    }
+  }
+
+  .menu-right {
+    padding: 0;
+    position: relative;
+    margin: 0;
+    float: $right;
+
+    @include breakpoint(xs) {
+      padding: 0;
+      position: relative;
+      margin: 10px 0 0 0;
+      float: $left;
+      width: 100%;
+      clear: both;
+    }
+
+    ul {
+      @include breakpoint(xs) {
+        width: 100%;
+        margin: 0;
+        padding: 0;
+        display: table;
+      }
+
+      li {
+        float: $left;
+        padding: 0 20px;
+        position: relative;
+        @include css3-transition(transition, all 0.3s ease);
+
+        @include breakpoint(xs) {
+          width: 50%;
+          display: table-cell;
+          padding: 0 15px;
+        }
+
+        &.cart-btn {
+          background: $white;
+          position: relative;
+          z-index: 1;
+          -webkit-transition: all 0.3s;
+          -moz-transition: all 0.3s;
+          transition: all 0.3s;
+          &:after {
+            content: "";
+            position: absolute;
+            z-index: -1;
+            -webkit-transition: all 0.3s;
+            -moz-transition: all 0.3s;
+            transition: all 0.3s;
+            z-index: -1;
+            width: 100%;
+            height: 0;
+            top: 0;
+            left: 0;
+            background: #66ae3d;
+          }
+          &:hover,
+          &:active {
+            color: #fff;
+          }
+          &:hover:after,
+          &:active:after {
+            height: 100%;
+          }
+
+          a {
+            color: #004272;
+            &:after {
+              content: none;
+            }
+            &:hover {
+              color: $white;
+              .cart-icon {
+                background-position: -10px -46px;
+              }
+              em {
+                color: $white;
+              }
+            }
+          }
+        }
+
+        a {
+          display: inline-block;
+          font-size: 18px;
+          line-height: 70px;
+          color: #242424;
+          text-transform: uppercase;
+          @include css3-transition(transition, all 0.3s ease);
+
+          @include breakpoint(lg) {
+            font-size: $fontLarge;
+            line-height: 50px;
+          }
+          em {
+            font-style: normal;
+            color: #004272;
+            padding: 0 5px;
+          }
+          .cart-icon {
+            width: 27px;
+            height: 24px;
+            background: $iconBg -10px -11px;
+            display: inline-block;
+            vertical-align: middle;
+          }
+          .donate-icon {
+            width: 35px;
+            height: 30px;
+            background: $iconBg -264px -11px;
+            display: inline-block;
+            vertical-align: middle;
+          }
+          .store-icon {
+            width: 35px;
+            height: 30px;
+            background: $iconBg -322px -10px;
+            display: inline-block;
+            vertical-align: middle;
+          }
+        }
+        &:nth-child(1) {
+          background: #004272;
+          a {
+            color: $white;
+            &:hover {
+              em {
+                color: $white;
+              }
+            }
+          }
+        }
+        &:last-child {
+          background: #a6ce38;
+          a {
+            color: $white;
+          }
+        }
+      }
+    }
+  }
+
+  img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+  }
+  .header-front {
+    width: 80%;
+    position: absolute;
+    top: 20px;
+    left: 50%;
+    transform: translateX(-50%);
+    color: $white;
+    @include breakpoint(laptop) {
+      width: 100%;
+    }
+    @include breakpoint(sm) {
+      display: none;
+    }
+  }
+  figcaption {
+    width: 75%;
+    position: absolute;
+    z-index: 2;
+    top: 75%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: $white;
+    text-align: $center;
+    @include breakpoint(xs) {
+      width: 96%;
+    }
+    h1 {
+      text-align: $center;
+      font-size: 100px;
+      line-height: 80px;
+      margin: 0 0 60px;
+      font-weight: 700;
+      @include breakpoint(laptop) {
+        font-size: 80px;
+        margin: 0 0 30px;
+        line-height: inherit;
+      }
+      @include breakpoint(lg) {
+        font-size: 60px;
+      }
+      @include breakpoint(sm) {
+        font-size: 50px;
+      }
+      @include breakpoint(xs) {
+        font-size: 30px;
+        margin: 0 0 20px;
+      }
+      @include breakpoint(xxs) {
+        font-size: 16px;
+        margin: 0 0 5px;
+      }
+      @media all and (max-width: 480px) and (orientation: landscape) {
+        margin: 0 0 10px;
+      }
+      span {
+        display: block;
+      }
+    }
+    h3 {
+      text-align: $center;
+      @include breakpoint(xs) {
+        font-size: $font-size-h5;
+      }
+      @include breakpoint(xxs) {
+        font-size: $fontLarge;
+      }
+      @media all and (max-width: 480px) and (orientation: landscape) {
+        font-size: $fontMedium;
+      }
+      span {
+        font-size: 120%;
+        text-transform: uppercase;
+
+        @include breakpoint(xs) {
+          font-size: 100%;
+        }
+      }
+      em {
+        font-style: normal;
+        display: block;
+
+        @include breakpoint(xs) {
+          display: inline;
+        }
+      }
+    }
+  }
+
+  .scroll-btn {
+    width: 75%;
+    position: absolute;
+    bottom: 30px;
+    left: 50%;
+    text-align: $center;
+    transform: translateX(-50%);
+    transition: transform 0.6s ease-in-out;
+    @include breakpoint(sm) {
+      bottom: 15px;
+    }
+    @media all and (max-width: 480px) and (orientation: landscape) {
+      bottom: 0px;
+    }
+    a {
+      color: #24aae1;
+      text-transform: uppercase;
+      padding: 0 5px 5px;
+      position: relative;
+      border-bottom: 2px solid transparent;
+      &:before {
+        position: absolute;
+        content: "";
+        height: 120px;
+        width: 1px;
+        background: #24aae1;
+        bottom: 35px;
+        transform: translateX(-50%);
+        left: 50%;
+        @include breakpoint(sm) {
+          height: 40px;
+        }
+        @include breakpoint(xxs) {
+          content: none;
+        }
+        @media all and (max-width: 480px) and (orientation: landscape) {
+          content: none;
+        }
+      }
+    }
+    .scroll-info-line {
+      position: absolute;
+      left: 50%;
+      bottom: -8px;
+      width: 80px;
+      height: 2px;
+      overflow: hidden;
+      transform: translateX(-50%);
+      z-index: 0;
+    }
+    .scroll-info-line div {
+      position: absolute;
+      left: 0;
+      top: 0;
+      width: 80px;
+      height: 2px;
+      background-color: $white;
+      -webkit-animation-duration: 1.5s;
+      animation-duration: 1.5s;
+      -webkit-animation-fill-mode: both;
+      animation-fill-mode: both;
+      -webkit-animation-iteration-count: infinite;
+      animation-iteration-count: infinite;
+      -webkit-animation-name: scroll-info-line;
+      animation-name: scroll-info-line;
+      -webkit-animation-timing-function: ease-in-out;
+      animation-timing-function: ease-in-out;
+    }
+  }
+}
+
+@-webkit-keyframes scroll-info-line {
+  from,
+  5% {
+    width: 0px;
+  }
+  33%,
+  66% {
+    left: 0px;
+    width: 80px;
+  }
+  95%,
+  to {
+    left: 80px;
+  }
+}
+
+@keyframes scroll-info-line {
+  from,
+  5% {
+    width: 0px;
+  }
+  33%,
+  66% {
+    left: 0px;
+    width: 80px;
+  }
+  95%,
+  to {
+    left: 80px;
+  }
+}

@@ -1,0 +1,679 @@
+.donation-wrap {
+  @include fullwidth();
+  clear: both;
+  padding: 50px 0;
+  margin: 0;
+
+  @include breakpoint(lg) {
+    padding: 75px 0;
+  }
+  @include breakpoint(xs) {
+    padding: 50px 0;
+  }
+
+  h1 {
+    font-size: 50px;
+    text-align: center;
+    color: #004272;
+    margin-bottom: 20px;
+    @include breakpoint(laptop) {
+      font-size: $font-size-h2;
+    }
+    @include breakpoint(lg) {
+      font-size: $font-size-h3;
+    }
+    @include breakpoint(xs) {
+      font-size: $font-size-h4;
+    }
+  }
+
+  .content {
+    text-align: center;
+    line-height: 25px;
+    font-size: 20px;
+    color: #727272;
+    @include breakpoint(xs) {
+      font-size: $fontLarge;
+    }
+  }
+
+  .tab .nav-tabs {
+    border-bottom: 0px;
+    padding: 0;
+    margin: 50px 0 0 0;
+    background: #e6e6e6;
+    @include breakpoint(xs) {
+      margin: 30px 0 0 0;
+    }
+    li {
+      border-right: 1px solid #e6e6e6;
+      width: 20%;
+      @include breakpoint(laptop) {
+        width: auto;
+      }
+      @include breakpoint(xs) {
+        width: 100%;
+      }
+      &:first-child {
+        a {
+          border-left: 1px solid #e6e6e6;
+        }
+      }
+      &:last-child {
+        border-right: 0px solid #e6e6e6;
+      }
+      a {
+        color: #464646;
+        background: #e6e6e6;
+        border-radius: 0;
+        font-size: $fontLarge;
+        margin-right: -1px;
+        padding: 13px 30px;
+        text-transform: uppercase;
+        @include breakpoint(laptop) {
+          padding: 10px 20px;
+        }
+        @include breakpoint(lg) {
+          font-size: $fontMedium;
+        }
+        @include breakpoint(sm) {
+          font-size: 12px;
+          padding: 10px 18px;
+        }
+        @include breakpoint(xs) {
+          font-size: $fontLarge;
+          padding: 10px 20px;
+        }
+        &:hover {
+          background: #e6e6e6;
+          border-color: #e6e6e6;
+        }
+      }
+    }
+  }
+
+  .tab .nav-tabs li a:hover:before {
+    border-left: 15px solid #eee;
+  }
+  .tab .nav-tabs li.active a:after,
+  .tab .nav-tabs li.donation-active a:after,
+  .tab .nav-tabs li a:after {
+    content: "";
+    border-left: 18px solid #66ae3d;
+    border-top: 24px solid transparent;
+    border-bottom: 24px solid transparent;
+    position: absolute;
+    top: 0px;
+    right: -18px;
+    z-index: 1;
+    @include breakpoint(laptop) {
+      border-top: 22px solid transparent;
+      border-bottom: 22px solid transparent;
+    }
+    @include breakpoint(lg) {
+      border-top: 20px solid transparent;
+      border-bottom: 20px solid transparent;
+      border-left: 10px solid #66ae3d;
+      right: -10px;
+    }
+    @include breakpoint(sm) {
+      border-top: 19px solid transparent;
+      border-bottom: 19px solid transparent;
+    }
+    @include breakpoint(xs) {
+      content: none;
+    }
+  }
+  .tab .nav-tabs li a:after {
+    border-left: 17px solid #e6e6e6;
+  }
+  .tab .nav-tabs li.active a:before,
+  .tab .nav-tabs li.donation-active a:before {
+    border-left: 17px solid #66ae3d;
+  }
+  .tab .nav-tabs li a:before {
+    border-bottom: 15px solid rgba(0, 0, 0, 0);
+    border-left: 15px solid $white;
+    border-top: 15px solid rgba(0, 0, 0, 0);
+    content: none;
+    position: absolute;
+    right: -15px;
+    top: 2px;
+    z-index: 2;
+  }
+  .tab .nav-tabs li.active > a,
+  .tab .nav-tabs li.donation-active > a,
+  .tab .nav-tabs > li.active > a:focus,
+  .tab .nav-tabs > li.donation-active > a:focus,
+  .tab .nav-tabs > li.active > a:hover,
+  .tab .nav-tabs > li.donation-active > a:hover {
+    border: none;
+    color: $white;
+    background: #66ae3d;
+    border-top: 1px solid #e6e6e6;
+    border-bottom: 1px solid #e6e6e6;
+  }
+  .tab .nav-tabs li:last-child.active a:after,
+  .tab .nav-tabs li:last-child.donation-active a:after,
+  .tab .nav-tabs li:last-child a:after {
+    border: none;
+  }
+  .tab .nav-tabs li:last-child a:after,
+  .tab .nav-tabs li:last-child a:hover:before,
+  .tab .nav-tabs li:last-child.donation-active a:before,
+  .tab .nav-tabs li:last-child.active a:before,
+  .tab .nav-tabs li:last-child a:before {
+    border-left: none;
+  }
+  .tab .tab-content {
+    padding: 10px 0;
+    color: #5a5c5d;
+    margin-top: 2%;
+    font-size: $fontMedium;
+    border: 1px solid $white;
+    .heading {
+      border-bottom: 5px solid #24aae1;
+      padding: 0 0 10px;
+      h3 {
+        color: #464646;
+        text-align: $center;
+        span {
+          background: #005ca3;
+          width: 45px;
+          height: 45px;
+          line-height: 45px;
+          border-radius: 100%;
+          display: inline-block;
+          color: $white;
+          margin-right: 15px;
+        }
+      }
+    }
+
+    .gifttype-wrap {
+      background: #f3f3f3;
+      padding: 20px;
+      text-align: center;
+      @include fullwidth();
+
+      @include breakpoint(xs) {
+        padding: 10px;
+      }
+      h5 {
+        @include breakpoint(xs) {
+          line-height: 25px;
+        }
+      }
+
+      .buttons {
+        @include fullwidth();
+        clear: both;
+        .backbutton {
+          width: 50%;
+          float: $left;
+          text-align: left;
+          @include breakpoint(xs) {
+            width: 40%;
+          }
+          a {
+            color: #004272;
+            font-size: 22px;
+            text-transform: uppercase;
+            line-height: 50px;
+            display: inline-block;
+            @include breakpoint(xs) {
+              font-size: $fontLarge;
+              padding: 0;
+              line-height: 40px;
+            }
+            span {
+              width: 27px;
+              height: 26px;
+              display: inline-block;
+              margin-right: 10px;
+              vertical-align: middle;
+              margin-top: -5px;
+              background: $iconBg no-repeat scroll -17px -411px;
+            }
+          }
+        }
+        .proceedbutton {
+          width: 50%;
+          float: $right;
+          text-align: right;
+          @include breakpoint(xs) {
+            width: 60%;
+          }
+          a,
+          button {
+            position: relative;
+            z-index: 1;
+            color: $white;
+            background: #004272;
+            padding: 0 20px;
+            line-height: 50px;
+            font-size: 22px;
+            text-transform: uppercase;
+            display: inline-block;
+            -webkit-transition: all 0.3s;
+            -moz-transition: all 0.3s;
+            transition: all 0.3s;
+            @include breakpoint(xs) {
+              font-size: $fontLarge;
+              padding: 0 10px;
+              line-height: 40px;
+            }
+            &:after {
+              content: "";
+              position: absolute;
+              z-index: -1;
+              -webkit-transition: all 0.3s;
+              -moz-transition: all 0.3s;
+              transition: all 0.3s;
+              z-index: -1;
+              width: 100%;
+              height: 0;
+              top: 0;
+              left: 0;
+              background: #24aae1;
+              @include breakpoint(xs) {
+                content: none;
+              }
+            }
+            &:hover,
+            &:active {
+              color: $white;
+            }
+            &:hover:after,
+            &:active:after {
+              height: 100%;
+            }
+            span {
+              width: 27px;
+              height: 26px;
+              display: inline-block;
+              margin-left: 10px;
+              vertical-align: middle;
+              margin-top: -5px;
+              background: $iconBg no-repeat scroll -16px -360px;
+            }
+          }
+        }
+      }
+    }
+  }
+
+  .checkbox-list {
+    margin: 0;
+    padding: 20px 0;
+    text-align: center;
+    width: 100%;
+    display: inline-block;
+    li {
+      display: inline-block;
+      padding: 0 20px 0 0;
+    }
+  }
+
+  .gift-list {
+    margin: 0;
+    padding: 20px 0;
+    text-align: $center;
+    width: 100%;
+    display: inline-block;
+    @include breakpoint(xs) {
+      text-align: $left;
+    }
+
+    li {
+      display: inline-block;
+      padding: 0 20px 0 0;
+      @include breakpoint(xs) {
+        padding: 0 10px 10px 0;
+      }
+      &.last {
+        padding-top: 20px;
+        label {
+          font-size: 18px;
+          color: #42413c;
+          width: 20%;
+          text-align: $right;
+          line-height: 48px;
+          padding-right: 30px;
+          margin: 0;
+          @include breakpoint(xs) {
+            width: 100%;
+            font-size: $fontLarge;
+            line-height: 25px;
+            padding-right: 0px;
+            text-align: left;
+          }
+        }
+        .frm-control {
+          border: 1px solid #d0d0d0;
+          height: 48px;
+          line-height: 48px;
+          background: $white;
+          font-size: $fontLarge;
+          color: #42413c;
+          width: 30%;
+          padding: 5px 10px;
+          margin-bottom: 10px;
+          @include breakpoint(xs) {
+            width: 100%;
+          }
+          &[disabled="disabled"] {
+            background: #f4f4f4;
+            cursor: not-allowed;
+          }
+        }
+      }
+    }
+  }
+
+  .payment-list {
+    margin: 0;
+    padding: 20px 0;
+    text-align: left;
+    width: 100%;
+    display: inline-block;
+    li {
+      display: inline-block;
+      padding: 0 20px 10px 0;
+      clear: both;
+      width: 100%;
+
+      .dfrship {
+        background: #24aae1;
+        text-align: $center;
+        padding: 10px 0;
+
+        input[type="checkbox"].css-checkbox + label.css-label {
+          width: 240px;
+          color: $white;
+          @include breakpoint(xxs) {
+            width: auto;
+            font-size: $fontSmall;
+          }
+        }
+      }
+
+      label {
+        font-size: 18px;
+        color: #42413c;
+        width: 100%;
+        text-align: right;
+        line-height: 48px;
+        padding-bottom: 0px;
+        margin: 0;
+        @include breakpoint(sm) {
+          text-align: left;
+        }
+        @include breakpoint(xs) {
+          font-size: $fontLarge;
+          line-height: 25px;
+          padding-right: 0px;
+          text-align: left;
+        }
+      }
+      .select2-container {
+        display: block;
+        width: 100%;
+        border: 1px solid #ccc;
+        &.select2-dropdown-open {
+          .select2-choice {
+            background: $white;
+            .select2-arrow b {
+              background-position: -25px -291px;
+            }
+          }
+        }
+
+        .select2-choice {
+          border: none;
+          height: 48px;
+          line-height: 48px;
+          border-radius: 0px;
+          width: 100%;
+          background: $white;
+          background-image: none;
+          .select2-arrow {
+            border: none;
+            background: transparent;
+            width: 25px;
+            b {
+              background: $iconBg;
+              background-position: -25px -222px;
+            }
+          }
+        }
+      }
+      .frm-control {
+        border: 1px solid #d0d0d0;
+        height: 48px;
+        line-height: 48px;
+        background: $white;
+        font-size: $fontLarge;
+        color: #42413c;
+        width: 100%;
+        padding: 5px 10px;
+        &.cvv {
+          width: 50%;
+          @include breakpoint(xs) {
+            width: 100%;
+          }
+        }
+      }
+    }
+  }
+}
+
+.example.che-donation .fieldset {
+  margin: 0 15px 30px;
+  padding: 0;
+  border-style: none;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-flow: row wrap;
+  flex-flow: row wrap;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+}
+
+.example.che-donation .field.StripeElement--complete {
+  background: $white;
+}
+
+.example.che-donation .field {
+  padding: 12px 10px;
+  line-height: 47px;
+  background-color: $white;
+  width: 100%;
+  border: 1px solid #d0d0d0;
+}
+
+.example.che-donation .field.half-width {
+  width: calc(50% - (5px / 2));
+  @include breakpoint(xs) {
+    width: 100%;
+  }
+}
+
+.example.che-donation .field.third-width {
+  width: calc(33% - (5px / 3));
+}
+
+.example.che-donation .field + .field {
+  margin-top: 6px;
+}
+
+.example.che-donation .field.focus,
+.example.che-donation .field:focus {
+  color: #242424;
+  background-color: #f6f9fc;
+}
+
+.example.che-donation .field.invalid {
+  background-color: #fa755a;
+}
+
+.example.che-donation .field.invalid.focus {
+  background-color: #f6f9fc;
+}
+
+.example.che-donation .field.focus::-webkit-input-placeholder,
+.example.che-donation .field:focus::-webkit-input-placeholder {
+  color: #cfd7df;
+}
+
+.example.che-donation .field.focus::-moz-placeholder,
+.example.che-donation .field:focus::-moz-placeholder {
+  color: #cfd7df;
+}
+
+.example.che-donation .field.focus:-ms-input-placeholder,
+.example.che-donation .field:focus:-ms-input-placeholder {
+  color: #cfd7df;
+}
+
+.example.che-donation input,
+.example.che-donation button {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  outline: none;
+  border-style: none;
+}
+
+.example.che-donation input {
+  color: $white;
+}
+
+.example.che-donation input::-webkit-input-placeholder {
+  color: #9bacc8;
+}
+
+.example.che-donation input::-moz-placeholder {
+  color: #9bacc8;
+}
+
+.example.che-donation input:-ms-input-placeholder {
+  color: #9bacc8;
+}
+
+.example.che-donation button {
+  cursor: pointer;
+}
+
+.example.che-donation button:active {
+  background-color: #f5be58;
+}
+
+.example.che-donation .error svg .base {
+  fill: #fa755a;
+}
+
+.example.che-donation .error svg .glyph {
+  fill: $white;
+}
+
+.example.che-donation .error .message {
+  color: #e91919;
+}
+
+.example.che-donation .success .icon .border {
+  stroke: #fcd669;
+}
+
+.example.che-donation .success .icon .checkmark {
+  stroke: $white;
+}
+
+.example.che-donation .success .title {
+  color: $white;
+}
+
+.example.che-donation .success .message {
+  color: #9cabc8;
+}
+
+.example.che-donation .success .reset path {
+  fill: $white;
+}
+
+input[type="checkbox"].css-checkbox {
+  position: absolute;
+  z-index: -1000;
+  left: -1000px;
+  overflow: hidden;
+  clip: rect(0 0 0 0);
+  height: 1px;
+  width: 1px;
+  margin: -1px;
+  padding: 0;
+  border: 0;
+}
+input[type="checkbox"].css-checkbox + label.css-label {
+  padding-left: 45px;
+  height: 34px;
+  display: inline-block;
+  line-height: 34px;
+  background-repeat: no-repeat;
+  background-position: 0 0px;
+  font-size: 18px;
+  vertical-align: middle;
+  cursor: pointer;
+  color: #42413c;
+}
+input[type="checkbox"].css-checkbox:checked + label.css-label {
+  background-position: 0 -36px;
+}
+label.css-label {
+  background-image: url(../images/checkbox.png);
+  -webkit-touch-callout: none;
+  -webkit-user-select: none;
+  -khtml-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
+input[type="radio"].css-radio {
+  position: absolute;
+  z-index: -1000;
+  left: -1000px;
+  overflow: hidden;
+  clip: rect(0 0 0 0);
+  height: 1px;
+  width: 1px;
+  margin: -1px;
+  padding: 0;
+  border: 0;
+}
+input[type="radio"].css-radio + label.css-labell {
+  padding-left: 27px;
+  height: 22px;
+  display: inline-block;
+  line-height: 22px;
+  background-repeat: no-repeat;
+  background-position: 0 0;
+  font-size: 18px;
+  vertical-align: middle;
+  vertical-align: middle;
+  cursor: pointer;
+  @include breakpoint(xs) {
+    font-size: $fontMedium;
+  }
+}
+input[type="radio"].css-radio:checked + label.css-labell {
+  background-position: 0 -22px;
+}
+label.css-labell {
+  background-image: url(../images/radio.png);
+  -webkit-touch-callout: none;
+  -webkit-user-select: none;
+  -khtml-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}

@@ -1,0 +1,252 @@
+.main_wrapper {
+  @include fullwidth();
+  clear: both;
+}
+
+.cms-wrap {
+  @include fullwidth();
+  clear: both;
+  position: relative;
+
+  p {
+    font-size: $fontLarge;
+    line-height: 24px;
+    color: $default-theme-color;
+    font-weight: $light;
+    margin-bottom: 10px;
+  }
+  h1 {
+    position: relative;
+    display: table;
+    margin: 0px auto 10px;
+    color: #015ca3;
+
+    &:before {
+      position: absolute;
+      content: "";
+      width: 75px;
+      height: 1px;
+      background: #24aae1;
+      top: 50%;
+      left: -100px;
+      @include breakpoint(xxs) {
+        content: none;
+      }
+    }
+    &:after {
+      position: absolute;
+      content: "";
+      width: 75px;
+      height: 1px;
+      background: #24aae1;
+      top: 50%;
+      right: -100px;
+      @include breakpoint(xxs) {
+        content: none;
+      }
+    }
+  }
+
+  h2,
+  h3,
+  h4,
+  h5 {
+    color: #242424;
+  }
+
+  h2 {
+    text-align: $center;
+    font-size: 150%;
+    color: $default-theme-color;
+  }
+
+  .terms-wrap {
+    padding: 50px 0 0 0;
+  }
+}
+
+.contact-wrap {
+  @include fullwidth();
+  clear: both;
+  padding: 0 0 50px;
+  @include breakpoint(xs) {
+    padding: 0 0 20px;
+  }
+
+  .banner {
+    figure {
+      figcaption {
+        .content {
+          top: 50%;
+          transform: translateY(-50%);
+          bottom: 0;
+
+          @include breakpoint(xs) {
+            position: relative;
+            top: inherit;
+            text-align: $center;
+          }
+        }
+      }
+    }
+  }
+
+  h2 {
+    color: #242424;
+    font-weight: $semibold;
+    margin-bottom: 40px;
+  }
+
+  form {
+    margin: 50px 0 0 0;
+    label {
+      color: #242424;
+      font-size: $fontExtraLarge;
+      line-height: 40px;
+    }
+    textarea {
+      resize: none;
+    }
+    button {
+      border: none;
+      border-radius: 0px;
+      color: $white;
+      font-size: 20px;
+      padding: 0 20px;
+      line-height: 45px;
+      &:focus {
+        color: $white;
+      }
+    }
+  }
+}
+
+.datanotfound {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  text-align: center;
+  left: auto;
+  right: auto;
+  width: 100%;
+
+  @include breakpoint(xs) {
+    position: relative;
+    transform: none;
+    padding: 20px;
+  }
+}
+.prayer-list {
+  @include fullwidth();
+  clear: both;
+  padding: 5% 0;
+  background: #e3e3e3;
+  @include breakpoint(xs) {
+    padding: 2% 0;
+  }
+  ul {
+    margin: 0;
+    padding: 0;
+    li {
+      list-style: none;
+      margin: 0 0 30px;
+      padding: 0;
+      h2,
+      p {
+        color: #5e5d5d;
+      }
+    }
+  }
+}
+.prayer-mark {
+  @include fullwidth();
+  clear: both;
+  padding: 5% 0;
+  background: $blue;
+  h2 {
+    color: $white;
+    text-align: $center;
+    span {
+      display: block;
+      padding-top: 30px;
+    }
+  }
+}
+.shop-instagram {
+  @include fullwidth();
+  clear: both;
+  padding: 5% 0;
+  background: #5e5d5d;
+  h2 {
+    display: table;
+    margin: 0px auto;
+    color: $white;
+    text-align: $center;
+    padding: 0;
+    span {
+      position: relative;
+      &:before {
+        position: absolute;
+        content: "";
+        width: 75px;
+        height: 1px;
+        background: $white;
+        top: 25px;
+        left: -100px;
+        @include breakpoint(lg) {
+          top: 20px;
+        }
+        @include breakpoint(xs) {
+          top: 15px;
+        }
+      }
+      &:after {
+        position: absolute;
+        content: "";
+        width: 75px;
+        height: 1px;
+        background: $white;
+        top: 25px;
+        right: -100px;
+        @include breakpoint(lg) {
+          top: 20px;
+        }
+        @include breakpoint(xs) {
+          top: 15px;
+        }
+      }
+    }
+  }
+  .btn {
+    padding: 8px 50px;
+    @include breakpoint(xs) {
+      padding: 5px 30px;
+    }
+  }
+}
+.instagram-list {
+  @include fullwidth();
+  clear: both;
+  padding: 3% 0;
+  margin: 0;
+  ul {
+    margin: 0;
+    padding: 0;
+    li {
+      list-style: none;
+      margin: 0;
+      padding: 0;
+      width: 25%;
+      float: $left;
+      @include breakpoint(xs) {
+        width: 50%;
+      }
+      @include breakpoint(xxs) {
+        width: 100%;
+      }
+      img {
+        width: 100%;
+      }
+    }
+  }
+}

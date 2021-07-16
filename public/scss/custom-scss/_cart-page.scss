@@ -1,0 +1,249 @@
+.cartwrapper {
+  @include fullwidth();
+  clear: both;
+  margin: 0px;
+  padding: 50px 0;
+
+  h2 {
+    margin: 0;
+    color: #004272;
+    text-align: $center;
+    padding-bottom: 50px;
+    position: relative;
+    display: table;
+    margin: 0px auto;
+
+    @include breakpoint(xs) {
+      padding-bottom: 20px;
+    }
+  }
+}
+
+.product-cart {
+  margin: 0;
+  padding: 0;
+  color: #242424;
+  font-weight: $normal;
+  font-size: $fontLarge;
+  text-align: $left;
+  @include breakpoint(sm) {
+    font-size: $fontMedium;
+  }
+
+  &.donate {
+    background: $white;
+    padding: 30px;
+    width: 75%;
+    margin: 0px auto 30px;
+    @include breakpoint(xs) {
+      width: 100%;
+      padding: 10px;
+    }
+    .cart_totals {
+      width: 100%;
+      margin: 0px auto;
+      float: none;
+    }
+  }
+
+  table {
+    tr {
+      th {
+        font-weight: $normal;
+      }
+    }
+  }
+  .product-thumb {
+    width: 80px;
+    @include breakpoint(sm) {
+      width: 60px;
+    }
+  }
+  .product-name {
+    /* width:calc(100% - 130px); */
+    vertical-align: middle;
+    a {
+      color: #727272;
+    }
+  }
+  .product-price {
+    width: 15%;
+    vertical-align: middle;
+    @include breakpoint(sm) {
+      width: 10%;
+    }
+  }
+  .product-qty {
+    width: 15%;
+    vertical-align: middle;
+    text-align: $center;
+    @include breakpoint(sm) {
+      width: 20%;
+    }
+    input[title="Qty"] {
+      height: 30px;
+      border: 1px solid $bordercolor;
+      padding: 0 5px;
+      color: #242424;
+      vertical-align: top;
+      text-align: $center;
+    }
+    .incr,
+    .decr {
+      background: #004272;
+      color: $white;
+      display: inline-block;
+      width: 30px;
+      height: 30px;
+      text-align: $center;
+      font-size: 20px;
+      cursor: pointer;
+    }
+  }
+  .product-total {
+    width: 15%;
+    vertical-align: middle;
+    @include breakpoint(sm) {
+      width: 10%;
+    }
+  }
+  .product-action {
+    width: 60px;
+    vertical-align: middle;
+    text-align: center;
+    a {
+      color: #66ae3d;
+      font-weight: $semibold;
+    }
+  }
+}
+
+.cart_totals {
+  width: calc(30% + 65px);
+  float: $right;
+  border: 1px solid $bordercolor;
+  background: #f2f2f2;
+  padding: 10px;
+  font-size: $fontLarge;
+  @include breakpoint(laptop) {
+    width: 50%;
+  }
+  @include breakpoint(md) {
+    width: 60%;
+  }
+  @include breakpoint(xs) {
+    width: 100%;
+  }
+
+  h4 {
+    margin: 0 0 10px;
+    color: #242424;
+  }
+
+  table {
+    background: $white;
+    tr {
+      td {
+        &:first-child {
+          width: 42%;
+        }
+        &:last-child {
+          width: 58%;
+          font-weight: $medium;
+          color: #242424;
+        }
+      }
+    }
+  }
+
+  .wc-proceed-to-checkout {
+    @include breakpoint(xxs) {
+      text-align: $center;
+    }
+
+    .shopping-btn {
+      padding: 0;
+      color: #004272;
+      text-transform: uppercase;
+      line-height: 39px;
+      font-size: $fontLarge;
+
+      span {
+        background: #004272;
+        color: $white;
+        display: inline-block;
+        width: 25px;
+        height: 25px;
+        margin-right: 10px;
+        text-align: $center;
+        font-size: $fontExtraLarge;
+        vertical-align: middle;
+        line-height: 25px;
+        @include border-radius(100%);
+      }
+    }
+
+    .green-btn {
+      padding: 8px 25px;
+      color: $white;
+      text-transform: uppercase;
+      font-size: $fontLarge;
+      @include breakpoint(xxs) {
+        display: block;
+        float: none !important;
+      }
+    }
+  }
+}
+
+.paymentwrap {
+  @include fullwidth();
+  clear: both;
+  margin: 0px;
+  padding: 50px 0;
+
+  h4 {
+    color: #242424;
+  }
+  .payment-form {
+    width: 50%;
+    margin: 0px auto;
+    padding: 30px;
+    border: 1px solid $bordercolor;
+    box-shadow: 0 1px 3px 0 #e6ebf1;
+  }
+  .blue-btn {
+    font-weight: 600;
+    font-size: 20px;
+    padding: 0 20px;
+    color: $white;
+    line-height: 45px;
+  }
+}
+
+.StripeElement {
+  margin: 0 0 20px;
+  background-color: white;
+  height: 40px;
+  padding: 10px 12px;
+  border-radius: 4px;
+  border: 1px solid $bordercolor;
+  box-shadow: 0 1px 3px 0 #e6ebf1;
+  -webkit-transition: box-shadow 150ms ease;
+  transition: box-shadow 150ms ease;
+  @include breakpoint(sm) {
+    margin: 0;
+  }
+}
+
+.StripeElement--focus {
+  box-shadow: 0 1px 3px 0 #cfd7df;
+}
+
+.StripeElement--invalid {
+  border-color: #fa755a;
+}
+
+.StripeElement--webkit-autofill {
+  background-color: #fefde5 !important;
+}

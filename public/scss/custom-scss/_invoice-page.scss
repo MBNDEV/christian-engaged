@@ -1,0 +1,93 @@
+.invoice-wrap {
+  @include fullwidth();
+  clear: both;
+  padding: 50px 0;
+  margin: 0;
+
+  h2 {
+    color: #242424;
+    border-bottom: 1px solid $bordercolor;
+    margin: 0 0 20px;
+    padding: 0 0 10px;
+  }
+  h4 {
+    color: #242424;
+  }
+  .sidebar {
+    position: relative;
+
+    &:after {
+      position: absolute;
+      content: "";
+      right: -15px;
+      top: 0;
+      width: 1px;
+      height: 100%;
+      background: $bordercolor;
+    }
+  }
+
+  .invoice-table {
+    border-bottom: 1px solid $bordercolor;
+    padding: 0;
+
+    tr {
+      th {
+        color: #242424;
+        font-family: $roboto;
+        font-weight: $medium;
+
+        &:first-child {
+          padding-left: 0;
+        }
+        &:last-child {
+          padding-right: 0;
+        }
+      }
+    }
+
+    tr {
+      td {
+        border-top: none;
+
+        &:first-child {
+          padding-left: 0;
+        }
+        &:last-child {
+          padding-right: 0;
+        }
+      }
+    }
+  }
+
+  .invoice-button {
+    padding: 20px 0 0 0;
+    border-top: 1px solid $bordercolor;
+
+    a,
+    button {
+      line-height: 45px;
+      display: inline-block;
+      font-size: $font-size-h4;
+      padding: 0 20px;
+      color: $white;
+      @include breakpoint(xxs) {
+        font-size: $font-size-h5;
+        width: 75%;
+        text-align: center;
+      }
+    }
+  }
+}
+
+#newsletter {
+  z-index: 9999 !important;
+
+  .modal-dialog {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%) !important;
+    margin: 0 auto !important;
+  }
+}

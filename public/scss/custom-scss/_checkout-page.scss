@@ -1,0 +1,79 @@
+.billing-detail {
+  padding: 20px 0 0 0;
+  h4 {
+    margin: 0 0 10px;
+    color: #242424;
+  }
+  label {
+    color: #242424;
+  }
+
+  .green-btn {
+    padding: 8px 25px;
+    color: $white;
+    text-transform: uppercase;
+    font-size: $fontLarge;
+    border: none;
+  }
+
+  .select2-container {
+    display: block;
+    width: 100%;
+    border: 1px solid #ccc;
+    &.select2-dropdown-open {
+      .select2-choice {
+        background: $white;
+        .select2-arrow b {
+          background-position: -25px -295px;
+        }
+      }
+    }
+
+    .select2-choice {
+      border: none;
+      height: 40px;
+      line-height: 40px;
+      border-radius: 0px;
+      width: 100%;
+      background: $white;
+      background-image: none;
+      .select2-arrow {
+        border: none;
+        background: transparent;
+        width: 25px;
+        b {
+          background: $iconBg;
+          background-position: -25px -226px;
+        }
+      }
+    }
+  }
+}
+
+.thankyou-wrap {
+  @include fullwidth();
+  clear: both;
+  margin: 0px;
+  padding: 120px 0;
+  @include breakpoint(laptop) {
+    padding: 100px 0;
+  }
+  @include breakpoint(lg) {
+    padding: 75px 0;
+  }
+  @include breakpoint(xs) {
+    padding: 50px 0;
+  }
+  h2 {
+    text-align: $center;
+    padding-bottom: 20px;
+    color: #66ae3d;
+  }
+  table {
+    tr {
+      th {
+        color: #242424;
+      }
+    }
+  }
+}
