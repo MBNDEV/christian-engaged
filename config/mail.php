@@ -30,7 +30,7 @@ return [
     // |
     // /
 
-    'host' => env('MAIL_HOST', 'mail.smtp.christianityengaged.net'),
+    'host' => env('MAIL_HOST', 'mail.info.christianityengaged.org'),
 
     // /
     // |--------------------------------------------------------------------------
