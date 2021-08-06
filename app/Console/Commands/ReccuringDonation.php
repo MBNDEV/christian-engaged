@@ -30,9 +30,23 @@ class ReccuringDonation extends Command
      *
      * @return void
      */
+
+    private $skey, $pkey, $endpoint_secret;
     public function __construct()
     {
         parent::__construct();
+        $environment = env('APP_ENV');
+        if ($environment == 'local' || $environment == 'staging') {
+            $this->skey = env('STRIPE_TEST_SK');
+            $this->pkey = env('STRIPE_TEST_PK');
+            $this->endpoint_secret = env('STRIPE_TEST_ENDPOINT_SECRET');
+        } else {
+            $this->skey = env('STRIPE_LIVE_SK');
+            $this->pkey = env('STRIPE_LIVE_PK');
+            $this->endpoint_secret = env('STRIPE_live_ENDPOINT_SECRET');
+        }
+
+        \Stripe\Stripe::setApiKey($this->skey);
     }
 
     /**
