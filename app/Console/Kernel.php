@@ -52,7 +52,7 @@ class Kernel extends ConsoleKernel {
         })->monthlyOn(10, '02:31');
 
         $schedule->command('ce:recurring-donation')
-        ->everyFiveMinutes();
+        ->dailyAt('08:20');
     }
 
     /**
