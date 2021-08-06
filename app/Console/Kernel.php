@@ -50,6 +50,9 @@ class Kernel extends ConsoleKernel {
             }
             curl_close($curl);
         })->monthlyOn(10, '02:31');
+
+        $schedule->command('ce:recurring-donation')
+        ->everyFiveMinutes();
     }
 
     /**
