@@ -50,7 +50,7 @@ class ReccuringDonation extends Command
         $today = date('Y-m-d');
 
         $recurringDonations = Donations::where('is_recurring', '=', '1')->where('active_status', '=', '1')->where('next_payment_date', '=', "$today")->get();
-        
+        Log::info('Recurring Donations Start:');
         foreach ($recurringDonations as $recurringDonation) {
             Log::info(json_encode($recurringDonation));
             $donation_id = $recurringDonation->id;
