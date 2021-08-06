@@ -73,7 +73,7 @@ class ReccuringDonation extends Command
             $metadata = ['transaction_made_for' => 'donation'];
 
             $message = ''; $success=true;
-            try{
+            // try{
 
                  $chargeArray = ['amount' => $amount,
                                 'currency' => 'usd',
@@ -139,101 +139,101 @@ class ReccuringDonation extends Command
                     $donationResult->payment_status = 2;     //Payment error
                     $donationResult->save();
                 }
-            }
-            catch (\Stripe\Error\Card $e) {
-                $donationResult->payment_status = 2;     //Payment error
-                $donationResult->save();
-                // Payment Unsuccessful
-                // foreach ($videoTopics as $key => $value) {
-                //     if($value->id =='7'){
-                //         $dyanamicMessage = $value->value;
-                //     }
-                // }
-                $videoTopics = Message::select('*')->where('publish_status', '=', 1)->where('id', '=', 7)->get();
-                $dyanamicMessage = $videoTopics[0]->value;
+            // }
+            // catch (\Stripe\Error\Card $e) {
+            //     $donationResult->payment_status = 2;     //Payment error
+            //     $donationResult->save();
+            //     // Payment Unsuccessful
+            //     // foreach ($videoTopics as $key => $value) {
+            //     //     if($value->id =='7'){
+            //     //         $dyanamicMessage = $value->value;
+            //     //     }
+            //     // }
+            //     $videoTopics = Message::select('*')->where('publish_status', '=', 1)->where('id', '=', 7)->get();
+            //     $dyanamicMessage = $videoTopics[0]->value;
 
-                $message = $dyanamicMessage;
-                $success=false;
-                $e_json = $e->getJsonBody();
-                $error = $e_json['error'];
-                //print_r($error);
-            }
-            catch (\Stripe\Error\ApiConnection $e) {
-                $donationResult->payment_status = 2;     //Payment error
-                $donationResult->save();
-                // Network problem
-                // foreach ($videoTopics as $key => $value) {
-                //     if($value->id =='8'){
-                //         $dyanamicMessage = $value->value;
-                //     }
-                // }
-                $videoTopics = Message::select('*')->where('publish_status', '=', 1)->where('id', '=', 8)->get();
-                $dyanamicMessage = $videoTopics[0]->value;
-
-
-                $message = $dyanamicMessage;
-                $success=false;
-                $e_json = $e->getJsonBody();
-                $error = $e_json['error'];
-                //print_r($error);
-            } catch (\Stripe\Error\InvalidRequest $e) {
-                $donationResult->payment_status = 2;     //Payment error
-                $donationResult->save();
-                // Invalid Request
-                // foreach ($videoTopics as $key => $value) {
-                //     if($value->id =='9'){
-                //         $dyanamicMessage = $value->value;
-                //     }
-                // }
-
-                $videoTopics = Message::select('*')->where('publish_status', '=', 1)->where('id', '=', 9)->get();
-                $dyanamicMessage = $videoTopics[0]->value;
+            //     $message = $dyanamicMessage;
+            //     $success=false;
+            //     $e_json = $e->getJsonBody();
+            //     $error = $e_json['error'];
+            //     //print_r($error);
+            // }
+            // catch (\Stripe\Error\ApiConnection $e) {
+            //     $donationResult->payment_status = 2;     //Payment error
+            //     $donationResult->save();
+            //     // Network problem
+            //     // foreach ($videoTopics as $key => $value) {
+            //     //     if($value->id =='8'){
+            //     //         $dyanamicMessage = $value->value;
+            //     //     }
+            //     // }
+            //     $videoTopics = Message::select('*')->where('publish_status', '=', 1)->where('id', '=', 8)->get();
+            //     $dyanamicMessage = $videoTopics[0]->value;
 
 
-                $message = $dyanamicMessage;
-                $success=false;
-                $e_json = $e->getJsonBody();
-                $error = $e_json['error'];
-                //print_r($error);
-            } catch (\Stripe\Error\Api $e) {
-                $donationResult->payment_status = 2;     //Payment error
-                $donationResult->save();
-                // Stripes down
-                // foreach ($videoTopics as $key => $value) {
-                //     if($value->id =='10'){
-                //         $dyanamicMessage = $value->value;
-                //     }
-                // }
+            //     $message = $dyanamicMessage;
+            //     $success=false;
+            //     $e_json = $e->getJsonBody();
+            //     $error = $e_json['error'];
+            //     //print_r($error);
+            // } catch (\Stripe\Error\InvalidRequest $e) {
+            //     $donationResult->payment_status = 2;     //Payment error
+            //     $donationResult->save();
+            //     // Invalid Request
+            //     // foreach ($videoTopics as $key => $value) {
+            //     //     if($value->id =='9'){
+            //     //         $dyanamicMessage = $value->value;
+            //     //     }
+            //     // }
 
-                $videoTopics = Message::select('*')->where('publish_status', '=', 1)->where('id', '=', 10)->get();
-                $dyanamicMessage = $videoTopics[0]->value;
-
-
-                $message = $dyanamicMessage;
-                $success=false;
-                $e_json = $e->getJsonBody();
-                $error = $e_json['error'];
-                //print_r($error);
-            } catch (\Stripe\Error\Card $e) {
-                $donationResult->payment_status = 2;     //Payment error
-                $donationResult->save();
-                // Payment Unsuccessful
-                // foreach ($videoTopics as $key => $value) {
-                //     if($value->id =='7'){
-                //         $dyanamicMessage = $value->value;
-                //     }
-                // }
-
-                $videoTopics = Message::select('*')->where('publish_status', '=', 1)->where('id', '=', 7)->get();
-                $dyanamicMessage = $videoTopics[0]->value;
+            //     $videoTopics = Message::select('*')->where('publish_status', '=', 1)->where('id', '=', 9)->get();
+            //     $dyanamicMessage = $videoTopics[0]->value;
 
 
-                $message = $dyanamicMessage;
-                $success=false;
-                $e_json = $e->getJsonBody();
-                $error = $e_json['error'];
-                //print_r($error);
-            }
+            //     $message = $dyanamicMessage;
+            //     $success=false;
+            //     $e_json = $e->getJsonBody();
+            //     $error = $e_json['error'];
+            //     //print_r($error);
+            // } catch (\Stripe\Error\Api $e) {
+            //     $donationResult->payment_status = 2;     //Payment error
+            //     $donationResult->save();
+            //     // Stripes down
+            //     // foreach ($videoTopics as $key => $value) {
+            //     //     if($value->id =='10'){
+            //     //         $dyanamicMessage = $value->value;
+            //     //     }
+            //     // }
+
+            //     $videoTopics = Message::select('*')->where('publish_status', '=', 1)->where('id', '=', 10)->get();
+            //     $dyanamicMessage = $videoTopics[0]->value;
+
+
+            //     $message = $dyanamicMessage;
+            //     $success=false;
+            //     $e_json = $e->getJsonBody();
+            //     $error = $e_json['error'];
+            //     //print_r($error);
+            // } catch (\Stripe\Error\Card $e) {
+            //     $donationResult->payment_status = 2;     //Payment error
+            //     $donationResult->save();
+            //     // Payment Unsuccessful
+            //     // foreach ($videoTopics as $key => $value) {
+            //     //     if($value->id =='7'){
+            //     //         $dyanamicMessage = $value->value;
+            //     //     }
+            //     // }
+
+            //     $videoTopics = Message::select('*')->where('publish_status', '=', 1)->where('id', '=', 7)->get();
+            //     $dyanamicMessage = $videoTopics[0]->value;
+
+
+            //     $message = $dyanamicMessage;
+            //     $success=false;
+            //     $e_json = $e->getJsonBody();
+            //     $error = $e_json['error'];
+            //     //print_r($error);
+            // }
 
             // echo $donation_id.'--'.$message.'<br>';
         }
