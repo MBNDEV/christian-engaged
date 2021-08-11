@@ -104,6 +104,100 @@ class HomeController extends Controller {
         return view('layouts.homepage-template', $data);
     }
 
+    public function demo() {
+        $donationGoal = DonationGoal::where('status', '=', '1')->first();
+        $resultsocial = DB::table('ce_socials')
+                ->select('*')
+                ->whereRaw('id', '1')
+                ->get();
+
+
+        $donationsTotal = 0;
+        $goal_amount = 0;
+        if ($donationGoal) {
+            $goal_id = $donationGoal->id;
+            $donationsTotal = Donations::where('goal_id', '=', $goal_id)->where('payment_status', '=', 1)->sum('donation_amount');
+
+            $goal_amount = $donationGoal->goal_amount;
+        }
+
+        $goalPercent = 0;
+        if ($goal_amount && $donationsTotal) {
+            $goalPercent = ($donationsTotal / $goal_amount) * 100;
+        }
+
+//        $products = Product::join('ce_product_categories', 'ce_product_categories.id', '=', 'ce_products.product_category_id')
+//                ->select('ce_products.*', 'ce_product_categories.product_category as cataogyName')
+//                ->where('ce_products.publish_status', '=', '1')
+//                ->where('ce_products.is_featured', '=', '1')
+//                ->orderBy('ce_products.featured_sort_order', 'asc')
+//                ->get();
+
+        $videos = Video::join('ce_video_topics', 'ce_video_topics.id', '=', 'ce_videos.topic_id')
+                        ->select('ce_videos.*', 'ce_video_topics.video_topic')
+                        ->where('ce_videos.publish_status', '=', '1')
+                        ->where('ce_video_topics.status', '=', '1')
+                        ->where('is_featured', '=', '1')
+                        ->orderBy('ce_videos.featured_sort_order', 'ASC')->get();
+
+        $newvideo = Video::join('ce_video_topics', 'ce_video_topics.id', '=', 'ce_videos.topic_id')
+                        ->select('ce_videos.*', 'ce_video_topics.video_topic')
+                        ->where('publish_status', '!=', '3')->where('ce_videos.is_new', '=', 1)->first();
+
+//        print_r($newvideo); die();
+        $cmsObj = new Cms();
+
+
+        //echo "<pre>"; print_r($message->all()); exit;
+
+        $leaders = $cmsObj->getLeaders();
+        $aboutUsPageSlug = $cmsObj->getSlug(1);
+        $videoPageSlug = $cmsObj->getSlug(3);
+        $merchPageSlug = $cmsObj->getSlug(5);
+
+
+        $section2 = $cmsObj->getAboutusAmenities(2);
+        $section2Amenities = json_decode($section2->amenity_details);
+        $videoDetail = $this->getYoutubevideoDetail($section2Amenities->youtube_url);
+        $videoIframe = 'Not Found';
+        if ($videoDetail != 'Not Found' && is_object($videoDetail)) {
+            $videoIframe = $videoDetail->html;
+        }
+
+        $meta = Cms::where('publish_status', '!=', '3')->where('id', '=', '2')->get();
+        //print_r($meta);
+        if ($meta[0]->page_title) {
+            MetaTag::set('title', $meta[0]->page_title);
+        } else {
+            MetaTag::set('title', 'Christianity Engaged');
+        }
+
+        MetaTag::set('description', $meta[0]->meta_description);
+        MetaTag::set('keywords', $meta[0]->meta_keyword);
+        $data['content'] = view('web.homepage_demo', compact('donationGoal', 'videos', 'goalPercent', 'resultsocial', 'videoIframe', 'aboutUsPageSlug', 'videoPageSlug', 'merchPageSlug', 'newvideo'));
+        
+        $curlHandler = curl_init();
+
+        $userName = env('WOOCOMMERCE_CONSUMER_KEY');
+        $password = env('WOOCOMMERCE_CONSUMER_SECRET');
+
+        curl_setopt_array($curlHandler, [
+            CURLOPT_URL => 'https://storechristianityengaged.mbndigital-staging.com/wp-json/wc/v3/products?feature=true',
+            CURLOPT_RETURNTRANSFER => true,
+            CURLOPT_HEADER => true,
+            CURLOPT_POST => 1,
+            CURLOPT_HTTPAUTH => CURLAUTH_BASIC,
+            CURLOPT_USERPWD => $userName . ':' . $password,
+        ]);
+
+        $response = curl_exec($curlHandler);
+
+        var_dump($response);
+        curl_close($curlHandler);
+
+        // return view('layouts.homepage-template', $data);
+    }
+
     public function subscribe(Request $request) {
         $email = $request->email;
         $sendEmail = 0;
