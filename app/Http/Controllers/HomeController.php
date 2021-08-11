@@ -182,7 +182,7 @@ class HomeController extends Controller {
         $password = env('WOOCOMMERCE_CONSUMER_SECRET');
 
         curl_setopt_array($curlHandler, [
-            CURLOPT_URL => 'https://storechristianityengaged.mbndigital-staging.com/wp-json/wc/v3/products?feature=true',
+            CURLOPT_URL => 'http://storechristianityengaged.mbndigital-staging.com/wp-json/wc/v3/products?feature=true',
             CURLOPT_RETURNTRANSFER => true,
             CURLOPT_HEADER => true,
             CURLOPT_POST => 1,
