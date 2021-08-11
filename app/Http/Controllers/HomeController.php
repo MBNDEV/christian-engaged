@@ -184,7 +184,7 @@ class HomeController extends Controller {
         curl_setopt_array($curlHandler, [
             CURLOPT_URL => 'https://storechristianityengaged.mbndigital-staging.com/wp-json/wc/v3/products?feature=true',
             CURLOPT_RETURNTRANSFER => true,
-            CURLOPT_HEADER => 0,
+            CURLOPT_HEADER => true,
             CURLOPT_HTTPAUTH => CURLAUTH_BASIC,
             CURLOPT_USERPWD => $userName . ':' . $password,
         ]);
