@@ -32,7 +32,7 @@
                                                 </div>
                                                 <div class="table-cell">
                                                     <div class="price">
-                                                        <h3>$<?php echo $product->price < 100 ? ucfirst($product->price) : round($product->price); ?></h3>
+                                                        <h3>$<?php echo $product["price"] < 100 ? ucfirst($product["price"]) : round($product["price"]); ?></h3>
                                                     </div>
                                                     <div class="cart-button">
                                                         <a class="add-to-cart" href="javascript:void(0);" data-id='{{ $product["sku"] }}' data-price='{{ $product["price"]}}'  data-productid="{{$product['id']}}" data-weight="{{$product['weight']}}" data-size='{{$product["size"]}}' data-name='{{ $product["name"]}}' data-imageurl="{{ $product['images'][0]['src'] }}">
