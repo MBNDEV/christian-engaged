@@ -189,7 +189,7 @@ class HomeController extends Controller {
         curl_close($ch); 
         var_dump($products);
         $data['content'] = view('web.homepage_demo', compact('donationGoal', 'videos', 'goalPercent', 'resultsocial', 'videoIframe', 'aboutUsPageSlug', 'videoPageSlug', 'merchPageSlug', 'newvideo', 'products'));   
-        return view('layouts.homepage-template', $data);
+        // return view('layouts.homepage-template', $data);
     }
 
     public function subscribe(Request $request) {
