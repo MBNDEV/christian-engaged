@@ -180,15 +180,30 @@ class HomeController extends Controller {
         $password = env('WOOCOMMERCE_CONSUMER_SECRET');
 
         $endpoint = 'https://storechristianityengaged.mbndigital-staging.com/wp-json/wc/v2/products?featured=true&consumer_key='.$userName.'&consumer_secret='.$password;
-        $client = new \GuzzleHttp\Client();
+        // $client = new \GuzzleHttp\Client();
 
-        $response = $client->request('GET', $endpoint);
+        // $response = $client->request('GET', $endpoint);
 
 
-        $statusCode = $response->getStatusCode();
-        $r = $response->getBody();
+        // $statusCode = $response->getStatusCode();
+        // $r = $response->getBody();
 
-        var_dump($r);
+        // create curl resource
+        $ch = curl_init();
+
+        // set url
+        curl_setopt($ch, CURLOPT_URL, $endpoint);
+
+        //return the transfer as a string
+        curl_setopt($ch, CURLOPT_RETURNTRANSFER, 1);
+
+        // $output contains the output string
+        $output = curl_exec($ch);
+
+        // close curl resource to free up system resources
+        curl_close($ch);    
+
+        var_dump($output);
         // return view('layouts.homepage-template', $data);
     }
 
