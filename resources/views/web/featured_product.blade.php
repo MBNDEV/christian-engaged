@@ -19,15 +19,15 @@
                         <?php foreach ($products as $product) { ?>
                             <li>
                                 <figure>
-                                    <a href="/store/<?php echo $product->slug; ?>">
-                                        <img src="{{ $product->images[0]->src }}" alt="No Image Found" onerror="this.src='{{asset("/images/no_image.png") }}'">
+                                    <a href="/store/<?php echo $product['slug']; ?>">
+                                        <img src="{{ $product['images'][0]['src'] }}" alt="No Image Found" onerror="this.src='{{asset("/images/no_image.png") }}'">
                                     </a>
                                     <figcaption>
                                         <div class="addtocart">
                                             <div class="table">
                                                 <div class="table-cell">
                                                     <h4>
-                                                        {{ucfirst($product->name)}}
+                                                        {{ucfirst($product['name'])}}
                                                     </h4>
                                                 </div>
                                                 <div class="table-cell">
@@ -35,7 +35,7 @@
                                                         <h3>$<?php echo $product->price < 100 ? ucfirst($product->price) : round($product->price); ?></h3>
                                                     </div>
                                                     <div class="cart-button">
-                                                        <a class="add-to-cart" href="javascript:void(0);" data-id='{{ $product->sku }}' data-price='{{ $product->price}}'  data-productid="{{$product->id}}" data-weight="{{$product->weight}}" data-size='{{$product->size}}' data-name='{{ $product->name}}' data-imageurl='{{asset('/uploads/productimages/'.$product->product_image) }}'>
+                                                        <a class="add-to-cart" href="javascript:void(0);" data-id='{{ $product["sku"] }}' data-price='{{ $product["price"]}}'  data-productid="{{$product['id']}}" data-weight="{{$product['weight']}}" data-size='{{$product["size"]}}' data-name='{{ $product["name"]}}' data-imageurl="{{ $product['images'][0]['src'] }}">
                                                             + ADD TO
                                                         </a>
                                                     </div>
@@ -43,11 +43,11 @@
                                             </div>
                                             <div class="itemnumber">
                                                 <span class="sku">
-                                                    {{$product->sku}}
+                                                    {{$product['sku']}}
                                                 </span>
                                                 <span class="sizee">
-                                                    @if($product->size != '')
-                                                    {{ucwords($product->size)}}
+                                                    @if($product["size"] != '')
+                                                    {{ucwords($product["size"])}}
                                                     @endif
                                                 </span>
                                             </div>
