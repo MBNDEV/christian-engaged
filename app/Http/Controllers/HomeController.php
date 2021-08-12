@@ -176,25 +176,19 @@ class HomeController extends Controller {
         MetaTag::set('keywords', $meta[0]->meta_keyword);
         $data['content'] = view('web.homepage_demo', compact('donationGoal', 'videos', 'goalPercent', 'resultsocial', 'videoIframe', 'aboutUsPageSlug', 'videoPageSlug', 'merchPageSlug', 'newvideo'));
         
-        $curlHandler = curl_init();
-
         $userName = env('WOOCOMMERCE_CONSUMER_KEY');
         $password = env('WOOCOMMERCE_CONSUMER_SECRET');
 
-        curl_setopt_array($curlHandler, [
-            CURLOPT_URL => 'https://storechristianityengaged.mbndigital-staging.com/wp-json/wc/v2/products/attributes?consumer_key='.$userName.'&consumer_secret='.$password,
-            CURLOPT_RETURNTRANSFER => true,
-            CURLOPT_HEADER => true,
-            // CURLOPT_HTTPHEADER => ['Content-Type: application/text'],
-            // CURLOPT_HTTPAUTH => CURLAUTH_BASIC,
-            // CURLOPT_USERPWD => $userName . ':' . $password,
-        ]);
+        $endpoint = 'https://storechristianityengaged.mbndigital-staging.com/wp-json/wc/v2/products/attributes?consumer_key='.$userName.'&consumer_secret='.$password;
+        $client = new \GuzzleHttp\Client();
 
-        $response = curl_exec($curlHandler);
+        $response = $client->request('GET', $endpoint);
 
-        var_dump($response);
-        curl_close($curlHandler);
 
+        $statusCode = $response->getStatusCode();
+        $r = $response->getBody();
+
+        var_dump($r);
         // return view('layouts.homepage-template', $data);
     }
 
