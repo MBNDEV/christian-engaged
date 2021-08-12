@@ -14,48 +14,48 @@ $(document).ready(function () {
         }
     });
 
-    $(document).on("click", ".add-to-cart", function (e) {
-        return false;
-        // var id = $(this).data('id');
-        // var price = $(this).data('price');
-        // var size = $(this).data('size');
-        // var weight = $(this).data('weight');
-        // var productid = $(this).data('productid');
-        // var count = (typeof $(this).data('count') != "undefined") ? $(this).data('count') : 1;
-        // var name = $(this).data('name');
-        // var imageurl = $(this).data('imageurl');
+    // $(document).on("click", ".add-to-cart", function (e) {
 
-        var id = $(this).attr('data-id');
-        var price = $(this).attr('data-price');
-        var size = $(this).attr('data-size');
-        var weight = $(this).attr('data-weight');
-        var productid = $(this).attr('data-productid');
-        var count = (typeof $(this).attr('data-count') != "undefined") ? $(this).attr('data-count') : 1;
-        var name = $(this).attr('data-name');
-        var imageurl = $(this).attr('data-imageurl');
-        productToAdd = {};
-        productToAdd.menu_id = id;
-        productToAdd.name = name;
-        productToAdd.price = price;
-        productToAdd.count = parseInt(count);
-        productToAdd.size = size;
-        productToAdd.weight = weight;
-        productToAdd.productid = productid;
-        productToAdd.imageurl = imageurl;
-        product_cart.add_product(productToAdd);
+    //     // var id = $(this).data('id');
+    //     // var price = $(this).data('price');
+    //     // var size = $(this).data('size');
+    //     // var weight = $(this).data('weight');
+    //     // var productid = $(this).data('productid');
+    //     // var count = (typeof $(this).data('count') != "undefined") ? $(this).data('count') : 1;
+    //     // var name = $(this).data('name');
+    //     // var imageurl = $(this).data('imageurl');
 
-        $(".alertify-notifier").html("");
+    //     var id = $(this).attr('data-id');
+    //     var price = $(this).attr('data-price');
+    //     var size = $(this).attr('data-size');
+    //     var weight = $(this).attr('data-weight');
+    //     var productid = $(this).attr('data-productid');
+    //     var count = (typeof $(this).attr('data-count') != "undefined") ? $(this).attr('data-count') : 1;
+    //     var name = $(this).attr('data-name');
+    //     var imageurl = $(this).attr('data-imageurl');
+    //     productToAdd = {};
+    //     productToAdd.menu_id = id;
+    //     productToAdd.name = name;
+    //     productToAdd.price = price;
+    //     productToAdd.count = parseInt(count);
+    //     productToAdd.size = size;
+    //     productToAdd.weight = weight;
+    //     productToAdd.productid = productid;
+    //     productToAdd.imageurl = imageurl;
+    //     product_cart.add_product(productToAdd);
 
-        var message = JSON.parse(js_arr);
-        //console.log(message[]);
-        for (var i = 0; i < message.length; i++) {
-            if (message[i]['id'] == '1') { // Add Product,id==1
-                var NewMessage = message[i]['value'];
-            }
-        }
-        alertify.success(NewMessage);
+    //     $(".alertify-notifier").html("");
 
-    });
+    //     var message = JSON.parse(js_arr);
+    //     //console.log(message[]);
+    //     for (var i = 0; i < message.length; i++) {
+    //         if (message[i]['id'] == '1') { // Add Product,id==1
+    //             var NewMessage = message[i]['value'];
+    //         }
+    //     }
+    //     alertify.success(NewMessage);
+
+    // });
 
     $(document).on("click", ".delete-cart-item", function (e) {
         e.preventDefault();
