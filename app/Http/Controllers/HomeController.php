@@ -174,37 +174,23 @@ class HomeController extends Controller {
 
         MetaTag::set('description', $meta[0]->meta_description);
         MetaTag::set('keywords', $meta[0]->meta_keyword);
-        $data['content'] = view('web.homepage_demo', compact('donationGoal', 'videos', 'goalPercent', 'resultsocial', 'videoIframe', 'aboutUsPageSlug', 'videoPageSlug', 'merchPageSlug', 'newvideo'));
+
+        
         
         $userName = env('WOOCOMMERCE_CONSUMER_KEY');
         $password = env('WOOCOMMERCE_CONSUMER_SECRET');
 
         $endpoint = 'https://storechristianityengaged.mbndigital-staging.com/wp-json/wc/v2/products?featured=true&consumer_key='.$userName.'&consumer_secret='.$password;
-        // $client = new \GuzzleHttp\Client();
 
-        // $response = $client->request('GET', $endpoint);
-
-
-        // $statusCode = $response->getStatusCode();
-        // $r = $response->getBody();
-
-        // create curl resource
         $ch = curl_init();
-
-        // set url
         curl_setopt($ch, CURLOPT_URL, $endpoint);
-
-        //return the transfer as a string
         curl_setopt($ch, CURLOPT_RETURNTRANSFER, 1);
-
-        // $output contains the output string
         $output = curl_exec($ch);
-
-        // close curl resource to free up system resources
-        curl_close($ch);    
-
+        curl_close($ch); 
         var_dump($output);
-        // return view('layouts.homepage-template', $data);
+        $data['content'] = view('web.homepage_demo', compact('donationGoal', 'videos', 'goalPercent', 'resultsocial', 'videoIframe', 'aboutUsPageSlug', 'videoPageSlug', 'merchPageSlug', 'newvideo'));   
+        $data['products'] = $output;
+        return view('layouts.homepage-template', $data);
     }
 
     public function subscribe(Request $request) {
