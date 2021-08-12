@@ -182,12 +182,12 @@ class HomeController extends Controller {
         $password = env('WOOCOMMERCE_CONSUMER_SECRET');
 
         curl_setopt_array($curlHandler, [
-            CURLOPT_URL => 'https://storechristianityengaged.mbndigital-staging.com/wp-json/wc/v3/products?feature=true&query_string_auth=true',
+            CURLOPT_URL => 'https://storechristianityengaged.mbndigital-staging.com/wp-json/wc/v2/products/attributes?consumer_key='.$userName.'&consumer_secret='.$password,
             CURLOPT_RETURNTRANSFER => true,
             CURLOPT_HEADER => true,
-            CURLOPT_HTTPHEADER => ['Content-Type: application/text'],
-            CURLOPT_HTTPAUTH => CURLAUTH_BASIC,
-            CURLOPT_USERPWD => $userName . ':' . $password,
+            // CURLOPT_HTTPHEADER => ['Content-Type: application/text'],
+            // CURLOPT_HTTPAUTH => CURLAUTH_BASIC,
+            // CURLOPT_USERPWD => $userName . ':' . $password,
         ]);
 
         $response = curl_exec($curlHandler);
