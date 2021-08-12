@@ -20,7 +20,7 @@
                             <li>
                                 <figure>
                                     <a href="/store/<?php echo $product->slug; ?>">
-                                        <img src="{{ $product->name }}" alt="No Image Found" onerror="this.src='{{asset("/images/no_image.png") }}'">
+                                        <img src="{{ $product->images[0]->src }}" alt="No Image Found" onerror="this.src='{{asset("/images/no_image.png") }}'">
                                     </a>
                                     <figcaption>
                                         <div class="addtocart">

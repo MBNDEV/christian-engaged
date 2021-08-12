@@ -218,13 +218,7 @@
                 
     </section><!-- End helpfund-wrap -->
 
-    <!-- @include('web.featured_product')  -->
-
-    <?php 
-    foreach ($products as $product) {
-        echo '<h1>'.$product->name.'</h1>';
-    } 
-    ?>
+    @include('web.featured_product') 
 
     <section class="newsletter-wrap">
         <div class="container">
