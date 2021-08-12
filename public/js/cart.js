@@ -15,7 +15,7 @@ $(document).ready(function () {
     });
 
     $(document).on("click", ".add-to-cart", function (e) {
-
+        return false;
         // var id = $(this).data('id');
         // var price = $(this).data('price');
         // var size = $(this).data('size');
