@@ -176,8 +176,8 @@ class HomeController extends Controller {
         MetaTag::set('keywords', $meta[0]->meta_keyword);
         $data['content'] = view('web.homepage_demo', compact('donationGoal', 'videos', 'goalPercent', 'resultsocial', 'videoIframe', 'aboutUsPageSlug', 'videoPageSlug', 'merchPageSlug', 'newvideo'));
         
-        // $userName = env('WOOCOMMERCE_CONSUMER_KEY');
-        // $password = env('WOOCOMMERCE_CONSUMER_SECRET');
+        $userName = env('WOOCOMMERCE_CONSUMER_KEY');
+        $password = env('WOOCOMMERCE_CONSUMER_SECRET');
 
         $endpoint = 'https://storechristianityengaged.mbndigital-staging.com/wp-json/wc/v2/products/attributes?consumer_key='.$userName.'&consumer_secret='.$password;
         $client = new \GuzzleHttp\Client();
