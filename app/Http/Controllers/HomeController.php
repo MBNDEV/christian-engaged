@@ -179,7 +179,7 @@ class HomeController extends Controller {
         $userName = env('WOOCOMMERCE_CONSUMER_KEY');
         $password = env('WOOCOMMERCE_CONSUMER_SECRET');
 
-        $endpoint = 'https://storechristianityengaged.mbndigital-staging.com/wp-json/wc/v2/products/attributes?consumer_key='.$userName.'&consumer_secret='.$password;
+        $endpoint = 'https://storechristianityengaged.mbndigital-staging.com/wp-json/wc/v2/products?featured=true&consumer_key='.$userName.'&consumer_secret='.$password;
         $client = new \GuzzleHttp\Client();
 
         $response = $client->request('GET', $endpoint);
