@@ -45,11 +45,6 @@
                                                 <span class="sku">
                                                     {{$product['sku']}}
                                                 </span>
-                                                <!-- <span class="sizee">
-                                                    @if($product["size"] != '')
-                                                    {{ucwords($product["size"])}}
-                                                    @endif
-                                                </span> -->
                                             </div>
                                         </div>
                                     </figcaption>
