@@ -185,6 +185,7 @@ class HomeController extends Controller {
             CURLOPT_URL => 'https://storechristianityengaged.mbndigital-staging.com/wp-json/wc/v3/products?feature=true',
             CURLOPT_RETURNTRANSFER => true,
             CURLOPT_HEADER => true,
+            CURLOPT_HTTPHEADER => ['Content-Type: application/text'],
             CURLOPT_HTTPAUTH => CURLAUTH_BASIC,
             CURLOPT_USERPWD => $userName . ':' . $password,
         ]);
