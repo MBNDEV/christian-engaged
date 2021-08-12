@@ -189,7 +189,8 @@ class HomeController extends Controller {
         $r = curl_exec($ch);
         curl_close($ch); 
         $products = json_decode($r, true);
-        $data['content'] = view('web.homepage_demo', compact('donationGoal', 'videos', 'goalPercent', 'resultsocial', 'videoIframe', 'aboutUsPageSlug', 'videoPageSlug', 'merchPageSlug', 'newvideo', 'products'));   
+        $storeUrl = 'https://storechristianityengaged.mbndigital-staging.com';
+        $data['content'] = view('web.homepage_demo', compact('donationGoal', 'videos', 'goalPercent', 'resultsocial', 'videoIframe', 'aboutUsPageSlug', 'videoPageSlug', 'merchPageSlug', 'newvideo', 'products', 'storeUrl'));   
         return view('layouts.homepage-template', $data);
     }
 
