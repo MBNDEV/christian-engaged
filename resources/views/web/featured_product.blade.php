@@ -35,7 +35,7 @@
                                                         <h3>$<?php echo $product["price"] < 100 ? ucfirst($product["price"]) : round($product["price"]); ?></h3>
                                                     </div>
                                                     <div class="cart-button">
-                                                        <a class="add-to-cart" href="{{ storeUrl }}">
+                                                        <a class="add-to-cart" href="{{ storeUrl['u'].'/product/'.$product['slug'] }}">
                                                             + ADD TO
                                                         </a>
                                                     </div>
@@ -60,7 +60,7 @@
                 </div>
             </div>
             <div class="col-md-12 center">
-                <a href="{{ storeUrl }}" class="btn btn-primary merch-btn">ALL MERCH</a>
+                <a href="{{ storeUrl['u'] }}" class="btn btn-primary merch-btn">ALL MERCH</a>
             </div>
         </div>
     </div>
