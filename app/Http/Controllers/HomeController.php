@@ -186,11 +186,11 @@ class HomeController extends Controller {
         curl_setopt($ch, CURLOPT_URL, $endpoint);
         curl_setopt($ch, CURLOPT_RETURNTRANSFER, 1);
         curl_setopt($ch, CURLOPT_HTTPHEADER, array('Content-type: application/json'));
-        $products = curl_exec($ch);
+        $r = curl_exec($ch);
         curl_close($ch); 
-        echo(gettype(json_decode($products, true)));
+        $products = json_decode($r, true);
         $data['content'] = view('web.homepage_demo', compact('donationGoal', 'videos', 'goalPercent', 'resultsocial', 'videoIframe', 'aboutUsPageSlug', 'videoPageSlug', 'merchPageSlug', 'newvideo', 'products'));   
-        // return view('layouts.homepage-template', $data);
+        return view('layouts.homepage-template', $data);
     }
 
     public function subscribe(Request $request) {
