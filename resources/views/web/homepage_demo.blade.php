@@ -320,10 +320,8 @@
         }
 
         $.ajax( {
-            url: 'https://storechristianityengaged.mbndigital-staging.com/wp-json/wc/v2/products?featured=true',
-            headers: {
-                'Authorization': 'Basic '+btoa('ck_eb0d172b6bc8c4e19a3fa33ec008262bc9d4838e:cs_2d6cc2b2713cceed3e1b32ea01eb58dfe45271df')
-            },
+            url: 'https://storechristianityengaged.mbndigital-staging.com/wp-json/wc/v2/products?featured=true&consumer_key=ck_eb0d172b6bc8c4e19a3fa33ec008262bc9d4838e&consumer_secret=cs_2d6cc2b2713cceed3e1b32ea01eb58dfe45271df',
+            method: 'GET',
             success: function(r) {
                 console.log(r)
             }
