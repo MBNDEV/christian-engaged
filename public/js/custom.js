@@ -328,8 +328,10 @@ $(document).ready(function () {
     flexslider.vars.maxItems = gridSize;
   });
 
-  console.log("ClassLength:")
-  console.log($(".flexslider .slides > li").length)
+  var c = $(".flexslider .slides > li").length
+  if(c < 4) {
+    $('ul.flex-direction-nav li').remove();
+  }
 }());
     
     /*setTimeout(function () {
