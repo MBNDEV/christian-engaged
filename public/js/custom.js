@@ -318,6 +318,7 @@ $(document).ready(function () {
       minItems: getGridSize(), // use function to pull in initial value
       maxItems: getGridSize() // use function to pull in initial value
     });
+
   });
  
   // check grid size on resize event
@@ -328,11 +329,13 @@ $(document).ready(function () {
     flexslider.vars.maxItems = gridSize;
   });
 
+      
   var c = $(".flexslider .slides > li").length
   if(c < 4) {
-    console.log(true)
-    $('.flex-direction-nav').remove();
+      console.log(true)
+      $('.merch-btn').remove();
   }
+
 }());
     
     /*setTimeout(function () {
