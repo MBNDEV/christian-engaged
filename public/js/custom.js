@@ -317,12 +317,6 @@ $(document).ready(function () {
       itemMargin: 40,
       minItems: getGridSize(), // use function to pull in initial value
       maxItems: getGridSize(), // use function to pull in initial value
-    }, function() {
-        var c = $(".flexslider .slides > li").length
-        if(c < 4) {
-            console.log(true)
-            $('.flex-direction-nav').css('display: none');
-        }
     });
 
   });
@@ -335,11 +329,13 @@ $(document).ready(function () {
     flexslider.vars.maxItems = gridSize;
   });
 
-  var c = $(".flexslider .slides > li").length
+  setTimeout(function() {
+    var c = $(".flexslider .slides > li").length
     if(c < 4) {
         console.log(true)
         $('.flex-direction-nav').css('display: none');
     }
+  }, 5000)
 
 
 }());
