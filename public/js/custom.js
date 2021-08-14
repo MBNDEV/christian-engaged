@@ -312,7 +312,7 @@ $(document).ready(function () {
   $window.load(function() {
     $('.flexslider').flexslider({
       animation: "slide",
-      after: function() {
+      before: function() {
         console.log('done')
         var c = $(".flexslider .slides > li").length
         if(c > 3) {
