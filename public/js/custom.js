@@ -331,9 +331,9 @@ $(document).ready(function () {
 
   setTimeout(function() {
     var c = $(".flexslider .slides > li").length
-    if(c < 4) {
+    if(c > 3) {
         console.log(true)
-        $('.flex-direction-nav').css('display', 'none');
+        $('.flex-direction-nav').css('display', 'block');
     }
   }, 5000)
 
