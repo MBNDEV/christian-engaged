@@ -333,7 +333,7 @@ $(document).ready(function () {
     var c = $(".flexslider .slides > li").length
     if(c > 3) {
         console.log(true)
-        $('.flex-direction-nav').css('display', 'block');
+        $('.product-wrap .flex-direction-na').css('display', 'block');
     }
   }, 5000)
 
