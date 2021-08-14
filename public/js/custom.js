@@ -336,12 +336,6 @@ $(document).ready(function () {
     flexslider.vars.maxItems = gridSize;
   });
 
-      
-  var c = $(".flexslider .slides > li").length
-  if(c < 4) {
-      console.log(true)
-      $('.merch-btn').remove();
-  }
 
 }());
     
