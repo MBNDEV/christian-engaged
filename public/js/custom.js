@@ -330,7 +330,8 @@ $(document).ready(function () {
 
   var c = $(".flexslider .slides > li").length
   if(c < 4) {
-    $('ul.flex-direction-nav li').remove();
+    console.log(true)
+    $('.flex-direction-nav').remove();
   }
 }());
     
