@@ -317,7 +317,7 @@ $(document).ready(function () {
         var c = $(".flexslider .slides > li").length
         if(c > 3) {
             console.log(c)
-            $('.product-wrap .flex-direction-na').css('display', 'block');
+            $('.product-wrap .flex-direction-nav').css('display', 'block');
         }
       },
       animationLoop: false,
