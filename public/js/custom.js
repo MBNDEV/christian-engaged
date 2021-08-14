@@ -317,7 +317,7 @@ $(document).ready(function () {
       itemMargin: 40,
       minItems: getGridSize(), // use function to pull in initial value
       maxItems: getGridSize(), // use function to pull in initial value
-      after: function(){ 
+      end: function(){ 
         var c = $(".flexslider .slides > li").length
         if(c < 4) {
             console.log(true)
