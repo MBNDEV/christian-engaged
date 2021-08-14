@@ -312,7 +312,7 @@ $(document).ready(function () {
   $window.load(function() {
     $('.flexslider').flexslider({
       animation: "slide",
-      before: function() {
+      start: function() {
         console.log('done')
         var c = $(".flexslider .slides > li").length
         if(c > 3) {
@@ -328,12 +328,6 @@ $(document).ready(function () {
     });
 
   });
-
-  var c = $(".flexslider .slides > li").length
-    if(c > 3) {
-        console.log(c)
-        $('.product-wrap .flex-direction-nav').css('display', 'block');
-    }
  
   // check grid size on resize event
   $window.resize(function() {
