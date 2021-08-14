@@ -321,7 +321,7 @@ $(document).ready(function () {
         var c = $(".flexslider .slides > li").length
         if(c < 4) {
             console.log(true)
-            $('.flex-direction-nav').remove();
+            $('.flex-direction-nav').css('display: none');
         }
     },
     });
@@ -335,6 +335,12 @@ $(document).ready(function () {
     flexslider.vars.minItems = gridSize;
     flexslider.vars.maxItems = gridSize;
   });
+
+  var c = $(".flexslider .slides > li").length
+    if(c < 4) {
+        console.log(true)
+        $('.flex-direction-nav').css('display: none');
+    }
 
 
 }());
