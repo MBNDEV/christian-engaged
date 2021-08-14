@@ -19,7 +19,7 @@
                         <?php foreach ($products as $product) { ?>
                             <li>
                                 <figure>
-                                    <a href="/store/<?php echo $product['slug']; ?>">
+                                    <a href="https://storechristianityengaged.mbndigital-staging.com/product/{{ $product['slug'] }}">
                                         <img src="{{ $product['images'][0]['src'] }}" alt="No Image Found" onerror="this.src='{{asset("/images/no_image.png") }}'">
                                     </a>
                                     <figcaption>

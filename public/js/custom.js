@@ -327,6 +327,9 @@ $(document).ready(function () {
     flexslider.vars.minItems = gridSize;
     flexslider.vars.maxItems = gridSize;
   });
+
+  console.log("ClassLength:")
+  console.log($(".flexslider .slides > li").length)
 }());
     
     /*setTimeout(function () {
