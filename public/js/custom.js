@@ -312,6 +312,14 @@ $(document).ready(function () {
   $window.load(function() {
     $('.flexslider').flexslider({
       animation: "slide",
+      after: function() {
+        console.log('done')
+        var c = $(".flexslider .slides > li").length
+        if(c > 3) {
+            console.log(c)
+            $('.product-wrap .flex-direction-na').css('display', 'block');
+        }
+      },
       animationLoop: false,
       itemWidth: 210,
       itemMargin: 40,
@@ -328,15 +336,6 @@ $(document).ready(function () {
     flexslider.vars.minItems = gridSize;
     flexslider.vars.maxItems = gridSize;
   });
-
-  setTimeout(function() {
-    var c = $(".flexslider .slides > li").length
-    if(c > 3) {
-        console.log(true)
-        $('.product-wrap .flex-direction-na').css('display', 'block');
-    }
-  }, 5000)
-
 
 }());
     
