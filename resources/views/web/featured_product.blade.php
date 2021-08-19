@@ -41,11 +41,11 @@
                                                     </div>
                                                 </div>
                                             </div>
-                                            <div class="itemnumber">
+                                            <!-- <div class="itemnumber">
                                                 <span class="sku">
                                                     {{$product['sku']}}
                                                 </span>
-                                            </div>
+                                            </div> -->
                                         </div>
                                     </figcaption>
                                 </figure>
