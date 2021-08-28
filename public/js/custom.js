@@ -320,17 +320,17 @@ $(document).ready(function () {
             $('.product-wrap .flex-direction-nav').css('display', 'block');
         }
       },
-      animationLoop: true,
-    //   itemWidth: 210,
+      animationLoop: false,
+      itemWidth: 210,
       itemMargin: 40,
       minItems: getGridSize(), // use function to pull in initial value
       maxItems: getGridSize(), // use function to pull in initial value
-    //   end : function(slider){
-    //         $('.flexslider .slides li').each(function(){
-    //             slider.addSlide('<li>'+jQuery(this).context.innerHTML+'</li>', slider.count);
-    //             $('.flexslider .slides').append('<li>'+jQuery(this).context.innerHTML+'</li>');
-    //         });
-    //     }
+      end : function(slider){
+            $('.flexslider .slides li').each(function(){
+                slider.addSlide('<li>'+jQuery(this).context.innerHTML+'</li>', slider.count);
+                $('.flexslider .slides').append('<li>'+jQuery(this).context.innerHTML+'</li>');
+            });
+        }
     });
 
   });
