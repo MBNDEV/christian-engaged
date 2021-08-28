@@ -320,7 +320,7 @@ $(document).ready(function () {
             $('.product-wrap .flex-direction-nav').css('display', 'block');
         }
       },
-      animationLoop: false,
+      animationLoop: true,
       itemWidth: 210,
       itemMargin: 40,
       minItems: getGridSize(), // use function to pull in initial value
