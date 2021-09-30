@@ -19,7 +19,7 @@
                         <?php foreach ($products as $product) { ?>
                             <li>
                                 <figure>
-                                    <a href="https://storechristianityengaged.mbndigital-staging.com/product/{{ $product['slug'] }}">
+                                    <a href="https://christianityengaged.org/store/product/{{ $product['slug'] }}">
                                         <img src="{{ $product['images'][0]['src'] }}" alt="No Image Found" onerror="this.src='{{asset("/images/no_image.png") }}'">
                                     </a>
                                     <figcaption>
@@ -35,7 +35,7 @@
                                                         <h3>$<?php echo $product["price"] < 100 ? ucfirst($product["price"]) : round($product["price"]); ?></h3>
                                                     </div>
                                                     <div class="cart-button">
-                                                        <a class="add-to-cart" href="https://storechristianityengaged.mbndigital-staging.com/product/{{ $product['slug'] }}">
+                                                        <a class="add-to-cart" href="https://christianityengaged.org/store/product/{{ $product['slug'] }}">
                                                             + ADD TO
                                                         </a>
                                                     </div>
