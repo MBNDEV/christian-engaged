@@ -27,17 +27,17 @@
                             </a>
                         </li>
                         <li>
-                            <a href="{{url('/donate/')}}">
+                            <a href="<?= url('/donate/') ?>">
                                 Donate
                             </a>
                         </li>
                         <li>
-                            <a href="{{url('/social/')}}">
+                            <a href="<?= url('/social/') ?>">
                                 Social Media
                             </a>
                         </li>
                         <li class="cart-btn">
-                            <a href="https://christianityengaged.org/store/cart" id='cartDetail'>
+                            <a href="https://christianityengaged.org/store" id='cartDetail'>
                                 Cart <em data-count='0'>0</em>
                                 <span class="cart-icon">&nbsp;</span>
                             </a>
