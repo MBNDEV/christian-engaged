@@ -170,7 +170,7 @@ Route::group(['prefix' => 'manage'], function () {
 
 //Home Page
 Route::get('/', 'HomeController@index');
-Route::get('/demo-home-page', 'HomeController@demo');
+// Route::get('/demo-home-page', 'HomeController@demo');
 Route::get('/newsletterpost', 'HomeController@newsletter');
 //Newsletter subscription
 Route::post('/subscribe', 'HomeController@subscribe');

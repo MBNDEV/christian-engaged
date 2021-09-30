@@ -21,11 +21,11 @@
                     <ul class="header-top-menu">
                         <li><a href="/<?php echo $videoPageSlug[0];?>"><span data-hover="Video"> Videos</a></li>
                         <li><a href="/<?php echo $aboutUsPageSlug[0];?>">About</a></li>
-                        <!-- <li>
-                            <a href="{{url('store')}}">
+                        <li>
+                            <a href="https://christianityengaged.org/store">
                                 Store
                             </a>
-                        </li> -->
+                        </li>
                         <li>
                             <a href="{{url('/donate/')}}">
                                 Donate
@@ -36,12 +36,12 @@
                                 Social Media
                             </a>
                         </li>
-                        <!-- <li class="cart-btn">
-                            <a href="{{url('/cart')}}" id='cartDetail'>
+                        <li class="cart-btn">
+                            <a href="https://christianityengaged.org/store/cart" id='cartDetail'>
                                 Cart <em data-count='0'>0</em>
                                 <span class="cart-icon">&nbsp;</span>
                             </a>
-                        </li> -->
+                        </li>
                     </ul>
                 </nav>
             </div>
@@ -218,7 +218,7 @@
                 
     </section><!-- End helpfund-wrap -->
 
-    @include('web.product_wraper') 
+    @include('web.featured_product') 
 
     <section class="newsletter-wrap">
         <div class="container">

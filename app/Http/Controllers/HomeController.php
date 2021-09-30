@@ -30,7 +30,7 @@ class HomeController extends Controller {
         $this->mail_service = new MailService();
     }
 
-    public function index() {
+    public function demo() {
         $donationGoal = DonationGoal::where('status', '=', '1')->first();
         $resultsocial = DB::table('ce_socials')
                 ->select('*')
@@ -104,7 +104,7 @@ class HomeController extends Controller {
         return view('layouts.homepage-template', $data);
     }
 
-    public function demo() {
+    public function index() {
         $donationGoal = DonationGoal::where('status', '=', '1')->first();
         $resultsocial = DB::table('ce_socials')
                 ->select('*')

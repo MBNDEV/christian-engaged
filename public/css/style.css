@@ -11197,17 +11197,17 @@ input[type="button"] {
   display: inline-block;
   vertical-align: middle;
 }
-.header .main-nav .header-top-menu li:nth-child(5) {
+/* .header .main-nav .header-top-menu li:nth-child(5) {
   background: #d0d0d0;
-}
+} */
 @media (max-width: 991px) {
   .header .main-nav .header-top-menu li:nth-child(5):hover:after {
     content: none;
   }
 }
-.header .main-nav .header-top-menu li:nth-child(5) a {
+/* .header .main-nav .header-top-menu li:nth-child(5) a {
   color: #fff;
-}
+} */
 .header .main-nav .header-top-menu li:nth-child(5) a:hover em {
   color: #fff;
 }
