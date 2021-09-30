@@ -175,7 +175,7 @@ Route::get('/newsletterpost', 'HomeController@newsletter');
 //Newsletter subscription
 Route::post('/subscribe', 'HomeController@subscribe');
 //Cart Page
-Route::get('/cart', 'CartController@cart');
+// Route::get('/cart', 'CartController@cart');
 
 
 Route::get('about-us', 'HomeController@aboutus');
