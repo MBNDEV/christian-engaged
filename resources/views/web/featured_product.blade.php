@@ -60,7 +60,7 @@
                 </div>
             </div>
             <div class="col-md-12 center">
-                <a href="https://storechristianityengaged.mbndigital-staging.com" class="btn btn-primary merch-btn">ALL MERCH</a>
+                <a href="https://christianityengaged.org/store" class="btn btn-primary merch-btn">ALL MERCH</a>
             </div>
         </div>
     </div>
