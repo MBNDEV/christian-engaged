@@ -21,27 +21,27 @@
                     <ul class="header-top-menu">
                         <li><a href="<?php $Videourl = App\Cms::getStaticSlug(3);echo url($Videourl[0]); ?>"><span data-hover="Video"> Videos</a></li>
                         <li><a href="<?php $Abouturl = App\Cms::getStaticSlug(1);echo url($Abouturl[0]); ?>">About</a></li>
-                        <!-- <li>
-                            <a href="<?= url('store') ?>">
+                        <li>
+                            <a href="https://christianityengaged.org/store">
                                 Store
                             </a>
-                        </li> -->
+                        </li>
                         <li>
-                            <a href="<?= url('/donate/') ?>">
+                            <a href="{{url('/donate/')}}">
                                 Donate
                             </a>
                         </li>
                         <li>
-                            <a href="<?= url('/social/') ?>">
+                            <a href="{{url('/social/')}}">
                                 Social Media
                             </a>
                         </li>
-                        <!-- <li class="cart-btn">
-                            <a href="<?= url('/cart') ?>" id='cartDetail'>
+                        <li class="cart-btn">
+                            <a href="https://christianityengaged.org/store/cart" id='cartDetail'>
                                 Cart <em data-count='0'>0</em>
                                 <span class="cart-icon">&nbsp;</span>
                             </a>
-                        </li> -->
+                        </li>
                     </ul>
 
                 </nav>
