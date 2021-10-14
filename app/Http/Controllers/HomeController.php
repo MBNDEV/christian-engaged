@@ -669,7 +669,7 @@ class HomeController extends Controller {
 
             if (isset($name) && isset($email) && isset($phone) && isset($message)) {
 
-               // $this->mail_service->contactUs($request);
+               $this->mail_service->contactUs($request);
             }
             // $videoTopics = Message::where('name', '=', 'Contact us')->pluck('value');
             $videoTopics = Message::where('id', '=', '2')->where('publish_status', '=', 1)->pluck('value');
