@@ -53,7 +53,7 @@
         $.ajax({
             type : "POST",
             dataType : "json",
-            url : "/public/manage/send-test-email",
+            url : "/manage/send-test-email",
             data : {
                 email: $('#test_email').val(),
                 subject: $('#test_subject').val(),
@@ -62,8 +62,14 @@
             },
             success: function(response) {
                 console.log(response)
+                if(response['status'] == true) {
+                    $('.temp-err').css('color', 'green');
+                    $('.temp-err').text('email sent')
+                    $('.temp-err').show()
+                } else {
                 $('.temp-err').text('sending mail error')
                 $('.temp-err').show()
+                }
             },
             error: function(err) {
                 console.log(err)
