@@ -165,6 +165,8 @@ Route::group(['prefix' => 'manage'], function () {
         Route::get('sendmail', 'CartController@reSentMail');
 //        Route::get('/prayer','PrayerController@index');
 
+        Route::post('/send-test-email', 'TemplateController@sendTestEmail');
+
     });
 });
 

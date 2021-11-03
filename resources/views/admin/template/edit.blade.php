@@ -103,11 +103,23 @@
                                 <button type="submit" class="btn btn-success">Save</button>
                                 <a href="{{url('manage/templates')}}" class="btn btn-danger">Cancel</a>
                             </div>
-
                         </div>
-                    </form>
-
+                    </form>       
                 </div>
+
+                
+                    
+                <div class="row">
+                    <div class="col-md-12">
+                        <label for="">Test Email Template:</label>
+                        <input type="email" class="form-control" name="test_email" id="test_email" placeholder="Email" required />
+                        <input type="hidden" class="form-control" name="test_subject" id="test_subject" value="{{ $template->subject }}" />
+                        <input type="hidden" class="form-control" name="test_message" id="test_message" value="{{ $template->message }}" />
+                        <input type="hidden" class="form-control" name="test_id" id="test_id" value="{{ $template->id }}" />
+                        <p class="small temp-err"></p>
+                        <button type="button" class="btn btn-success" id="temp_send_btn" style="margin-top: 10px;">Send</button>
+                    </div>
+                </div>   
                 <!-- /.box-body -->
             </div>
             <!-- /.box -->

@@ -43,3 +43,32 @@
             allowedContent: true
         })
     });
+
+    //send test email
+    $('.temp-err').css('margin-top', '5px');
+    $('.temp-err').css('color', 'red');
+    $('.temp-err').hide();
+    $('#temp_send_btn').on('click', function() {
+        $('.temp-err').hide();
+        $.ajax({
+            type : "POST",
+            dataType : "json",
+            url : "/public/manage/send-test-email",
+            data : {
+                email: $('#test_email').val(),
+                subject: $('#test_subject').val(),
+                message: $('#test_message').val(),
+                temp_id: $('#test_id').val(),
+            },
+            success: function(response) {
+                console.log(response)
+                $('.temp-err').text('sending mail error')
+                $('.temp-err').show()
+            },
+            error: function(err) {
+                console.log(err)
+                $('.temp-err').text('input required fields')
+                $('.temp-err').show()
+            }
+        })
+    })

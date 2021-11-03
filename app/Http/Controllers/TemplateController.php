@@ -5,8 +5,10 @@ namespace App\Http\Controllers;
 use Illuminate\Http\Request;
 use App\Template;
 use Exception;
+use Mail;
 
 class TemplateController extends Controller {
+
 
     public function index() {
         
@@ -23,7 +25,7 @@ class TemplateController extends Controller {
     }
 
     public function updateTemplate(Request $request, $id) {
-        $this->validate($request, [
+       $this->validate($request, [
             'subject' => 'required',
             'message' => 'required',
         ]);
@@ -37,6 +39,37 @@ class TemplateController extends Controller {
         } catch (Exception $e) {
              return redirect(url('manage/templates/edit/'.$id))->with('error', 'Some problem occured please try after some times!.');
         }
+    }
+
+    public function sendTestEmail(Request $request) {
+        $this->validate($request, [
+            'subject' => 'required',
+            'message' => 'required',
+            'email' => 'required|email',
+        ]);
+
+        $donation_admin = Template::where('id', '=', '1')->where('publish_status', '=', '1')->first();
+
+        $text_admin = ["XXXXXX", "{{date('Y-m-d')}}","Test","John Doe", "email@email.com", "4805678567", "100"];
+        $rpc_admin = [1, date('Y-m-d'), 'Test','John Doe', 'email@email.com', '4805678567', 100];
+
+        $new_message_for_admin = str_replace($text_admin, $rpc_admin, $donation_admin->message);
+
+        $template['to_email'] = $request->email;
+        $template['name'] = env('MAIL_DONATION_NAME');
+        $template['template'] = $new_message_for_admin;
+        $template['subject'] = $donation_admin->subject;
+        try {
+            Mail::send('web.mail', $template, function($msg) use($template) {
+                $msg->from(env('FROM_MAIL'), env('MAIL_NAME'));
+                $msg->to($template['to_email'], $template['name'])->subject($template['subject']);
+            });
+        } catch (Exception $e) {
+            return response()->json(['status' => false]);
+            die;
+        }
+
+        return response()->json(['status' => true]);
     }
 
 }
