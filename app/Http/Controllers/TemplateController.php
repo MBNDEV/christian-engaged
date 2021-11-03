@@ -46,9 +46,10 @@ class TemplateController extends Controller {
             'subject' => 'required',
             'message' => 'required',
             'email' => 'required|email',
+            'temp_id' => 'required'
         ]);
 
-        $donation_admin = Template::where('id', '=', '1')->where('publish_status', '=', '1')->first();
+        $donation_admin = Template::where('id', '=', $request->temp_id)->first();
 
         $text_admin = ["XXXXXX", "{{date('Y-m-d')}}","Test","John Doe", "email@email.com", "4805678567", "100"];
         $rpc_admin = [1, date('Y-m-d'), 'Test','John Doe', 'email@email.com', '4805678567', 100];
