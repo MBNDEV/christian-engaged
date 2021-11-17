@@ -14308,7 +14308,8 @@ label.css-labell {
   margin: 0 1% 20px;
   padding: 0;
   width: 31%;
-  float: left;
+  /* float: left; */
+  display: inline-flex;
   position: relative;
 }
 .videowrapper .video-list li.no-video {
@@ -14331,7 +14332,7 @@ label.css-labell {
 }
 @media (max-width: 767px) {
   .videowrapper .video-list li {
-    width: 48%;
+    width: 47%;
   }
 }
 @media (max-width: 479px) {
