@@ -33,12 +33,12 @@
                             </a>
                         </li>
                         <li>
-                            <a href="https://christianityengaged.org/store">
+                            <a href="/store">
                                 Store
                             </a>
                         </li>
                         <li class="cart-btn">
-                            <a href="https://christianityengaged.org/store/cart" id='cartDetail'>
+                            <a href="/store/cart" id='cartDetail'>
                                 Cart <em data-count='0'>0</em>
                                 <span class="cart-icon">&nbsp;</span>
                             </a>
