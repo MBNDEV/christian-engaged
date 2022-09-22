@@ -50,23 +50,19 @@
     </div>
 </header>
 <div class="front-wrap" id='front-wrap'>
-    <img src="images/banner-home.jpg">
+    <img src="images/home-banner-1.png">
     <div class="banner-text-container">
-    <img class="banner-img" src="/images/footer-logo2.png" alt="Christianity Engaged"><br>
-    <h1 class="banner-text">Helping you overcome<br />barriers and grow closer to God.</h1>
+    <h1 class="hero-title">We share the Gospel and encourage believers all over the world.</h1>
+    <img class="banner-img" src="/images/hero-logo.png" />
     </div>
     <figcaption class="fadeInUp">
-{{--        <h3>We help people overcome barriers to faith and grow spiritually through</h3>--}}
-{{--        <h1>--}}
-{{--        the power of video.--}}
-{{--        </h1>--}}
         <a class="btn btn-info" href="/<?php $Videourl= App\Cms::getStaticSlug(3); echo $Videourl[0];?>">WATCH VIDEOS</a>
     </figcaption>
     <div class="scroll-btn">
         <a href="javascript:void(0)">Scroll</a>
         <div class="scroll-info-line"><div></div></div>
     </div>
-</div><!-- End front-wrap -->
+</div>
 
 
 <div class="body-content">
