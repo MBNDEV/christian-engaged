@@ -51,7 +51,7 @@
 </header>
 <div class="front-wrap" id='front-wrap'>
     <img src="images/home-banner-1.png">
-    <div class="banner-text-container">
+    <div class="banner-text-container-1">
     <h1 class="hero-title">We share the Gospel and encourage believers all over the world.</h1>
     <img class="banner-img" src="/images/hero-logo.png" />
     </div>
