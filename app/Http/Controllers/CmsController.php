@@ -248,8 +248,8 @@ class CmsController extends Controller {
         $savedata = [];
         if ($id == 1) {
             $this->validate($request, [
-                'heading' => 'required',
-                'short_description' => 'required'
+                // 'heading' => 'required',
+                // 'short_description' => 'required'
             ]);
 
             $savedata['amenity_details'] = json_encode(['heading' => $request->heading, 'short_description' => $request->short_description]);
@@ -263,8 +263,8 @@ class CmsController extends Controller {
             $savedata['amenity_details'] = json_encode(['title' => $request->title, 'youtube_url' => $request->youtube_url, 'description' => $request->description]);
         }if ($id == 3) {
             $this->validate($request, [
-                'heading' => 'required',
-                'description' => 'required'
+                // 'heading' => 'required',
+                // 'description' => 'required'
             ]);
 
             $savedata['amenity_details'] = json_encode(['heading' => $request->heading, 'description' => $request->description]);

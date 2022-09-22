@@ -16505,9 +16505,9 @@ label.css-labell {
   color: #fff;
 }
 .front-wrap img {
-  position: absolute;
+  /* position: absolute;
   top: 0;
-  left: 0;
+  left: 0; */
   width: 100%;
   height: 100%;
   object-fit: cover;
@@ -16523,8 +16523,11 @@ label.css-labell {
 
 .banner-text-container {
   position:absolute; 
-  top: 20%; 
-  left: 10%;
+  top: 30%;
+  left: 50%;
+  text-align: center;
+  transform: translate(-50%, -50%);
+  width: 100%;
 }
 
 .banner-text {
@@ -16538,8 +16541,39 @@ label.css-labell {
 }
 
 .banner-img {
-  width: 300px!important;
+  width: 350px!important;
   height: auto!important;
+}
+
+.hero-image {
+  /* Use "linear-gradient" to add a darken background effect to the image (photographer.jpg). This will make the text easier to read */
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../images/home-banner-1.png");
+
+  /* Set a specific height */
+  height: 50%;
+
+  /* Position and center the image to scale nicely on all screens */
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+}
+
+/* Place text in the middle of the image */
+.hero-text {
+  text-align: center;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: white;
+}
+
+.hero-title {
+  color: #f9f9f9; 
+  font-weight: 200;
+  letter-spacing: 2px;
+  margin-bottom: 40px;
 }
 
 @media (max-width: 1500px) {
@@ -16572,8 +16606,17 @@ label.css-labell {
   }
   
   .banner-img {
-    width: 250px!important;
+    width: 150px!important;
     height: auto!important;
+  }
+
+  .banner-text-container {
+    /* top: 45%; */
+  }
+
+  .hero-title {
+    font-size: 20px;
+    margin-bottom: 10px;
   }
 }
 .front-wrap figcaption h1 {
@@ -16594,6 +16637,9 @@ label.css-labell {
   .front-wrap figcaption h1 {
     font-size: 60px;
   }
+  .banner-text-container {
+    top: 45%;
+  }
 }
 @media (max-width: 991px) {
   .front-wrap figcaption h1 {
@@ -16610,6 +16656,10 @@ label.css-labell {
   .front-wrap figcaption h1 {
     font-size: 16px;
     margin: 0 0 5px;
+  }
+
+  .banner-text-container {
+    top: 45%;
   }
 }
 @media all and (max-width: 480px) and (orientation: landscape) {

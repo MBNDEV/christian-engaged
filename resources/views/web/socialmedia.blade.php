@@ -1,6 +1,6 @@
 <section class="shop-banner">
     <figure>
-        <img src="{{ asset('images/prayer-bg.jpg') }}" alt="" />
+        <img src="{{ asset('images/social.png') }}" alt="" />
         <figcaption>
             <h1>
                 Connect with us!

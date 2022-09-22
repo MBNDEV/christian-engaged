@@ -50,24 +50,33 @@
     </div>
 </header>
 <div class="front-wrap" id='front-wrap'>
-    <img src="images/banner-home.jpg">
+    <img src="images/home-banner-1.png">
     <div class="banner-text-container">
-    <img class="banner-img" src="/images/footer-logo2.png" alt="Christianity Engaged"><br>
-    <h1 class="banner-text">Helping you overcome<br />barriers and grow closer to God.</h1>
+    <h1 class="hero-title">We share the Gospel and encourage believers all over the world.</h1>
+    <img class="banner-img" src="/public/images/hero-logo.png" />
     </div>
     <figcaption class="fadeInUp">
-{{--        <h3>We help people overcome barriers to faith and grow spiritually through</h3>--}}
-{{--        <h1>--}}
-{{--        the power of video.--}}
-{{--        </h1>--}}
         <a class="btn btn-info" href="/<?php $Videourl= App\Cms::getStaticSlug(3); echo $Videourl[0];?>">WATCH VIDEOS</a>
     </figcaption>
     <div class="scroll-btn">
         <a href="javascript:void(0)">Scroll</a>
         <div class="scroll-info-line"><div></div></div>
     </div>
-</div><!-- End front-wrap -->
-
+</div>
+<!-- End front-wrap -->
+<!-- <div class="hero-image">
+  <div class="hero-text">
+    <h1>We share the Gospel and encourage believers all over the world.</h1>
+    <img src="/public/images/hero-logo.png" />
+    <figcaption class="fadeInUp">
+        <a class="btn btn-info" href="/<?php $Videourl= App\Cms::getStaticSlug(3); echo $Videourl[0];?>">WATCH VIDEOS</a>
+    </figcaption>
+    <div class="scroll-btn">
+        <a href="javascript:void(0)">Scroll</a>
+        <div class="scroll-info-line"><div></div></div>
+    </div>
+  </div>
+</div> -->
 
 <div class="body-content">
 
@@ -82,7 +91,7 @@
                
             </h2>
             <h3>
-                {!! \Illuminate\Support\Str::words($newvideo->video_description, 15, ' ...')  !!}
+                {!! \Illuminate\Support\Str::words($newvideo->video_description, 30, ' ...')  !!}
                     
             </h3>
             <div class="donate-btn">
@@ -128,7 +137,7 @@
         <figure>
             <a href="#" class="youtube-link-dark" youtubeid="zG9x6M1cXhI">
                 <!--<img src="{{ asset('images/about-img_new.jpg') }}">-->
-                <img src="{{ asset('images/Introducing_Christianity_Engaged_web_v2.jpg') }}">
+                <img src="{{ asset('images/intro.png') }}">
             </a>
          </figure>
         <figcaption>
@@ -209,7 +218,8 @@
             </h1>
              <h3>{!! $video1->video_description !!} </h3>
             <div class="donate-btn">
-                <a class="btn btn-default" href="{{url('/donate')}}">DONATE</a>
+                <!-- <a class="btn btn-default" href="{{url('/donate')}}">DONATE</a> -->
+                <a href="{{url('/donate')}}"><img src="/images/donate.png" width="200" /></a>
             </div>
             <small>
                 Christianity Engaged is a 501(c)3 non-profit organization. Your donations are fully tax deductible.

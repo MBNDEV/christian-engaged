@@ -20,6 +20,11 @@
                 <nav class="main-nav">
                     <ul class="header-top-menu">
                         <li><a href="<?php $Videourl = App\Cms::getStaticSlug(3);echo url($Videourl[0]); ?>"><span data-hover="Video"> Videos</a></li>
+                        <li>
+                            <a href="<?= url('/social/') ?>">
+                                Social Media
+                            </a>
+                        </li>
                         <li><a href="<?php $Abouturl = App\Cms::getStaticSlug(1);echo url($Abouturl[0]); ?>">About</a></li>
                         <li>
                             <a href="https://christianityengaged.org/store">
@@ -29,11 +34,6 @@
                         <li>
                             <a href="<?= url('/donate/') ?>">
                                 Donate
-                            </a>
-                        </li>
-                        <li>
-                            <a href="<?= url('/social/') ?>">
-                                Social Media
                             </a>
                         </li>
                         <li class="cart-btn">

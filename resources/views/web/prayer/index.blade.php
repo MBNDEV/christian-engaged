@@ -1,6 +1,6 @@
 <section class="shop-banner">
     <figure>
-        <img src="{{ asset('images/prayer-bg.jpg') }}" alt="" />
+        <img src="{{ asset('images/prayer-1.png') }}" alt="" />
         <figcaption>
             <h1>
                 Pray for Our Ministry

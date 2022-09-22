@@ -1,7 +1,7 @@
 <?php $section1Amenities = json_decode($section1->amenity_details);  ?>
 <section class="banner">
     <figure>
-        <img src="{{ asset('images/aboutbanner.jpg') }} " alt="Video">
+        <img src="{{ asset('images/about-1.png') }} " alt="Video">
         <figcaption>
             <div class="content">
                 <h1>
