@@ -20,20 +20,21 @@
                 <nav class="main-nav">
                     <ul class="header-top-menu">
                         <li><a href="/<?php echo $videoPageSlug[0];?>"><span data-hover="Video"> Videos</a></li>
-                        <li><a href="/<?php echo $aboutUsPageSlug[0];?>">About</a></li>
+                        
                         <li>
-                            <a href="https://christianityengaged.org/store">
-                                Store
+                            <a href="{{url('/social/')}}">
+                                Social Media
                             </a>
                         </li>
+                        <li><a href="/<?php echo $aboutUsPageSlug[0];?>">About</a></li>
                         <li>
                             <a href="{{url('/donate/')}}">
                                 Donate
                             </a>
                         </li>
                         <li>
-                            <a href="{{url('/social/')}}">
-                                Social Media
+                            <a href="https://christianityengaged.org/store">
+                                Store
                             </a>
                         </li>
                         <li class="cart-btn">
