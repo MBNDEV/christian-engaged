@@ -34,7 +34,8 @@
 	</tr>
 	<tr>
 		<td>
-			<img src="images/Video-template/header.jpg" alt="Christianity Header">
+			<!-- <img src="images/Video-template/header.jpg" alt="Christianity Header"> -->
+			<img src="images/video-bg.png" alt="Christianity Header">
 		</td>
 	</tr>
 	<tr>
