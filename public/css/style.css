@@ -11663,14 +11663,14 @@ input[type="button"] {
 }
 @media (max-width: 991px) {
   .powervideo-wrap figcaption {
-    padding: 0 4%;
+    padding: 10px 4%;
   }
 }
 @media (max-width: 767px) {
   .powervideo-wrap figcaption {
     display: block;
     width: 100%;
-    padding: 0 20px;
+    padding: 10px 20px;
   }
 }
 .powervideo-wrap figcaption h3 {
@@ -11949,13 +11949,13 @@ input[type="button"] {
 }
 @media (max-width: 991px) {
   .helpfund-wrap figcaption {
-    padding: 0 4%;
+    padding: 10px 4%;
   }
 }
 @media (max-width: 767px) {
   .helpfund-wrap figcaption {
     width: 100%;
-    padding: 0 20px;
+    padding: 10px 20px;
     display: block;
   }
 }
