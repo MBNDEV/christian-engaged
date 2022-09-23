@@ -1,6 +1,6 @@
 <section class="banner">
     <figure>
-        <img src="{{ asset('images/videobanner.jpg') }} " alt="Video">
+        <img src="{{ asset('images/video-bg.png') }} " alt="Video">
         <figcaption>
             <div class="content">
                 <h1><?php echo ($videoamenity) ? $videoamenity->heading : ''; ?></h1>
