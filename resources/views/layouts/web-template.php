@@ -47,7 +47,7 @@
         <!-- <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,600i,700" rel="stylesheet">  -->
 
         <link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
-        <link href="<?= asset('css/style.css?v=2.6') ?>" type="text/css" rel="stylesheet" />
+        <link href="<?= asset('css/style.css?v=2.7') ?>" type="text/css" rel="stylesheet" />
         <link href="<?= asset('css/flexslider.css') ?>" type="text/css" rel="stylesheet" />
         <!-- <link href="{{ asset('css/jquery.bxslider.css') }}" type="text/css" rel="stylesheet" /> -->
         <link href="<?= asset('css/select2.css') ?>" type="text/css" rel="stylesheet" />
