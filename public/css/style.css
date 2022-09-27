@@ -16544,7 +16544,7 @@ label.css-labell {
 }
 
 .banner-img {
-  width: 350px!important;
+  width: 35%!important;
   height: auto!important;
 }
 
@@ -16577,6 +16577,12 @@ label.css-labell {
   font-weight: 200;
   letter-spacing: 2px;
   margin-bottom: 40px;
+}
+
+@media (max-width: 1500px) {
+  .hero-title {
+    font-size: 64px;
+  }
 }
 
 @media (max-width: 1500px) {
