@@ -16660,6 +16660,9 @@ label.css-labell {
     font-size: 30px;
     margin: 0 0 20px;
   }
+  .banner-text-container-1 {
+    top: 30%;
+  }
 }
 @media (max-width: 479px) {
   .front-wrap figcaption h1 {
@@ -16668,7 +16671,7 @@ label.css-labell {
   }
 
   .banner-text-container-1 {
-    top: 45%;
+    top: 30%;
   }
 }
 @media all and (max-width: 480px) and (orientation: landscape) {
@@ -16767,7 +16770,7 @@ label.css-labell {
   }
   
   .banner-img {
-    width: 150px!important;
+    width: 200px!important;
     height: auto!important;
   }
 }
