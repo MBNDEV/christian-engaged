@@ -16615,7 +16615,7 @@ label.css-labell {
   }
   
   .banner-img {
-    width: 150px!important;
+    width: 30%!important;
     height: auto!important;
   }
 
@@ -16624,8 +16624,8 @@ label.css-labell {
   }
 
   .hero-title {
-    font-size: 20px;
-    margin-bottom: 10px;
+    font-size: 26px;
+    margin-bottom: 15px;
   }
 }
 .front-wrap figcaption h1 {
@@ -16645,9 +16645,6 @@ label.css-labell {
 @media (max-width: 1280px) {
   .front-wrap figcaption h1 {
     font-size: 60px;
-  }
-  .banner-text-container-1 {
-    top: 45%;
   }
 }
 @media (max-width: 991px) {
