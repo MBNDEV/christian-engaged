@@ -54,7 +54,7 @@
     <img src="images/home-banner-1.png">
     <div class="banner-text-container-1">
     <h1 class="hero-title">We share the Gospel and encourage believers all over the world.</h1>
-    <img class="banner-img" src="/images/hero-logo.png" />
+    <img class="banner-img" src="/images/ce-logo-hero.png" />
     </div>
     <figcaption class="fadeInUp">
         <a class="btn btn-info" href="/<?php $Videourl= App\Cms::getStaticSlug(3); echo $Videourl[0];?>">WATCH VIDEOS</a>
