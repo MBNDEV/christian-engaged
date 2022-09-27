@@ -16579,7 +16579,7 @@ label.css-labell {
   margin-bottom: 40px;
 }
 
-@media (max-width: 1500px) {
+@media (min-width: 1800px) {
   .hero-title {
     font-size: 64px;
   }

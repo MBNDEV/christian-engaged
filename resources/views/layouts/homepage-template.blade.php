@@ -18,7 +18,7 @@
 
 
         <link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
-        <link href="{{ asset('css/style.css?v=2.5') }}" type="text/css" rel="stylesheet" />
+        <link href="{{ asset('css/style.css?v=2.6') }}" type="text/css" rel="stylesheet" />
         <link href="{{ asset('css/flexslider.css') }}" type="text/css" rel="stylesheet" />
         <link href="{{ asset("/bower_components/admin-lte/dist/css/select2.css")}}" rel="stylesheet" type="text/css" />
 
