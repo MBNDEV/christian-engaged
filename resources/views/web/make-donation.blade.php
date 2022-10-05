@@ -1,9 +1,21 @@
 <?php session(['donation_page' => 1]); ?>
+<section class="banner">
+    <figure>
+        <img src="{{ asset('images/donate-hero.png') }} " alt="Donate">
+        <figcaption>
+            <div class="content">
+                <h1></h1>
+                <h4>
+                </h4>
+            </div>
+        </figcaption>
+    </figure>
+</section><!-- End banner -->
 <section class="donation-wrap">
     <div class="container">
         <div class="row">
             <div class="col-md-12">
-                <h1>Donate</h1>
+                <!-- <h1>Donate</h1> -->
                 <p class="content">
                     Our videos are free to view, but not free to produce. <br>Your generous donation today helps fund the production of new videos. 
                 </p>
