@@ -183,6 +183,8 @@
         </div>
         <div class="slider-inner-2">
             <img src="/images/slider/corner-dots.png" class="corner-dots" />
+            <img src="/images/slider/triangle.png" class="left-triangle" />
+
         <div class="flexslider2">
             <ul class="slides">
                 <li>
