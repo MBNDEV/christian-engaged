@@ -104,6 +104,24 @@
         </figure>
     </section><!-- End helpfund-wrap -->
 
+    
+    <section class="powervideo-wrap">
+        <figure>
+            <a href="#" class="youtube-link-dark" youtubeid="zG9x6M1cXhI">
+                <!--<img src="{{ asset('images/about-img_new.jpg') }}">-->
+                <img src="{{ asset('images/intro.png') }}">
+            </a>
+         </figure>
+        <figcaption>
+            <h3>
+                We want to meet people where they are and engage with them where they want to be engaged. Our videos address hard topics that are relevant today and help people progress along a continuum of spiritual maturity, from atheists to mature believers.
+            </h3>
+            <div class="donate-btn">
+                <a class="btn btn-primary" href="{{url('/about')}}">ABOUT US</a>
+            </div>
+        </figcaption>
+    </section><!-- End helpfund-wrap -->
+
 
     <section class="featured-wrap">
         <div class="heading">
@@ -134,22 +152,66 @@
         </div>
     </section>
 
-    <section class="powervideo-wrap">
-        <figure>
-            <a href="#" class="youtube-link-dark" youtubeid="zG9x6M1cXhI">
-                <!--<img src="{{ asset('images/about-img_new.jpg') }}">-->
-                <img src="{{ asset('images/intro.png') }}">
-            </a>
-         </figure>
-        <figcaption>
-            <h3>
-                We want to meet people where they are and engage with them where they want to be engaged. Our videos address hard topics that are relevant today and help people progress along a continuum of spiritual maturity, from atheists to mature believers.
-            </h3>
-            <div class="donate-btn">
-                <a class="btn btn-primary" href="{{url('/about')}}">ABOUT US</a>
+
+    <section class="social-media">
+        <div class="container">
+            <div class="row">
+                <div class="col-12">
+                <div class="social-inner">
+                    <div class="line-h">
+                        <span>
+                            <ul>
+                                <li><a href="https://www.youtube.com/ChristianityEngaged" target="_blank"><img src="/images/yt-w.png" width="57" height="57" /></a></li>
+                                <li><a href="https://www.facebook.com/ChristianityEngaged" target="_blank"><img src="/images/fb-w.png" width="57" height="57" /></a></li>
+                                <li><a href="https://twitter.com/CEvideos" target="_blank"><img src="/images/twitter-w.png" width="57" height="57" /></a></li>
+                                <li><a href="https://www.linkedin.com/company/christianity-engaged" target="_blank"><img src="/images/linkedin-w.png" width="57" height="57" /></a></li>
+                                <li><a href="https://www.instagram.com/christianity.engaged" target="_blank"><img src="/images/ig-w.png" width="57" height="57" /></a></li>
+                            </ul>
+                        </span>
+                    </div>
+                    
+                    <h3>When you like our videos and share them with your friends, you help us reach more people all over the world with a powerful message of hope. In addition to our vides, if you would like more encouraging content throughout the week, follow us on social media.</h3>
+                </div>
+                </div>
             </div>
-        </figcaption>
-    </section><!-- End helpfund-wrap -->
+        </div>
+    </section>
+
+    <section class="slider-wrap">
+        <div class="slider-inner-1">
+            <h3>As a result of our ministry, people have decided to say "yes" to Jesus, grow in their faith, be more intentional in their parenting, better understand the Bible, and grow closer to God in prayer.</h3>
+        </div>
+        <div class="slider-inner-2">
+            <img src="/images/slider/corner-dots.png" class="corner-dots" />
+        <div class="flexslider2">
+            <ul class="slides">
+                <li>
+                <img src="/images/slider/img1.png" />
+                </li>
+                <li>
+                <img src="/images/slider/img2.png" />
+                </li>
+                <li>
+                <img src="/images/slider/img3.png" />
+                </li>
+                <li>
+                <img src="/images/slider/img4.png" />
+                </li>
+                <li>
+                <img src="/images/slider/img5.png" />
+                </li>
+                <li>
+                <img src="/images/slider/img6.png" />
+                </li>
+                <li>
+                <img src="/images/slider/img7.png" />
+                </li>
+            </ul>
+        </div>
+        </div>
+    </section><!-- End slider wrap -->
+
+    
 
 
     <section class="mission-wrap">
@@ -193,17 +255,6 @@
             </div>
         </div>
     </section><!-- End mission-wrap -->
-
-    <section class="social-media">
-        <h3>Follow us on social media:</h3>
-        <ul>
-            <li><a href="https://www.youtube.com/ChristianityEngaged" target="_blank"><i class="fa fa-youtube"></i></a></li>
-            <li><a href="https://www.instagram.com/christianity.engaged" target="_blank"><i class="fa fa-instagram"></i></a></li>
-            <li><a href="https://www.facebook.com/ChristianityEngaged" target="_blank"><i class="fa fa-facebook"></i></a></li>
-            <li><a href="https://www.linkedin.com/company/christianity-engaged" target="_blank"><i class="fa fa-linkedin"></i></a></li>
-            <li><a href="https://twitter.com/CEvideos" target="_blank"><i class="fa fa-twitter"></i></a></li>
-        </ul>
-    </section>
 
     <section class="helpfund-wrap">
         <figure>

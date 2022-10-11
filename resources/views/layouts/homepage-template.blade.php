@@ -85,12 +85,20 @@
                 autoPlay:false,
                 theme: "dark"
             });
+
+            $(window).load(function() {
+            $('.flexslider2').flexslider({
+                animation: "slide"
+            });
+            });
         </script>
 
 
         <script src="//cdn.jsdelivr.net/npm/alertifyjs@1.11.1/build/alertify.min.js"></script>
         <script src="{{ asset("/bower_components/admin-lte/dist/js/select2.min.js") }}"></script>
         <script src="{{ asset ("js/cart.js") }}"></script>
+
+        
 
         <?php    if($_SERVER['SERVER_NAME'] == "christianityengaged.org" || $_SERVER['SERVER_NAME'] == "www.christianityengaged.org") {    ?>
 
