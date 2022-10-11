@@ -26,7 +26,9 @@
         <link rel="stylesheet" href="//cdn.jsdelivr.net/npm/alertifyjs@1.11.1/build/css/themes/default.min.css"/>
         
         <link rel="stylesheet" href="{{ asset('css/grt-youtube-popup.css') }}">
+        
 
+        <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/flexslider/2.7.1/jquery.flexslider-min.js"></script>
 
         <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
         <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
@@ -54,6 +56,14 @@
    //console.log(js_arr);
 
             var APP_URL = {!! json_encode(url('/')) !!}
+
+            
+
+            $(window).load(function() {
+            $('.flexslider2').flexslider({
+                animation: "slide"
+            });
+            });
         </script>
 
     </head>
@@ -72,8 +82,6 @@
 
         <script type="text/javascript" src="{{ asset("js/wow.min.js") }}"></script>
         <script type="text/javascript" src="{{ asset("js/bootstrap.min.js") }}"></script>
-
-        <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/flexslider/2.7.1/jquery.flexslider-min.js"></script>
         <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery.imagesloaded/3.1.8/imagesloaded.pkgd.min.js'></script>
         <script src='{{ asset("js/fluid.jquery.js") }}'></script>
         <script type="text/javascript" src="{{ asset("js/custom.js") }}"></script>
@@ -84,12 +92,6 @@
             $(".youtube-link-dark").grtyoutube({
                 autoPlay:false,
                 theme: "dark"
-            });
-
-            $(window).load(function() {
-            $('.flexslider2').flexslider({
-                animation: "slide"
-            });
             });
         </script>
 
