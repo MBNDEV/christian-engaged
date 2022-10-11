@@ -12554,10 +12554,16 @@ input[type="button"] {
   .join-btn {
     width: inherit;
   }
+  .slider-inner-1 {
+    height: 300px;
+  }
+
   .slider-inner-1 h3 {
     font-size: 22px;
     line-height: 2.5rem;
     margin-left: 0;
+    max-width: 700px;
+    margin: auto;
   }
   .social-inner h3 {
     font-size: 22px;
