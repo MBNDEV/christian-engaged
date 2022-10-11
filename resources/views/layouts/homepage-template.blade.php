@@ -28,8 +28,6 @@
         <link rel="stylesheet" href="{{ asset('css/grt-youtube-popup.css') }}">
         
 
-        <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/flexslider/2.7.1/jquery.flexslider-min.js"></script>
-
         <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
         <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
         <!--about-us.html-->
@@ -45,6 +43,9 @@
         <!--[if !IE]><!-->
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
         <script src='https://www.google.com/recaptcha/api.js'></script>
+        
+
+        <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/flexslider/2.7.1/jquery.flexslider-min.js"></script>
         <script type="text/javascript">
             $.ajaxSetup({
                 headers: {
