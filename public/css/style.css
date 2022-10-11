@@ -12023,6 +12023,10 @@ input[type="button"] {
   z-index: 9999;
 }
 
+.flexslider2 {
+  position: relative;
+}
+
 .flexslider2 .flex-control-paging li a {
   border-radius: 0!important;
   width: 40px;
