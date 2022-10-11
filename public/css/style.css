@@ -12025,6 +12025,7 @@ input[type="button"] {
 
 .flexslider2 {
   position: relative;
+  padding-bottom: 30px;
 }
 
 .flexslider2 .flex-control-paging li a {
@@ -12042,7 +12043,7 @@ input[type="button"] {
 .flexslider2  .flex-control-nav {
   width: 100%;
   position: absolute;
-  bottom: -30px;
+  bottom: 0;
   text-align: center;
   background: #f4f4f4;
   padding: 10px 0px 0px;
