@@ -325,9 +325,9 @@ class CmsController extends Controller {
     public function contactusedit(Request $request) {
 
         $this->validate($request, [
-            'page_title' => 'required',
-            'address' => 'required',
-            'address_line_2' => 'required',
+            // 'page_title' => 'required',
+            // 'address' => 'required',
+            // 'address_line_2' => 'required'
             //'mobile' => 'required|min:10|max:10',
             //'landline_phone' => 'required',
             'page_url' => 'required',

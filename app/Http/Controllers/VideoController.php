@@ -657,8 +657,8 @@ public function videossocials(Request $request) {
     public function updatevideoamenity(Request $request, $id) {
 
         $this->validate($request, [
-            'heading' => 'required',
-            'short_description' => 'required',
+            // 'heading' => 'required',
+            // 'short_description' => 'required',
         ]);
 
         $videoObj = new Video();

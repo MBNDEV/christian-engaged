@@ -12003,7 +12003,7 @@ input[type="button"] {
 }
 
 .slider-inner-1 h3 {
-  margin-left: 200px;
+  margin: auto 0;
   font-weight: 300;
   line-height: 45px;
 }
@@ -12235,7 +12235,6 @@ input[type="button"] {
   
   .slider-inner-1 h3 {
     font-size: 26px;
-    margin-left: 20px;
   }
   .social-inner h3 {
     font-size: 26px;
