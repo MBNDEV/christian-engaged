@@ -100,7 +100,7 @@
             </div>
         </figcaption>
         <figure>
-            <img src="{{ asset('/uploads/videoimages/'.$newvideo->video_image) }}">
+            <img src="{{ asset('/uploads/videoimages/'.$newvideo->video_image) }}" alt="No Image Found" onerror="this.src='{{asset("/images/no_image.png") }}'">
         </figure>
     </section><!-- End helpfund-wrap -->
 
@@ -161,11 +161,11 @@
                     <div class="line-h">
                         <span>
                             <ul>
-                                <li><a href="https://www.youtube.com/ChristianityEngaged" target="_blank"><img src="/images/yt-w.png" width="57" height="57" /></a></li>
-                                <li><a href="https://www.facebook.com/ChristianityEngaged" target="_blank"><img src="/images/fb-w.png" width="57" height="57" /></a></li>
-                                <li><a href="https://twitter.com/CEvideos" target="_blank"><img src="/images/twitter-w.png" width="57" height="57" /></a></li>
-                                <li><a href="https://www.linkedin.com/company/christianity-engaged" target="_blank"><img src="/images/linkedin-w.png" width="57" height="57" /></a></li>
-                                <li><a href="https://www.instagram.com/christianity.engaged" target="_blank"><img src="/images/ig-w.png" width="57" height="57" /></a></li>
+                                <li><a href="https://www.youtube.com/ChristianityEngaged" target="_blank"><div class="yt-img"></div></a></li>
+                                <li><a href="https://www.facebook.com/ChristianityEngaged" target="_blank"><div class="fb-img"></div></a></li>
+                                <li><a href="https://twitter.com/CEvideos" target="_blank"><div class="tw-img"></div></a></li>
+                                <li><a href="https://www.linkedin.com/company/christianity-engaged" target="_blank"><div class="linkedin-img"></div></a></li>
+                                <li><a href="https://www.instagram.com/christianity.engaged" target="_blank"><div class="ig-img"></div></a></li>
                             </ul>
                         </span>
                     </div>
