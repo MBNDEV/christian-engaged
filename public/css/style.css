@@ -11841,10 +11841,10 @@ input[type="button"] {
   position: relative;
   z-index: 2;
 }
-.mission-wrap ul li:hover {
+/* .mission-wrap ul li:hover {
   border: 2px solid #e3e3e3;
   color: #a6ce38;
-}
+} */
 .mission-wrap ul li:hover:after,
 .mission-wrap ul li:hover:before {
   -webkit-transform: scale(1);
