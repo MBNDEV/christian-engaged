@@ -170,7 +170,7 @@
                         </span>
                     </div>
                     
-                    <h3>When you like our videos and share them with your friends, you help us reach more people all over the world with a powerful message of hope. In addition to our vides, if you would like more encouraging content throughout the week, follow us on social media.</h3>
+                    <h3>When you like our videos and share them with your friends, you help us reach more people all over the world with a powerful message of hope. In addition to our videos, if you would like more encouraging content throughout the week, follow us on social media.</h3>
                 </div>
                 </div>
             </div>
@@ -188,25 +188,39 @@
         <div class="flexslider2">
             <ul class="slides">
                 <li>
-                <img src="/images/slider/img1.png" />
+                    <a href="https://christianityengaged.org/videos/Top-10-Reasons-to-Believe-in-Jesus">
+                        <img src="/images/slider/img1.png" />
+                    </a>
                 </li>
                 <li>
-                <img src="/images/slider/img2.png" />
+                    <a href="https://christianityengaged.org/videos/bible-overview">
+                        <img src="/images/slider/img2.png" />
+                    </a>
                 </li>
                 <li>
-                <img src="/images/slider/img3.png" />
+                    <a href="https://christianityengaged.org/videos/5FingerPrayer">
+                        <img src="/images/slider/img3.png" />
+                    </a>
                 </li>
                 <li>
-                <img src="/images/slider/img4.png" />
+                    <a href="https://christianityengaged.org/videos/have-your-children-left-the-faith">
+                        <img src="/images/slider/img4.png" />
+                    </a>
                 </li>
                 <li>
-                <img src="/images/slider/img5.png" />
+                    <a href="https://christianityengaged.org/videos/evil-and-suffering">
+                        <img src="/images/slider/img5.png" />
+                    </a>
                 </li>
                 <li>
-                <img src="/images/slider/img6.png" />
+                    <a href="https://christianityengaged.org/videos/bible-overview">
+                        <img src="/images/slider/img6.png" />
+                    </a>
                 </li>
                 <li>
-                <img src="/images/slider/img7.png" />
+                    <a href="https://christianityengaged.org/videos/bible-overview">
+                        <img src="/images/slider/img7.png" />
+                    </a>
                 </li>
             </ul>
         </div>
