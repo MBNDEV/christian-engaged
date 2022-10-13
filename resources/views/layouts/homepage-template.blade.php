@@ -18,7 +18,7 @@
 
 
         <link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
-        <link href="{{ asset('css/style.css?v=3.9') }}" type="text/css" rel="stylesheet" />
+        <link href="{{ asset('css/style.css?v=4.0') }}" type="text/css" rel="stylesheet" />
         <link href="{{ asset('css/flexslider.css') }}" type="text/css" rel="stylesheet" />
         <link href="{{ asset("/bower_components/admin-lte/dist/css/select2.css")}}" rel="stylesheet" type="text/css" />
 
@@ -101,8 +101,6 @@
         <script src="{{ asset("/bower_components/admin-lte/dist/js/select2.min.js") }}"></script>
         <script src="{{ asset ("js/cart.js") }}"></script>
 
-        
-
         <?php    if($_SERVER['SERVER_NAME'] == "christianityengaged.org" || $_SERVER['SERVER_NAME'] == "www.christianityengaged.org") {    ?>
 
             <script id="mcjs">!function(c,h,i,m,p){m=c.createElement(h),p=c.getElementsByTagName(h)[0],m.async=1,m.src=i,p.parentNode.insertBefore(m,p)}(document,"script","https://chimpstatic.com/mcjs-connected/js/users/f451fac7a36dba9bcc3d52921/5e6049e3d79568c5035f5b44c.js");</script>
@@ -126,6 +124,7 @@
             <!-- Facebook Pixel Code -->
 
         <script>
+
 
         !function(f,b,e,v,n,t,s)
 

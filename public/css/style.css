@@ -11618,9 +11618,10 @@ input[type="button"] {
   background: #e3e3e3;
 }
 .videos-wrap figure {
-  float: right;
+  display: table-cell;
   margin: 0px;
   width: 55%;
+  vertical-align: middle;
 }
 @media (max-width: 767px) {
   .videos-wrap figure {
@@ -11632,7 +11633,7 @@ input[type="button"] {
   max-height: 100%;
 }
 .videos-wrap figcaption {
-  float: left;
+  display: table-cell;
   margin: 0px;
   padding: 0 6% 3% 8%;
   width: 45%;
@@ -13077,6 +13078,7 @@ input[type="button"] {
 }
 .instagram-list ul li img {
   width: 100%;
+  object-fit: contain;
 }
 .banner {
   float: left;
@@ -13098,6 +13100,11 @@ input[type="button"] {
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
+}
+.sub-img {
+  width: 32px; 
+  margin-top: -5px; 
+  margin-right: 5px;
 }
 @media (max-width: 1500px) {
   .banner figure figcaption {
@@ -13132,6 +13139,9 @@ input[type="button"] {
   .banner figure figcaption .content h1 {
     font-size: 16px;
     margin-bottom: 0px;
+  }
+  .sub-img {
+    width: 24px;
   }
 }
 .banner figure figcaption .content h4 {
@@ -16924,7 +16934,12 @@ label.css-labell {
   }
 
   .banner-text-container-1 {
-    top: 30%;
+    top: 50%;
+    padding: 0 10px;
+  }
+
+  .hero-title {
+    font-size: 16px;
   }
 }
 @media all and (max-width: 480px) and (orientation: landscape) {
@@ -17023,9 +17038,15 @@ label.css-labell {
   }
   
   .banner-img {
-    width: 200px!important;
+    width: 120px!important;
     height: auto!important;
   }
+
+  .fb-img, .yt-img, .tw-img, .ig-img, .linkedin-img {
+    background-size: 32px;
+    width: 32px;
+    height: 32px;
+}
 }
 @media all and (max-width: 480px) and (orientation: landscape) {
   .front-wrap .scroll-btn a:before {
