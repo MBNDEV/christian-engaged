@@ -255,7 +255,7 @@
     <script type="text/javascript" src="<?= asset("js/bootstrap.min.js") ?>"></script>
 
     <script type="text/javascript" src="<?= asset("js/select2.min.js") ?>"></script>
-    <script type="text/javascript" src="<?= asset("js/custom.js") ?>"></script>
+    <script type="text/javascript" src="<?= asset("js/custom.js?v=1.0") ?>"></script>
     <script src="//cdn.jsdelivr.net/npm/alertifyjs@1.11.1/build/alertify.min.js"></script>
     <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/flexslider/2.7.1/jquery.flexslider-min.js"></script>
     <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/flexslider/2.7.1/jquery.flexslider-min.js"></script>

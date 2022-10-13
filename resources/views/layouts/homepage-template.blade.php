@@ -85,7 +85,7 @@
         <script type="text/javascript" src="{{ asset("js/bootstrap.min.js") }}"></script>
         <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery.imagesloaded/3.1.8/imagesloaded.pkgd.min.js'></script>
         <script src='{{ asset("js/fluid.jquery.js") }}'></script>
-        <script type="text/javascript" src="{{ asset("js/custom.js") }}"></script>
+        <script type="text/javascript" src="{{ asset("js/custom.js?v=1.0") }}"></script>
         <!-- <script type="text/javascript" src="{{ asset("js/jquery.photogrid.js") }}"></script>         -->
 
         <script src="{{ asset("js/grt-youtube-popup.js") }}"></script>
