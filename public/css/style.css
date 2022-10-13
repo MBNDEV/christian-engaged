@@ -11631,6 +11631,7 @@ input[type="button"] {
 .videos-wrap figure img {
   max-width: 100%;
   max-height: 100%;
+  width: 100%;
 }
 .videos-wrap figcaption {
   display: table-cell;
@@ -11708,6 +11709,7 @@ input[type="button"] {
 .powervideo-wrap figure img {
   max-width: 100%;
   max-height: 100%;
+  width: 100%;
 }
 .powervideo-wrap figcaption {
   display: table-cell;
@@ -12057,6 +12059,9 @@ input[type="button"] {
   z-index: 9999;
 }
 
+.flex-active-slide img {
+  width: 100%;
+}
 @media (max-width: 767px) {
   .helpfund-wrap figure {
     width: 100%;
@@ -12073,7 +12078,7 @@ input[type="button"] {
 .helpfund-wrap figcaption {
   display: table-cell;
   margin: 0px;
-  padding: 0 8%;
+  padding: 15px 8%;
   width: 45%;
   vertical-align: middle;
 }
