@@ -73,85 +73,85 @@ var CustomModal = function () {
 
         /*Add window height in Front Wrap */
 
-        $(".front-wrap").css("height", $(window).height());
+        // $(".front-wrap").css("height", $(window).height());
 
-        if ($(window).width() <= 991) {
+        // if ($(window).width() <= 991) {
 
-            $(".front-wrap").css("height", $(window).height()/2+50);
+        //     $(".front-wrap").css("height", $(window).height()/2+50);
 
-            $(window).bind('scroll', function() {
-                var pageURL = $(location).attr("href");
+        //     $(window).bind('scroll', function() {
+        //         var pageURL = $(location).attr("href");
 
-                if (pageURL == APP_URL+'/' || pageURL == APP_URL) {
-                    var navHeight = $( window ).height()/2+50;
-                    if ($(window).scrollTop() > navHeight) {
-                         $('.homenav').addClass('headerBg');
-                         $('.featured-wrap').addClass('space');
-                    }
-                    else {
-                        $('.homenav').removeClass('headerBg');
-                        $('.featured-wrap').removeClass('space');
-                    }
-                }
+        //         if (pageURL == APP_URL+'/' || pageURL == APP_URL) {
+        //             var navHeight = $( window ).height()/2+50;
+        //             if ($(window).scrollTop() > navHeight) {
+        //                  $('.homenav').addClass('headerBg');
+        //                  $('.featured-wrap').addClass('space');
+        //             }
+        //             else {
+        //                 $('.homenav').removeClass('headerBg');
+        //                 $('.featured-wrap').removeClass('space');
+        //             }
+        //         }
 
-                else {
-                    /*if ($(window).scrollTop() >= 100) {
-                        $('.header').addClass('headerBg');
-                        $('.body-content').addClass('space');
-                    }
-                    else {
-                        $('.header').removeClass('headerBg');
-                        $('.body-content').removeClass('space');
-                    }*/
-                }
-            });
-        }
+        //         else {
+        //             /*if ($(window).scrollTop() >= 100) {
+        //                 $('.header').addClass('headerBg');
+        //                 $('.body-content').addClass('space');
+        //             }
+        //             else {
+        //                 $('.header').removeClass('headerBg');
+        //                 $('.body-content').removeClass('space');
+        //             }*/
+        //         }
+        //     });
+        // }
 
 
-        if ($(window).width() <= 560) {
-            $(".front-wrap").css("height", $(window).height()/2-50);
-        }
+        // if ($(window).width() <= 560) {
+        //     $(".front-wrap").css("height", $(window).height()/2-50);
+        // }
 
-        $( window ).resize(function() {
+        // $( window ).resize(function() {
 
-            $(".front-wrap").css("height", $(window).height());
+        //     $(".front-wrap").css("height", $(window).height());
 
-            if ($(window).width() <= 991) {
-               $(".front-wrap").css("height", $(window).height()/2+50);
+        //     if ($(window).width() <= 991) {
+        //        $(".front-wrap").css("height", $(window).height()/2+50);
 
-                $(window).bind('scroll', function() {
-                    var pageURL = $(location).attr("href");
+        //         $(window).bind('scroll', function() {
+        //             var pageURL = $(location).attr("href");
 
-                    if (pageURL == APP_URL+'/' || pageURL == APP_URL) {
-                        var navHeight = $( window ).height()/2+50;
-                        if ($(window).scrollTop() > navHeight) {
-                             $('.homenav').addClass('headerBg');
-                             $('.featured-wrap').addClass('space');
-                        }
-                        else {
-                            $('.homenav').removeClass('headerBg');
-                            $('.featured-wrap').removeClass('space');
-                        }
-                    }
+        //             if (pageURL == APP_URL+'/' || pageURL == APP_URL) {
+        //                 var navHeight = $( window ).height()/2+50;
+        //                 if ($(window).scrollTop() > navHeight) {
+        //                      $('.homenav').addClass('headerBg');
+        //                      $('.featured-wrap').addClass('space');
+        //                 }
+        //                 else {
+        //                     $('.homenav').removeClass('headerBg');
+        //                     $('.featured-wrap').removeClass('space');
+        //                 }
+        //             }
 
-                    else {
-                        /*if ($(window).scrollTop() >= 100) {
-                            $('.header').addClass('headerBg');
-                            $('.body-content').addClass('space');
-                        }
-                        else {
-                            $('.header').removeClass('headerBg');
-                            $('.body-content').removeClass('space');
-                        }*/
-                    }
-                });
-            }
+        //             else {
+        //                 /*if ($(window).scrollTop() >= 100) {
+        //                     $('.header').addClass('headerBg');
+        //                     $('.body-content').addClass('space');
+        //                 }
+        //                 else {
+        //                     $('.header').removeClass('headerBg');
+        //                     $('.body-content').removeClass('space');
+        //                 }*/
+        //             }
+        //         });
+        //     }
 
-            if ($(window).width() <= 560) {
-                $(".front-wrap").css("height", $(window).height()/2-50);
-            }
+        //     if ($(window).width() <= 560) {
+        //         $(".front-wrap").css("height", $(window).height()/2-50);
+        //     }
 
-        });
+        // });
 
 
 

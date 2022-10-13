@@ -3,6 +3,11 @@
  * Copyright 2011-2016 Twitter, Inc.
  * Licensed under MIT (https://github.com/twbs/bootstrap/blob/master/LICENSE)
  */ /*! normalize.css v3.0.3 | MIT License | github.com/necolas/normalize.css */
+html,body {
+  margin:0;
+  padding:0;
+  overflow-x:hidden;
+}
 html {
   font-family: sans-serif;
   -ms-text-size-adjust: 100%;
@@ -16802,6 +16807,7 @@ label.css-labell {
   text-align: center;
   transform: translate(-50%, -50%);
   width: 100%;
+  padding: 0 15px;
 }
 
 .banner-text {
@@ -16865,6 +16871,9 @@ label.css-labell {
   .front-wrap .header-front {
     display: none;
   }
+  .front-wrap {
+    margin-top: 70px;
+  }
 }
 .front-wrap figcaption {
   width: 75%;
@@ -16897,6 +16906,10 @@ label.css-labell {
   .hero-title {
     font-size: 26px;
     margin-bottom: 15px;
+  }
+
+  .front-wrap {
+    margin-top: 50px;
   }
 }
 .front-wrap figcaption h1 {
@@ -16939,7 +16952,7 @@ label.css-labell {
   }
 
   .banner-text-container-1 {
-    top: 50%;
+    top: 40%;
     padding: 0 10px;
   }
 
