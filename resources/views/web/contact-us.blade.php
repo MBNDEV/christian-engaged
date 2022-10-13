@@ -1,9 +1,11 @@
-<div class="contact-wrap" style="padding: 0px; margin-bottom: 40px;">
+<div class="contact-wrap" style="padding: 0px;">
 
   <section class="banner">
        <figure>        
-        <img src="{{ asset('images/contact-hero.png') }} " alt="Video">         
-        <figcaption>                            
+       <img src="{{ asset('images/contact-hero.png') }} " alt="Video">    
+        <figcaption>             
+          <div class="content">                 
+            <h1><?=($contact_us->address!='') ? $contact_us->address: 'Contact Us'?></h1>                 
             <h4><?=($contact_us->address_line_2!='') ? $contact_us->address_line_2: ''?></h4>             
           </div>         
         </figcaption>     
