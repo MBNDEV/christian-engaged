@@ -11994,6 +11994,7 @@ input[type="button"] {
 }
 
 .slider-wrap {
+  margin-top: 50px;
   margin-bottom: 50px;
   background: #ffffff;
 }
@@ -16533,6 +16534,7 @@ label.css-labell {
   width: 100%;
   clear: both;
   position: relative;
+  margin-top: 70px;
 }
 .front-wrap .logo {
   position: absolute;
