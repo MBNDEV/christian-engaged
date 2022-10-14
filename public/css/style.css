@@ -11625,7 +11625,7 @@ input[type="button"] {
 .videos-wrap figure {
   display: table-cell;
   margin: 0px;
-  width: 55%;
+  width: 50%;
   vertical-align: middle;
 }
 @media (max-width: 767px) {
@@ -11642,7 +11642,7 @@ input[type="button"] {
   display: table-cell;
   margin: 0px;
   padding: 0 6% 3% 8%;
-  width: 45%;
+  width: 50%;
 }
 @media (max-width: 991px) {
   .videos-wrap figcaption {
@@ -11702,7 +11702,7 @@ input[type="button"] {
 .powervideo-wrap figure {
   display: table-cell;
   margin: 0px;
-  width: 45%;
+  width: 50%;
   vertical-align: middle;
 }
 @media (max-width: 767px) {
@@ -11720,7 +11720,7 @@ input[type="button"] {
   display: table-cell;
   margin: 0px;
   padding: 0 8%;
-  width: 55%;
+  width: 50%;
   vertical-align: middle;
 }
 @media (max-width: 991px) {
@@ -11999,7 +11999,7 @@ input[type="button"] {
 }
 
 .slider-inner-1 {
-  width: 45%;
+  width: 50%;
   display: table-cell;
   height: auto;
   background-image: url("../images/left-bg.jpg");
@@ -12017,7 +12017,7 @@ input[type="button"] {
 }
 
 .slider-inner-2 {
-  width: 55%;
+  width: 50%;
   display: table-cell;
   vertical-align: middle;
   position: relative;
