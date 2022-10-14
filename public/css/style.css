@@ -13249,7 +13249,7 @@ input[type="button"] {
   }
 }
 .global-wrap .table .table-cell:first-child {
-  width: 45%;
+  width: 50%;
 }
 @media (max-width: 767px) {
   .global-wrap .table .table-cell:first-child {
