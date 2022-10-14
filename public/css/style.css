@@ -11988,7 +11988,7 @@ input[type="button"] {
 }
 .helpfund-wrap figure {
   margin: 0px;
-  width: 55%;
+  width: 50%;
   display: table-cell;
   vertical-align: middle;
 }
@@ -12084,7 +12084,7 @@ input[type="button"] {
   display: table-cell;
   margin: 0px;
   padding: 15px 8%;
-  width: 45%;
+  width: 50%;
   vertical-align: middle;
 }
 @media (max-width: 991px) {
