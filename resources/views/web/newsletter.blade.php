@@ -63,7 +63,7 @@
                             <a class="join-btn btn btn-primary" data-toggle="modal" data-target="#newsletter">JOIN</a>
                         </li>
                         <li>
-                            <a class="join-btn btn btn-primary" href="https://www.youtube.com/ChristianityEngaged" target="_blank">Subscribe</a>
+                            <a class="join-btn btn btn-primary" href="https://www.youtube.com/ChristianityEngaged" target="_blank"><img src="/images/yt-w.png" class="sub-img" />Subscribe</a>
                         </li>
                     </ul>
                 </div>
