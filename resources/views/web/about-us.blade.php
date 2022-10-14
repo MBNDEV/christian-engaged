@@ -249,7 +249,7 @@
 </section><!-- End leadership-wrap -->
 
 
-<section class="global-wrap" style="margin-bottom: 55px;">
+<section class="global-wrap">
     <div class="table">
         <div class="table-cell">
             <img src="{{ asset('images/global-bg.jpg') }}">
@@ -270,15 +270,29 @@
 
 
 <!-- Gaurav Added on 11/11/2019 -->
+
 <section class="social-media">
-        <h3>Follow us on social media:</h3>
-        <ul>
-            <li><a href="https://www.youtube.com/ChristianityEngaged" target="_blank"><i class="fa fa-youtube"></i></a></li>
-            <li><a href="https://www.instagram.com/christianity.engaged" target="_blank"><i class="fa fa-instagram"></i></a></li>
-            <li><a href="https://www.facebook.com/ChristianityEngaged" target="_blank"><i class="fa fa-facebook"></i></a></li>
-            <li><a href="https://www.linkedin.com/company/christianity-engaged" target="_blank"><i class="fa fa-linkedin"></i></a></li>
-            <li><a href="https://twitter.com/CEvideos" target="_blank"><i class="fa fa-twitter"></i></a></li>
-        </ul>
+        <div class="container">
+            <div class="row">
+                <div class="col-12">
+                <div class="social-inner">
+                    <div class="line-h">
+                        <span>
+                            <ul>
+                                <li><a href="https://www.youtube.com/ChristianityEngaged" target="_blank"><div class="yt-img"></div></a></li>
+                                <li><a href="https://www.facebook.com/ChristianityEngaged" target="_blank"><div class="fb-img"></div></a></li>
+                                <li><a href="https://twitter.com/CEvideos" target="_blank"><div class="tw-img"></div></a></li>
+                                <li><a href="https://www.linkedin.com/company/christianity-engaged" target="_blank"><div class="linkedin-img"></div></a></li>
+                                <li><a href="https://www.instagram.com/christianity.engaged" target="_blank"><div class="ig-img"></div></a></li>
+                            </ul>
+                        </span>
+                    </div>
+                    
+                    <h3>When you like our videos and share them with your friends, you help us reach more people all over the world with a powerful message of hope. In addition to our videos, if you would like more encouraging content throughout the week, follow us on social media.</h3>
+                </div>
+                </div>
+            </div>
+        </div>
     </section>
 
     <section class="helpfund-wrap">
