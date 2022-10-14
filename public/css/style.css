@@ -12231,6 +12231,10 @@ input[type="button"] {
   display: inline-block;
   position: relative;
 }
+
+.global-wrap .table .table-cell img {
+  width: 100%;
+}
 @media (max-width: 1280px) {
   .product-listing
     ul
