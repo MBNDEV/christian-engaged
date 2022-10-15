@@ -12908,7 +12908,6 @@ input[type="button"] {
 .contact-wrap .banner figure figcaption .content {
   top: 50%;
   transform: translateY(-50%);
-  bottom: 0;
 }
 @media (max-width: 767px) {
   .contact-wrap .banner figure figcaption .content {
