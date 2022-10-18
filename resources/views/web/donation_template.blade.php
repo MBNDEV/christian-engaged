@@ -98,7 +98,7 @@
 				<tr>
 					<td style=" padding-left: 10px;">
 						
-						<small style="color: #FFF; font-family: arial; font-size: 11px; font-weight: normal;">© Copyright 2018 christianity. All rights reserved.</small>
+						<small style="color: #FFF; font-family: arial; font-size: 11px; font-weight: normal;">© Copyright 2022 christianity. All rights reserved.</small>
 
 					</td>
 					<td style="text-align: right; padding-right: 10px;">

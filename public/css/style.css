@@ -13183,12 +13183,12 @@ input[type="button"] {
 }
 .intro-wrap .table .table-cell:first-child {
   margin: 0px;
-  padding: 0 6% 0 8%;
+  padding: 20px 6% 20px 8%;
   width: 45%;
 }
 @media (max-width: 991px) {
   .intro-wrap .table .table-cell:first-child {
-    padding: 0 4% 0 4%;
+    padding: 20px 4% 20px 4%;
   }
 }
 @media (max-width: 767px) {
@@ -13261,11 +13261,11 @@ input[type="button"] {
   }
 }
 .global-wrap .table .table-cell:last-child {
-  padding: 0 8%;
+  padding: 20px 8%;
 }
 @media (max-width: 767px) {
   .global-wrap .table .table-cell:last-child {
-    padding: 0 15px;
+    padding: 20px 15px;
   }
 }
 .global-wrap .table .table-cell a {

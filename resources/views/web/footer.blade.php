@@ -44,7 +44,7 @@
                             <li><a href="https://twitter.com/CEvideos" target="_blank"><i class="fa fa-twitter"></i></a></li>
                         </ul>
                     </div>
-                    &copy; 2018 Christianity Engaged. All rights reserved.
+                    &copy; 2022 Christianity Engaged. All rights reserved.
                 </div>
             </div>
         </div>

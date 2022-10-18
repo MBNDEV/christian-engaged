@@ -1,5 +1,5 @@
 <footer class="main-footer">
-    Copyright &copy; 2018 <a href="#">Christianity Engaged</a>
+    Copyright &copy; 2022 <a href="#">Christianity Engaged</a>
     <!-- To the right -->
     <div class="pull-right hidden-xs">
         All rights reserved
