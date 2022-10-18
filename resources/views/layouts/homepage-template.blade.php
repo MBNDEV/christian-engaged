@@ -96,10 +96,37 @@
             });
         </script>
 
+            
 
+        <script src="https://www.christianityengaged.org/insta_token.js"></script>
+        <script src="https://cdn.jsdelivr.net/gh/stevenschobert/instafeed.js@2.0.0rc1/src/instafeed.min.js"></script>
         <script src="//cdn.jsdelivr.net/npm/alertifyjs@1.11.1/build/alertify.min.js"></script>
         <script src="{{ asset("/bower_components/admin-lte/dist/js/select2.min.js") }}"></script>
         <script src="{{ asset ("js/cart.js") }}"></script>
+        <script type="text/javascript">
+            var link = '';
+            var image = '';
+            var feed = new Instafeed({
+                accessToken: 'IGQVJWQjdvT0hRS0pwTmE0cEItZAWZAxeGxwTW9CT1ZAMOHVscUVTc19JbEt6YU5oVGtYWWJzVzdSYWVNYkQ0YUU0dnNKTWFtVnlSazdmaDhidzVjMGFBWHFSbDZAKYjZA4RjY2TU5pREhB',
+                template: '<li><img   src="!!image!!"  alt="" /></li>',
+                limit: 8,
+                templateBoundaries: ["!!", "!!"],
+            });
+            feed.run();
+            $(window).on("load", function () {
+                //var instaffedHeight = $("#instafeed li").width();
+                var imgheight = $("#instafeed li img").width();
+            
+                //$("#instafeed li").css("height", instaffedHeight);
+                $("#instafeed li img").css("height", imgheight);
+            });
+
+            $(window).resize(function () {
+                var instaffedHeight = $("#instafeed li").width();
+                $("#instafeed li").css("height", instaffedHeight);
+            });
+
+        </script>
 
         <?php    if($_SERVER['SERVER_NAME'] == "christianityengaged.org" || $_SERVER['SERVER_NAME'] == "www.christianityengaged.org") {    ?>
 

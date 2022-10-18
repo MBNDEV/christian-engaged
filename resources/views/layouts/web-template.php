@@ -267,11 +267,14 @@
     <script type="text/javascript">
             var link = '     ';
             var image = '';
+            console.log('this');
+            console.log(image);
             var feed = new Instafeed({
                 accessToken: token,
                 //                accessToken: 'IGQVJXZAEhfbm5yaC1ES2xRaEtCVGxmWjVPQWcyV2twS2t2VGNQWFlVQmhGTWV6S2tCNzVJUk1VMUFYQkc5T2lrYXN6LWVCd2FqS0NHNTVxMXRxQTFUOEdPcFU5UzhoYS1iR2luVHhBVGJKckY0cFZAETwZDZD',
-                template: '<li><img   src="{{image}}"  alt="" /></li>',
+                template: '<li><img  src="!!image!!" alt="" /></li>',
                 limit: 12,
+                templateBoundaries: ["!!", "!!"],
 //                transform: function(item) { 
 //                    console.log(item.image);
 //                    return item;

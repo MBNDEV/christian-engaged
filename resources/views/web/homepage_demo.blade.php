@@ -168,36 +168,8 @@
 
         <div class="instagram-list">
             <ul id="instafeed">
-                <ul id="instafeed">
-                    <li>
-                        <img src="https://scontent.cdninstagram.com/v/t51.29350-15/311263482_3208211219492503_867811725610028107_n.jpg?_nc_cat=102&amp;ccb=1-7&amp;_nc_sid=8ae9d6&amp;_nc_ohc=3y7UZrgBFS0AX9WGipT&amp;_nc_ht=scontent.cdninstagram.com&amp;edm=ANo9K5cEAAAA&amp;oh=00_AT961DtK8hcq73Oi42IAr2MgwiMZziYMngWQTgtJCxCkow&amp;oe=634BC685" alt="" style="height: auto;">
-                    </li>
-                    <li>
-                        <img src="https://scontent.cdninstagram.com/v/t51.29350-15/309545033_2930884637221028_6907648598010914426_n.jpg?_nc_cat=108&amp;ccb=1-7&amp;_nc_sid=8ae9d6&amp;_nc_ohc=JgArLnB2u0kAX9mizb-&amp;_nc_ht=scontent.cdninstagram.com&amp;edm=ANo9K5cEAAAA&amp;oh=00_AT-Trzi5V_rlcx1Ck9hyqTY-2993CHUWC9lptooPIbhiVQ&amp;oe=634D6BA6" alt="" style="height: auto;">
-                    </li>
-                    <li>
-                        <img src="https://scontent.cdninstagram.com/v/t51.29350-15/311141683_5968305966515716_5512022078122491949_n.jpg?_nc_cat=111&amp;ccb=1-7&amp;_nc_sid=8ae9d6&amp;_nc_ohc=U37lE7Mrw7sAX-krZBS&amp;_nc_ht=scontent.cdninstagram.com&amp;edm=ANo9K5cEAAAA&amp;oh=00_AT-5wtdWNJEH4nSlD-e6X5zfYJu2u2Nsm6hBwR6poRgD7A&amp;oe=634D11D7" alt="" style="height: auto;">
-                    </li>
-                    <li>
-                        <img src="https://scontent.cdninstagram.com/v/t51.29350-15/310594793_861781281480209_5200574460355078566_n.jpg?_nc_cat=103&amp;ccb=1-7&amp;_nc_sid=8ae9d6&amp;_nc_ohc=2W-PHn-Qo4EAX9-4hJW&amp;_nc_ht=scontent.cdninstagram.com&amp;edm=ANo9K5cEAAAA&amp;oh=00_AT_7BTd-V_o8oepL6j9SpreZgQXu_Urw6sxmmi04Smw--A&amp;oe=634BFF3F" alt="" style="height: auto;">
-                    </li>
-                    <li>
-                        <img src="https://scontent.cdninstagram.com/v/t51.29350-15/310227925_968029494601030_5658622037662655366_n.jpg?_nc_cat=104&amp;ccb=1-7&amp;_nc_sid=8ae9d6&amp;_nc_ohc=QzQMW3VXdcUAX_SXIRy&amp;_nc_ht=scontent.cdninstagram.com&amp;edm=ANo9K5cEAAAA&amp;oh=00_AT-DIEIbiBxcJ3Yr2mvvsSbjRkJTqFAScfdjt2Gcf_WqGA&amp;oe=634C3AEC" alt="" style="height: auto;">
-                    </li>
-                    <li>
-                        <img src="https://scontent.cdninstagram.com/v/t51.29350-15/309276012_643500570668112_7686191415840667254_n.jpg?_nc_cat=108&amp;ccb=1-7&amp;_nc_sid=8ae9d6&amp;_nc_ohc=S_zqrV0PzsAAX-QNn2o&amp;_nc_ht=scontent.cdninstagram.com&amp;edm=ANo9K5cEAAAA&amp;oh=00_AT-DzRnG4v91erRoHXMlCD4xbz2JoXK2IOKc9LQ3ofRNew&amp;oe=634CC9E1" alt="" style="height: auto;">
-                    </li>
-                    <li>
-                        <img src="https://scontent.cdninstagram.com/v/t51.29350-15/309509346_471250691609040_2643504142680361913_n.jpg?_nc_cat=103&amp;ccb=1-7&amp;_nc_sid=8ae9d6&amp;_nc_ohc=ofD9KuSMiqcAX9fcZHw&amp;_nc_ht=scontent.cdninstagram.com&amp;edm=ANo9K5cEAAAA&amp;oh=00_AT9Xl4fmTmByHqc6v_rUucDavHCgMSEctZAnpMvO4HPfCA&amp;oe=634C2829" alt="" style="height: auto;">
-                    </li>
-                    <li>
-                        <img src="https://scontent.cdninstagram.com/v/t51.29350-15/309485668_640801077581212_3698088789598375159_n.jpg?_nc_cat=100&amp;ccb=1-7&amp;_nc_sid=8ae9d6&amp;_nc_ohc=CwRiOXKgFJgAX9bZXDu&amp;_nc_ht=scontent.cdninstagram.com&amp;edm=ANo9K5cEAAAA&amp;oh=00_AT9h1F_mqTFjXdSoaB5NIfSy3Fw2YpiIkjlgDD5IS-gkKQ&amp;oe=634C39FE" alt="" style="height: auto;">
-                    </li>
-                </ul>
             </ul>
         </div>
-
-        <div class="clearfix"></div>
 
 
     </section><!-- End .shop-top -->
