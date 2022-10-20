@@ -270,7 +270,7 @@
             console.log('this');
             console.log(image);
             var feed = new Instafeed({
-                accessToken: "<?php echo ENV('INSTA_TOKEN'); ?>",
+                accessToken: "<?php echo env('INSTA_TOKEN'); ?>",
                 template: '<li><img  src="!!image!!" alt="" /></li>',
                 limit: 12,
                 templateBoundaries: ["!!", "!!"],
