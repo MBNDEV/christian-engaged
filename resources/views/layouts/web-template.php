@@ -267,7 +267,7 @@
     <script type="text/javascript">
             var link = '     ';
             var image = '';
-            var token = '{{ env(INSTA_TOKEN) }}';
+            var token = '{{ env("INSTA_TOKEN") }}';
             console.log('this');
             console.log(image);
             var feed = new Instafeed({
