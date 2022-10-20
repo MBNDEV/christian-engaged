@@ -107,7 +107,7 @@
             var link = '';
             var image = '';
             var feed = new Instafeed({
-                accessToken: 'IGQVJWQjdvT0hRS0pwTmE0cEItZAWZAxeGxwTW9CT1ZAMOHVscUVTc19JbEt6YU5oVGtYWWJzVzdSYWVNYkQ0YUU0dnNKTWFtVnlSazdmaDhidzVjMGFBWHFSbDZAKYjZA4RjY2TU5pREhB',
+                accessToken: 'IGQVJXb3RBSWdXYWxvdTg0dnozckF2aHBwS2RJMHAwTVJVN25IRDh4X3FVS2gtemlZASHQwN25fWXp4V1YzOFNzZA0pYVTVRb0VRV2t0Rk8xRDNQajZAZAU0pidWJPZAnJwQ3dDSU5NYjRBWXlJOVI0ZAU5UWAZDZD',
                 template: '<li><img   src="!!image!!"  alt="" /></li>',
                 limit: 8,
                 templateBoundaries: ["!!", "!!"],
