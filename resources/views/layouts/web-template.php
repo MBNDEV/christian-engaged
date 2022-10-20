@@ -267,10 +267,11 @@
     <script type="text/javascript">
             var link = '     ';
             var image = '';
+            var token = '{{ env(INSTA_TOKEN }}';
             console.log('this');
             console.log(image);
             var feed = new Instafeed({
-                accessToken: "{{ env('INSTA_TOKEN') }}",
+                accessToken: token,
                 template: '<li><img  src="!!image!!" alt="" /></li>',
                 limit: 12,
                 templateBoundaries: ["!!", "!!"],
