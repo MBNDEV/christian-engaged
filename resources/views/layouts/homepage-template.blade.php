@@ -18,7 +18,7 @@
 
 
         <link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
-        <link href="{{ asset('css/style.css?v=4.9') }}" type="text/css" rel="stylesheet" />
+        <link href="{{ asset('css/style.css?v=4.10') }}" type="text/css" rel="stylesheet" />
         <link href="{{ asset('css/flexslider.css') }}" type="text/css" rel="stylesheet" />
         <link href="{{ asset("/bower_components/admin-lte/dist/css/select2.css")}}" rel="stylesheet" type="text/css" />
 
@@ -107,7 +107,7 @@
             var link = '';
             var image = '';
             var feed = new Instafeed({
-                accessToken: 'IGQVJXb3RBSWdXYWxvdTg0dnozckF2aHBwS2RJMHAwTVJVN25IRDh4X3FVS2gtemlZASHQwN25fWXp4V1YzOFNzZA0pYVTVRb0VRV2t0Rk8xRDNQajZAZAU0pidWJPZAnJwQ3dDSU5NYjRBWXlJOVI0ZAU5UWAZDZD',
+                accessToken: 'IGQVJVZAUNQM2lfT25PeGNORlpfU0VnaEVqRS1QOVQyb3d4dXRTVmpxSDA0UGFqbDNDb2VuMzJMaEg4clJjUHA2UjZAZAMC1CZAU1NaWFWOVdIejZARQ01rYk5BR0JsdGpoYkFwS2N0TTJMS3h6aUdIcEk3bQZDZD',
                 template: '<li><img   src="!!image!!"  alt="" /></li>',
                 limit: 8,
                 templateBoundaries: ["!!", "!!"],

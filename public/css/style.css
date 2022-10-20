@@ -12008,7 +12008,7 @@ input[type="button"] {
   background-position: left center;
   background-size: cover;
   vertical-align: middle;
-  padding: 20px;
+  padding: 20px 8%;
 }
 
 .slider-inner-1 h3 {

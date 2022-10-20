@@ -95,8 +95,8 @@
     <div class="container">
         <div class="row">
             <div class="col-sm-12 col-md-8 col-md-offset-2">
-                <h3>Stay informed about new videos and exclusive updates.</h3>
-                <h4>Join our newsletter or <a href="javascript:void(0)">subscribe</a> to our YouTube channel. </h4>
+            <h3>We invite you join our newsletter to be notified when we release new videos.</h3>
+                    <h4>You can also <a href="javascript:void(0)">subscribe</a> and click the bell notification on YouTube.</h4>
 
                 <ul>
                     <li>
