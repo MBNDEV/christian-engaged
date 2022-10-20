@@ -270,8 +270,7 @@
             console.log('this');
             console.log(image);
             var feed = new Instafeed({
-                accessToken: "IGQVJVZAUNQM2lfT25PeGNORlpfU0VnaEVqRS1QOVQyb3d4dXRTVmpxSDA0UGFqbDNDb2VuMzJMaEg4clJjUHA2UjZAZAMC1CZAU1NaWFWOVdIejZARQ01rYk5BR0JsdGpoYkFwS2N0TTJMS3h6aUdIcEk3bQZDZD",
-                //                accessToken: 'IGQVJXZAEhfbm5yaC1ES2xRaEtCVGxmWjVPQWcyV2twS2t2VGNQWFlVQmhGTWV6S2tCNzVJUk1VMUFYQkc5T2lrYXN6LWVCd2FqS0NHNTVxMXRxQTFUOEdPcFU5UzhoYS1iR2luVHhBVGJKckY0cFZAETwZDZD',
+                accessToken: "<?php echo ENV('INSTA_TOKEN'); ?>",
                 template: '<li><img  src="!!image!!" alt="" /></li>',
                 limit: 12,
                 templateBoundaries: ["!!", "!!"],

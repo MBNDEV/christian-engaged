@@ -107,7 +107,7 @@
             var link = '';
             var image = '';
             var feed = new Instafeed({
-                accessToken: 'IGQVJVZAUNQM2lfT25PeGNORlpfU0VnaEVqRS1QOVQyb3d4dXRTVmpxSDA0UGFqbDNDb2VuMzJMaEg4clJjUHA2UjZAZAMC1CZAU1NaWFWOVdIejZARQ01rYk5BR0JsdGpoYkFwS2N0TTJMS3h6aUdIcEk3bQZDZD',
+                accessToken: "<?php echo ENV('INSTA_TOKEN'); ?>",
                 template: '<li><img   src="!!image!!"  alt="" /></li>',
                 limit: 8,
                 templateBoundaries: ["!!", "!!"],
