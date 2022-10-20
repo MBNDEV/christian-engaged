@@ -106,7 +106,6 @@
         <script type="text/javascript">
             var link = '';
             var image = '';
-            var token = '{{ env("INSTA_TOKEN") }}';
             var feed = new Instafeed({
                 accessToken: token,
                 template: '<li><img   src="!!image!!"  alt="" /></li>',

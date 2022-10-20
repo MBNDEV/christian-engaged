@@ -11,6 +11,7 @@ npm-debug.log
 yarn-error.log
 /public/uploads.old
 /public/uploads
+/public/insta_token.js
 .env
 /composer.lock
 /storage_bk
