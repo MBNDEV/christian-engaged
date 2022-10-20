@@ -99,7 +99,7 @@
         </script>
       <!-- End -->
 
-        <script src="https://www.christianityengaged.org/insta_token.js"></script>
+      <script src="{{ asset('insta_token.js') }}"></script>
 <!--<script src="<?= asset('js/instafeed.min.js') ?>"></script>-->
         <script src="https://cdn.jsdelivr.net/gh/stevenschobert/instafeed.js@2.0.0rc1/src/instafeed.min.js"></script>
 

@@ -98,7 +98,7 @@
 
             
 
-        <script src="https://www.christianityengaged.org/insta_token.js"></script>
+        <script src="{{ asset('insta_token.js') }}"></script>
         <script src="https://cdn.jsdelivr.net/gh/stevenschobert/instafeed.js@2.0.0rc1/src/instafeed.min.js"></script>
         <script src="//cdn.jsdelivr.net/npm/alertifyjs@1.11.1/build/alertify.min.js"></script>
         <script src="{{ asset("/bower_components/admin-lte/dist/js/select2.min.js") }}"></script>
