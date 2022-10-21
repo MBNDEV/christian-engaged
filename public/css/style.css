@@ -16861,6 +16861,12 @@ label.css-labell {
   margin-bottom: 40px;
 }
 
+.hero-logo {
+  width: 104px!important; 
+  height: auto; 
+  margin-top: 15px;
+}
+
 @media (min-width: 1800px) {
   .hero-title {
     font-size: 64px;
@@ -16878,6 +16884,10 @@ label.css-labell {
   }
   .front-wrap {
     margin-top: 70px;
+  }
+
+  .hero-logo {
+    width: 84px!important; 
   }
 }
 .front-wrap figcaption {
@@ -16915,6 +16925,10 @@ label.css-labell {
 
   .front-wrap {
     margin-top: 50px;
+  }
+
+  .hero-logo {
+    width: 64px!important; 
   }
 }
 .front-wrap figcaption h1 {
@@ -16963,6 +16977,10 @@ label.css-labell {
 
   .hero-title {
     font-size: 16px;
+  }
+
+  .hero-logo {
+    width: 54px!important; 
   }
 }
 @media all and (max-width: 480px) and (orientation: landscape) {

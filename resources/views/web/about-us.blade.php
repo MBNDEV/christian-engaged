@@ -11,7 +11,7 @@
                     <?php echo ($section1Amenities) ? $section1Amenities->short_description:'--'; ?>
                 </h4>
                 
-                <img src="{{ asset('images/symbol.png') }}" width="104" height="104" style="width: 10%; height: auto; margin-top: 15px;" />
+            <img src="{{ asset('images/symbol.png') }}" width="104" height="104" class="hero-logo" /> 
             </div>
         </figcaption>
     </figure>

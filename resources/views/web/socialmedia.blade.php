@@ -6,7 +6,7 @@
                 Connect with us!
             </h1>
             
-            <img src="{{ asset('images/symbol.png') }}" width="104" height="104" style="width: 10%; height: auto; margin-top: 15px;" />
+            <img src="{{ asset('images/symbol.png') }}" width="104" height="104" class="hero-logo" /> 
         </figcaption>
     </figure>
 </section><!-- End .shop-banner -->

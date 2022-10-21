@@ -7,7 +7,8 @@
                 <h4>
                     <?php echo ($videoamenity) ? $videoamenity->short_description : ''; ?>
                 </h4>
-                <img src="{{ asset('images/symbol.png') }}" width="104" height="104" style="width: 10%; height: auto; margin-top: 15px;" />
+                
+            <img src="{{ asset('images/symbol.png') }}" width="104" height="104" class="hero-logo" /> 
             </div>
         </figcaption>
     </figure>
