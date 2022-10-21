@@ -110,6 +110,7 @@
                 accessToken: token,
                 template: '<li><img   src="!!image!!"  alt="" /></li>',
                 limit: 8,
+                slideshowSpeed: 5000,
                 templateBoundaries: ["!!", "!!"],
             });
             feed.run();

@@ -273,6 +273,7 @@
                 accessToken: token,
                 template: '<li><img  src="!!image!!" alt="" /></li>',
                 limit: 12,
+                slideshowSpeed: 5000,
                 templateBoundaries: ["!!", "!!"],
 //                transform: function(item) { 
 //                    console.log(item.image);
