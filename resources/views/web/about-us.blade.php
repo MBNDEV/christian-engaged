@@ -10,6 +10,8 @@
                 <h4>
                     <?php echo ($section1Amenities) ? $section1Amenities->short_description:'--'; ?>
                 </h4>
+                
+                <img src="{{ asset('images/symbol.png') }}" width="104" height="104" style="width: 10%; height: auto; margin-top: 15px;" />
             </div>
         </figcaption>
     </figure>
@@ -282,7 +284,6 @@
                 <div class="col-sm-12 col-md-8 col-md-offset-2">
                     <h3>We invite you join our newsletter to be notified when we release new videos.</h3>
                     <h4>You can also <a href="javascript:void(0)">subscribe</a> and click the bell notification on YouTube.</h4>
-
                     <ul>
                         <li>
                             <a class="join-btn btn btn-primary" data-toggle="modal" data-target="#newsletter">JOIN</a>

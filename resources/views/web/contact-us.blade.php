@@ -6,7 +6,8 @@
         <figcaption>             
           <div class="content">                 
             <h1><?=($contact_us->address!='') ? $contact_us->address: 'Contact Us'?></h1>                 
-            <h4><?=($contact_us->address_line_2!='') ? $contact_us->address_line_2: ''?></h4>             
+            <h4><?=($contact_us->address_line_2!='') ? $contact_us->address_line_2: ''?></h4>   
+            <img src="{{ asset('images/symbol.png') }}" width="104" height="104" style="width: 10%; height: auto; margin-top: 15px;" />          
           </div>         
         </figcaption>     
       </figure> 

@@ -5,6 +5,8 @@
             <h1>
                 Connect with us!
             </h1>
+            
+            <img src="{{ asset('images/symbol.png') }}" width="104" height="104" style="width: 10%; height: auto; margin-top: 15px;" />
         </figcaption>
     </figure>
 </section><!-- End .shop-banner -->
