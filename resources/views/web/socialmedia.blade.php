@@ -3,7 +3,7 @@
         <img src="{{ asset('images/social.png') }}" alt="" />
         <figcaption>
             <h1>
-                Connect with us!
+                CONNECT
             </h1>
             
             <img src="{{ asset('images/symbol.png') }}" width="104" height="104" class="hero-logo" /> 
