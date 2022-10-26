@@ -62,7 +62,8 @@
 
             $(window).load(function() {
             $('.flexslider2').flexslider({
-                animation: "slide"
+                animation: "slide",
+                slideshowSpeed: 3000,
             });
             });
         </script>
@@ -110,7 +111,6 @@
                 accessToken: token,
                 template: '<li><img   src="!!image!!"  alt="" /></li>',
                 limit: 8,
-                slideshowSpeed: 1000,
                 templateBoundaries: ["!!", "!!"],
             });
             feed.run();
