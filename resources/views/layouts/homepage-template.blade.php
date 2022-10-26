@@ -63,7 +63,7 @@
             $(window).load(function() {
             $('.flexslider2').flexslider({
                 animation: "slide",
-                slideshowSpeed: 3000,
+                slideshowSpeed: 5000,
             });
             });
         </script>
