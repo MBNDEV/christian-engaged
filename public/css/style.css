@@ -16913,7 +16913,18 @@ label.css-labell {
   .front-wrap .header-front {
     width: 100%;
   }
+
+  .hero-logo {
+    width: 94px!important; 
+  }
 }
+
+@media (max-width: 1199) {
+  .hero-logo {
+    width: 84px!important; 
+  }
+}
+
 @media (max-width: 991px) {
   .front-wrap .header-front {
     display: none;
@@ -17016,7 +17027,7 @@ label.css-labell {
   }
 
   .hero-logo {
-    width: 54px!important; 
+    width: 44px!important; 
   }
 }
 @media all and (max-width: 480px) and (orientation: landscape) {
