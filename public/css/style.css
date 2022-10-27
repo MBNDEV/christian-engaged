@@ -13136,29 +13136,51 @@ input[type="button"] {
 }
 .banner figure figcaption .content h1 {
   color: #fff;
-  font-size: 100px;
+  font-size: 110px;
   font-weight: 700;
   margin-bottom: 0px;
 }
+
 @media (max-width: 1500px) {
   .banner figure figcaption .content h1 {
-    font-size: 40px;
+    font-size: 80px;
   }
 }
+
 @media (max-width: 1280px) {
   .banner figure figcaption .content h1 {
     font-size: 50px;
   }
 }
+
+@media (max-width: 1199px) {
+  .banner figure figcaption .content h1 {
+    font-size: 50px;
+  }
+}
+@media (max-width: 991px) {
+  .banner figure figcaption .content h1 {
+    font-size: 40px;
+  }
+}
+
 @media (max-width: 767px) {
   .banner figure figcaption .content h1 {
-    font-size: 16px;
+    font-size: 30px;
     margin-bottom: 0px;
   }
   .sub-img {
     width: 24px;
   }
 }
+
+@media (max-width: 450px) {
+  .banner figure figcaption .content h1 {
+    font-size: 20px;
+    line-height: 20px;
+  }
+}
+
 .banner figure figcaption .content h4 {
   color: #fff;
   margin-bottom: 0;
@@ -15685,6 +15707,11 @@ label.css-labell {
   line-height: 90px;
   margin-bottom: 0;
 }
+@media (max-width: 1500px) {
+  .shop-banner figcaption h1 {
+    font-size: 80px;
+  }
+}
 @media (max-width: 1280px) {
   .shop-banner figcaption h1 {
     font-size: 75px;
@@ -15709,6 +15736,14 @@ label.css-labell {
     line-height: 20px;
   }
 }
+
+@media (max-width: 450px) {
+  .shop-banner figcaption h1 {
+    font-size: 20px;
+    line-height: 20px;
+  }
+}
+
 .shop-banner figcaption h1 span {
   display: block;
   padding-top: 30px;
