@@ -17199,4 +17199,15 @@ label.css-labell {
     left: 80px;
   }
 }
+
+@media (max-width: 375px) {
+  .flex-control-nav li {
+    margin: 0 3px;
+  }
+
+  .slider-wrap {
+    margin-top: 0;
+    margin-bottom: 0;
+  }
+}
 /*# sourceMappingURL=style.css.map */
