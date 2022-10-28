@@ -1,12 +1,11 @@
 <?php session(['donation_page' => 1]); ?>
 <section class="banner">
     <figure>
-        <img src="{{ asset('images/donate-hero-2.png') }} " alt="Donate">
+        <img src="{{ asset('images/donate-hero-bg.png') }} " alt="Donate">
         <figcaption>
             <div class="content">
-                <h1></h1>
-                <h4>
-                </h4>
+                <h1>DONATE</h1>
+                <img src="{{ asset('images/symbol.png') }}" width="104" height="104" class="hero-logo" />  
             </div>
         </figcaption>
     </figure>
