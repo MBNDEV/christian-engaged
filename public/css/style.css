@@ -17203,12 +17203,20 @@ label.css-labell {
 
 @media (max-width: 375px) {
   .flex-control-nav li {
-    margin: 0 3px;
+    margin: 0!important;
+  }
+
+  .flexslider2 .flex-control-paging li a {
+    width: 30px;
   }
 
   .slider-wrap {
     margin-top: 0;
     margin-bottom: 0;
+  }
+
+  .corner-dots {
+    height: 100px;
   }
 }
 /*# sourceMappingURL=style.css.map */
