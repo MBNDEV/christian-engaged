@@ -17203,7 +17203,7 @@ label.css-labell {
 
 @media (max-width: 375px) {
   .flex-control-nav li {
-    margin: 0!important;
+    margin: 0 2px!important;
   }
 
   .flexslider2 .flex-control-paging li a {
