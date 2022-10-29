@@ -19,6 +19,8 @@
   <div class="row">
 
     <div class="col-sm-8 col-sm-offset-2 col-xs-12">
+        <h1 style="margin-top: 20px;">Questions or Feedback?</h1>
+        <h2 style="margin-bottom: 20px;">Please reach out with any questions or feedback</h2>
       @if(Session::has('message'))
       <div class="alert alert-success" style="margin-top: 20px; text-align: center;">{{ Session::get('message') }}</div>
       @endif
@@ -33,8 +35,8 @@
           }                               
       ?>
     <div class="form-group  {{ $class }}">
-      <label class="col-md-4 text-right" for="name">Name:<?php if(isset($data)){echo $data;} ?></label>
-      <div class="col-md-8">
+      <div class="col-md-12">
+      <label for="name">Name:<?php if(isset($data)){echo $data;} ?></label>
         <input type="text" class="form-control" id="name" name="name" placeholder="Enter Name" name="name">
         <span class="error hide" id="name_error">
             Name is required
@@ -50,8 +52,8 @@
           }                               
       ?>
     <div class="form-group {{ $class }}">
-      <label class="col-md-4 text-right" for="email">Email:</label>
-      <div class="col-md-8">
+      <div class="col-md-12">
+      <label for="email">Email:</label>
         <input type="text" class="form-control" id="email" name="email" placeholder="Enter Email" name="email">
         <span class="error hide" id="email_error">
             Invalid Email
@@ -67,8 +69,8 @@
           }                               
       ?>
     <div class="form-group {{ $class }}">
-      <label class="col-md-4 text-right" for="phone">Phone:</label> 
-      <div class="col-md-8">
+      <div class="col-md-12">
+      <label for="phone">Phone:</label> 
         <input type="text" class="form-control" id="phone" name="phone" placeholder="Enter Phone Number" name="phone">
         <span class="error hide" id="phone_error">
             Invalid Phone
@@ -84,8 +86,8 @@
           }                               
       ?>
     <div class="form-group {{ $class }}">
-      <label class="col-md-4 text-right" for="pwd">Message:</label>
-      <div class="col-md-8">
+      <div class="col-md-12">
+      <label for="pwd">Message:</label>
         <textarea rows="4" cols="50" class="form-control" id="message" name="message" placeholder="Enter Message" name="message"></textarea>
         <span class="error hide" id="message_error">
             Message is required
@@ -113,8 +115,7 @@
 <!-- Ends  -->
 
     <div class="form-group {{ $class }}">
-      <div class="col-md-4 text-right">&nbsp;</div>
-      <div class="col-md-8">
+      <div class="col-md-12">
         <button type="submit" id='submit' class="btn blue-btn">Submit</button>
       </div>
     </div>
@@ -126,7 +127,7 @@
 
 
 <!-- Gaurav Added on 11/11/2019 -->
-<section class="social-media">
+<!-- <section class="social-media">
         <h3>Follow us on social media:</h3>
         <ul>
             <li><a href="https://www.youtube.com/ChristianityEngaged" target="_blank"><i class="fa fa-youtube"></i></a></li>
@@ -135,7 +136,7 @@
             <li><a href="https://www.linkedin.com/company/christianity-engaged" target="_blank"><i class="fa fa-linkedin"></i></a></li>
             <li><a href="https://twitter.com/CEvideos" target="_blank"><i class="fa fa-twitter"></i></a></li>
         </ul>
-    </section>
+    </section> -->
 
     <section class="helpfund-wrap">
         <figure>

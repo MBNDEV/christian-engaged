@@ -11838,7 +11838,7 @@ input[type="button"] {
   margin: 0;
   padding: 20px 0;
   float: left;
-  width: 33%;
+  width: 25%;
   text-align: center;
   cursor: pointer;
   transition: 0.5s;
@@ -11906,12 +11906,12 @@ input[type="button"] {
 }
 .mission-wrap ul li .icon {
   background: url(../images/icons-sprite.png) no-repeat;
-  height: 120px;
+  height: 140px;
   width: 180px;
   display: inline-block;
 }
 .mission-wrap ul li .icon.praying-icon {
-  background-position: 18px -76px;
+  background-position: -932px -66px;
 }
 .mission-wrap ul li .icon.promoting-icon {
   background-position: -196px -76px;
@@ -11921,6 +11921,9 @@ input[type="button"] {
 }
 .mission-wrap ul li .icon.purchasing-icon {
   background-position: -649px -76px;
+}
+.mission-wrap ul li .icon.sponsoring-icon {
+  background-position: -1185px -46px;
 }
 .mission-wrap ul li h3 {
   margin: 0;
@@ -12924,7 +12927,7 @@ input[type="button"] {
   margin-bottom: 40px;
 }
 .contact-wrap form {
-  margin: 50px 0 0 0;
+  margin: 0 0 20px 0;
 }
 .contact-wrap form label {
   color: #242424;

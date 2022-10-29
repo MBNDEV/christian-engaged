@@ -24,7 +24,7 @@
                 Introducing Christianity Engaged
             </h2>
             <h4>
-                Meet the people involved and see how we are introducing an online generation to Jesus through the power of video and other online media.
+                This one-minute video shares our mission and the focus of our Christian video and social media ministries.
             </h4>
             <div class="donate-btn">
                 <a class="btn btn-info" href="{{url('/videos/Our-Vision')}}">WATCH NOW</a>
@@ -55,8 +55,28 @@
     </div>
 </section><!-- End worldchange-wrap -->
 
+
 <?php $section3Amenities = json_decode($section3->amenity_details);  ?>
 
+
+<section class="global-wrap">
+    <div class="table">
+        <div class="table-cell">
+            <img src="{{ asset('images/global-bg.jpg') }}">
+        </div>
+        <div class="table-cell">
+            <div class="content">
+                <h2>
+                    <?php echo ($section3Amenities) ? $section3Amenities->heading:'--'; ?>
+                </h2>
+                <p>
+                    <?php echo ($section3Amenities) ? $section3Amenities->description:'--'; ?>
+                </p>
+                <a href="{{url('/donate/')}}" class="btn btn-default">HOW TO HELP</a>
+            </div>
+        </div>
+    </div>
+</section><!-- End global-wrap -->
 
 
 <?php if($leaders->count()){ ?>
@@ -68,158 +88,6 @@
         <div class="row">
             <!-- <div class="col-sm-12 col-md-10 col-md-offset-1"> -->
             <div class="col-sm-12">
-
-            <!-- <div id="demo" class="demo">
-				<ul class="slide-wrap" id="example">
-					<li class="pos1">
-						<div class="inner">
-							<a href="#">
-								<img src="https://unsplash.it/300/390?image=944"/>
-								<div class="pic-tit">
-                                    <h2>
-                                        1 David Erhart
-                                    </h2>
-                                    <h4>
-                                        Founder & CEO
-                                    </h4>
-                                    <div class="text">
-                                        <p>
-                                            "For God so loved the world that he gave his one and only Son, 
-                                            that whoever believes in him shall not perish, but have eternal life." 
-                                        </p>
-                                        <p>
-                                            John 3:16
-                                        </p>
-                                    </div>                                    
-                                </div>
-							</a>
-						</div>
-					</li>
-					<li class="pos2">
-						<div class="inner">
-							<a href="#">
-								<img src="https://unsplash.it/300/390?image=943"/>
-								<div class="pic-tit">
-                                    <h2>
-                                        2 David Erhart
-                                    </h2>
-                                    <h4>
-                                        Founder & CEO
-                                    </h4>
-                                    <div class="text">
-                                        <p>
-                                            "For God so loved the world that he gave his one and only Son, 
-                                            that whoever believes in him shall not perish, but have eternal life." 
-                                        </p>
-                                        <p>
-                                            John 3:16
-                                        </p>
-                                    </div>                                    
-                                </div>
-							</a>
-						</div>
-					</li>
-					<li class="pos3">
-						<div class="inner">
-							<a href="#">
-								<img src="https://unsplash.it/300/390?image=942"/>
-								<div class="pic-tit">
-                                    <h2>
-                                        3 David Erhart
-                                    </h2>
-                                    <h4>
-                                        Founder & CEO
-                                    </h4>
-                                    <div class="text">
-                                        <p>
-                                            "For God so loved the world that he gave his one and only Son, 
-                                            that whoever believes in him shall not perish, but have eternal life." 
-                                        </p>
-                                        <p>
-                                            John 3:16
-                                        </p>
-                                    </div>                                    
-                                </div>
-							</a>
-						</div>
-					</li>
-					<li class="pos4">
-						<div class="inner">
-							<a href="#">
-								<img src="https://unsplash.it/300/390?image=941"/>
-								<div class="pic-tit">
-                                    <h2>
-                                        4 David Erhart
-                                    </h2>
-                                    <h4>
-                                        Founder & CEO
-                                    </h4>
-                                    <div class="text">
-                                        <p>
-                                            "For God so loved the world that he gave his one and only Son, 
-                                            that whoever believes in him shall not perish, but have eternal life." 
-                                        </p>
-                                        <p>
-                                            John 3:16
-                                        </p>
-                                    </div>                                    
-                                </div>
-							</a>
-						</div>
-					</li>
-					<li class="pos5">
-						<div class="inner">
-							<a href="#">
-								<img src="https://unsplash.it/300/390?image=940"/>
-								<div class="pic-tit">
-                                    <h2>
-                                        5 David Erhart
-                                    </h2>
-                                    <h4>
-                                        Founder & CEO
-                                    </h4>
-                                    <div class="text">
-                                        <p>
-                                            "For God so loved the world that he gave his one and only Son, 
-                                            that whoever believes in him shall not perish, but have eternal life." 
-                                        </p>
-                                        <p>
-                                            John 3:16
-                                        </p>
-                                    </div>                                    
-                                </div>
-							</a>
-						</div>
-					</li>
-					<li>
-						<div class="inner">
-							<a href="#">
-								<img data-src="https://unsplash.it/300/390?image=840"/>
-								<div class="pic-tit">
-                                    <h2>
-                                        6 David Erhart
-                                    </h2>
-                                    <h4>
-                                        Founder & CEO
-                                    </h4>
-                                    <div class="text">
-                                        <p>
-                                            "For God so loved the world that he gave his one and only Son, 
-                                            that whoever believes in him shall not perish, but have eternal life." 
-                                        </p>
-                                        <p>
-                                            John 3:16
-                                        </p>
-                                    </div>                                    
-                                </div>
-							</a>
-						</div>
-					</li>
-					
-				</ul>
-				<i class="arrow prev" id="jprev">&lt;</i>
-				<i class="arrow next" id="jnext">&gt;</i>
-			</div> -->
                 
                 <ul>
                     <?php
@@ -251,31 +119,11 @@
 </section><!-- End leadership-wrap -->
 
 
-<section class="global-wrap">
-    <div class="table">
-        <div class="table-cell">
-            <img src="{{ asset('images/global-bg.jpg') }}">
-        </div>
-        <div class="table-cell">
-            <div class="content">
-                <h2>
-                    <?php echo ($section3Amenities) ? $section3Amenities->heading:'--'; ?>
-                </h2>
-                <p>
-                    <?php echo ($section3Amenities) ? $section3Amenities->description:'--'; ?>
-                </p>
-                <a href="{{url('/donate/')}}" class="btn btn-default">HOW TO HELP</a>
-            </div>
-        </div>
-    </div>
-</section><!-- End global-wrap -->
+@include('web.section-support')
 
-
-<!-- Gaurav Added on 11/11/2019 -->
-
-
-
-@include('web.product_wraper') 
+@include('web.section-donate')
+    
+@include('web.featured_product') 
 
 <?php } ?>
 <section class="newsletter-wrap">
@@ -356,59 +204,7 @@
     </div>
 </div><!-- End .newsletter -->
 
-
-
-
-<section class="helpfund-wrap">
-        <figure>
-            <?php foreach ($resultsocial as $video1) { ?>
-            <a class="animate-fade  bounce-in delay-200 po-bounce-in photoGrid clearfix" id="play" target="blank" href="{{url($video1->video_url)}}">
-                    <!-- <img src="{{asset('/uploads/videoimages/'.$video1->video_image) }} " class="img-responsive" width="100%" height="100%" alt="Video" onerror="this.src='{{asset("/images/no_image.png") }}'"> -->
-                    <img src="{{asset('/images/donate-bg-4.png') }} " class="img-responsive" width="100%" height="100%" alt="Video" onerror="this.src='{{asset("/images/no_image.png") }}'">
-                </a>
-             <?php } ?>   
-        </figure>
-        <figcaption>
-            <h1>
-                How can you help?
-            </h1>
-             <h3>None of this would be possible without your support. If you would like to help us share Jesus with the world, please prayerfully consider financially supporting our ministry.</h3>
-            <div class="donate-btn">
-                <a class="btn btn-default" href="{{url('/donate')}}">DONATE</a>
-                <!-- <a href="{{url('/donate')}}"><img src="/images/donate.png" width="200" /></a> -->
-            </div>
-            <small>
-                Christianity Engaged is a 501(c)3 non-profit organization. Your donations are fully tax deductible.
-            </small>
-        </figcaption>
-                
-    </section><!-- End helpfund-wrap -->
-
-    
-<section class="social-media">
-        <div class="container">
-            <div class="row">
-                <div class="col-12">
-                <div class="social-inner">
-                    <div class="line-h">
-                        <span>
-                            <ul>
-                                <li><a href="https://www.youtube.com/ChristianityEngaged" target="_blank"><div class="yt-img"></div></a></li>
-                                <li><a href="https://www.facebook.com/ChristianityEngaged" target="_blank"><div class="fb-img"></div></a></li>
-                                <li><a href="https://twitter.com/CEvideos" target="_blank"><div class="tw-img"></div></a></li>
-                                <li><a href="https://www.linkedin.com/company/christianity-engaged" target="_blank"><div class="linkedin-img"></div></a></li>
-                                <li><a href="https://www.instagram.com/christianity.engaged" target="_blank"><div class="ig-img"></div></a></li>
-                            </ul>
-                        </span>
-                    </div>
-                    
-                    <h3>When you like our videos and share them with your friends, you help us reach more people all over the world with a powerful message of hope. In addition to our videos, if you would like more encouraging content throughout the week, follow us on social media.</h3>
-                </div>
-                </div>
-            </div>
-        </div>
-    </section>
-
+@include('web.section-social')
 
 <script type="text/javascript">
     $(document).ready(function(){

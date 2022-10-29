@@ -43,7 +43,7 @@
 
 <div class="clearfix"></div>
 
-<section class="shop-instagram">
+<section class="shop-instagram" style="padding: 20px 0 20px 0!important;">
     <div class="container">
         <div class="row">
             <div class="col-md-12 center">
@@ -57,30 +57,6 @@
 
     <div class="instagram-list">
         <ul id="instafeed">
-            <!--            <li>
-                            <img src="{{ asset('images/global-bg.jpg') }}" alt="" />
-                        </li>
-                        <li>
-                            <img src="{{ asset('images/global-bg.jpg') }}" alt="" />
-                        </li>
-                        <li>
-                            <img src="{{ asset('images/global-bg.jpg') }}" alt="" />
-                        </li>
-                        <li>
-                            <img src="{{ asset('images/global-bg.jpg') }}" alt="" />
-                        </li>
-                        <li>
-                            <img src="{{ asset('images/global-bg.jpg') }}" alt="" />
-                        </li>
-                        <li>
-                            <img src="{{ asset('images/global-bg.jpg') }}" alt="" />
-                        </li>
-                        <li>
-                            <img src="{{ asset('images/global-bg.jpg') }}" alt="" />
-                        </li>
-                        <li>
-                            <img src="{{ asset('images/global-bg.jpg') }}" alt="" />
-                        </li>-->
         </ul>
     </div>
 
@@ -97,32 +73,10 @@
 
 </section><!-- End .shop-top -->
 
-<section class="helpfund-wrap">
-        <figure>
-            <?php foreach ($resultsocial as $video1) { ?>
-            <a class="animate-fade  bounce-in delay-200 po-bounce-in photoGrid clearfix" id="play" target="blank" href="{{url($video1->video_url)}}">
-                    <!-- <img src="{{asset('/uploads/videoimages/'.$video1->video_image) }} " class="img-responsive" width="100%" height="100%" alt="Video" onerror="this.src='{{asset("/images/no_image.png") }}'"> -->
-                    <img src="{{asset('/images/donate-bg-4.png') }} " class="img-responsive" width="100%" height="100%" alt="Video" onerror="this.src='{{asset("/images/no_image.png") }}'">
-                </a>
-             <?php } ?>   
-        </figure>
-        <figcaption>
-            <h1>
-                How can you help?
-            </h1>
-             <h3>None of this would be possible without your support. If you would like to help us share Jesus with the world, please prayerfully consider financially supporting our ministry.</h3>
-            <div class="donate-btn">
-                <a class="btn btn-default" href="{{url('/donate')}}">DONATE</a>
-                <!-- <a href="{{url('/donate')}}"><img src="/images/donate.png" width="200" /></a> -->
-            </div>
-            <small>
-                Christianity Engaged is a 501(c)3 non-profit organization. Your donations are fully tax deductible.
-            </small>
-        </figcaption>
-                
-    </section><!-- End helpfund-wrap -->
+@include('web.section-social')
+@include('web.section-donate')
 
-@include('web.product_wraper') 
+
 
 
 <div class="clearfix"></div>
@@ -195,30 +149,6 @@
         </div>
     </div>
 </div><!-- End .newsletter -->
-
-<section class="social-media">
-        <div class="container">
-            <div class="row">
-                <div class="col-12">
-                <div class="social-inner">
-                    <div class="line-h">
-                        <span>
-                            <ul>
-                                <li><a href="https://www.youtube.com/ChristianityEngaged" target="_blank"><div class="yt-img"></div></a></li>
-                                <li><a href="https://www.facebook.com/ChristianityEngaged" target="_blank"><div class="fb-img"></div></a></li>
-                                <li><a href="https://twitter.com/CEvideos" target="_blank"><div class="tw-img"></div></a></li>
-                                <li><a href="https://www.linkedin.com/company/christianity-engaged" target="_blank"><div class="linkedin-img"></div></a></li>
-                                <li><a href="https://www.instagram.com/christianity.engaged" target="_blank"><div class="ig-img"></div></a></li>
-                            </ul>
-                        </span>
-                    </div>
-                    
-                    <h3>When you like our videos and share them with your friends, you help us reach more people all over the world with a powerful message of hope. In addition to our videos, if you would like more encouraging content throughout the week, follow us on social media.</h3>
-                </div>
-                </div>
-            </div>
-        </div>
-    </section>
 
 
 <script type="text/javascript">

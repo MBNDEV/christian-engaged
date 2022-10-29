@@ -289,7 +289,12 @@ class HomeController extends Controller {
         $videoObj = new Video();
         $videoamenity = $videoObj->videoamenity();
 
-        $data['content'] = view('web.videolibrary', compact('videos', 'videoTopics', 'videoamenity'));
+        $resultsocial = DB::table('ce_socials')
+                ->select('*')
+                ->whereRaw('id', '1')
+                ->get();
+
+        $data['content'] = view('web.videolibrary', compact('videos', 'videoTopics', 'videoamenity', 'resultsocial'));
         return view('layouts.web-template', $data);
     }
 
@@ -483,7 +488,7 @@ class HomeController extends Controller {
 
         MetaTag::set('description', $meta[0]->meta_description);
         MetaTag::set('keywords', $meta[0]->meta_keyword);
-        $data['content'] = view('web.socialmedia', compact('donationGoal', 'products', 'videos', 'about_us_page', 'resultsocial', 'goalPercent', 'videoIframe', 'aboutUsPageSlug', 'videoPageSlug', 'merchPageSlug'));
+        $data['content'] = view('web.socialmedia', compact('donationGoal', 'products', 'videos', 'resultsocial', 'goalPercent', 'videoIframe', 'aboutUsPageSlug', 'videoPageSlug', 'merchPageSlug'));
         return view('layouts.web-template', $data);
     }
 
@@ -685,7 +690,11 @@ class HomeController extends Controller {
 
     public function prayer(Request $request) {
         MetaTag::set('title', 'Prayer | Christianity Engaged');
-        $data['content'] = view('web.prayer.index');
+        $resultsocial = DB::table('ce_socials')
+                ->select('*')
+                ->whereRaw('id', '1')
+                ->get();
+        $data['content'] = view('web.prayer.index', compact('resultsocial'));
         return view('layouts.web-template', $data);
     }
 

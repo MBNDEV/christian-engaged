@@ -116,6 +116,12 @@
     </div>
 </section><!-- End .prayer-list -->
 
+@include('web.section-support')
+
+@include('web.section-donate')
+    
+@include('web.featured_product') 
+
 <section class="newsletter-wrap">
         <div class="container">
             <div class="row">
@@ -135,3 +141,5 @@
             </div>
         </div>
     </section><!-- End newsletter-wrap -->
+
+@include('web.section-social') 

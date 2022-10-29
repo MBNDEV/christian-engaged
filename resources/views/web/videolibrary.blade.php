@@ -88,10 +88,10 @@
 </section><!-- End videowrapper -->
 
 
-<!--<div class="overlay">
-    <div class="loader">Loading...</div>
-</div>-->
+@include('web.section-social')
 
+@include('web.section-donate')
+     
 
 <section class="newsletter-wrap">
     <div class="container">
