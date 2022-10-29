@@ -109,7 +109,7 @@
         <figure>
             <a href="#" class="youtube-link-dark" youtubeid="zG9x6M1cXhI">
                 <!--<img src="{{ asset('images/about-img_new.jpg') }}">-->
-                <img src="{{ asset('images/intro-1.png') }}">
+                <img src="{{ asset('images/intro-1.jpg') }}">
             </a>
          </figure>
         <figcaption>
