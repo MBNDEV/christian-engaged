@@ -516,14 +516,25 @@ class HomeController extends Controller {
         MetaTag::set('description', $meta[0]->meta_description);
         MetaTag::set('keywords', $meta[0]->meta_keyword);
 
+        $userName = env('WOOCOMMERCE_CONSUMER_KEY');
+        $password = env('WOOCOMMERCE_CONSUMER_SECRET');
 
+        $endpoint = 'https://christianityengaged.org/store/wp-json/wc/v2/products?category=50&consumer_key='.$userName.'&consumer_secret='.$password;
+
+        $ch = curl_init();
+        curl_setopt($ch, CURLOPT_URL, $endpoint);
+        curl_setopt($ch, CURLOPT_RETURNTRANSFER, 1);
+        curl_setopt($ch, CURLOPT_HTTPHEADER, array('Content-type: application/json'));
+        $r = curl_exec($ch);
+        curl_close($ch); 
+        $products = json_decode($r, true);
         //Gaurav Added on 11/11/2019 Social link and donate section page functionality
         $resultsocial = DB::table('ce_socials')
                 ->select('*')
                 ->whereRaw('id', '1')
                 ->get();
 
-        $data['content'] = view('web.about-us', compact('leaders', 'section1', 'section2', 'section3', 'videoIframe', 'resultsocial'));
+        $data['content'] = view('web.about-us', compact('leaders', 'section1', 'section2', 'section3', 'videoIframe', 'resultsocial', 'products'));
         return view('layouts.web-template', $data);
     }
 
