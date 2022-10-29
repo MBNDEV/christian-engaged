@@ -705,7 +705,19 @@ class HomeController extends Controller {
                 ->select('*')
                 ->whereRaw('id', '1')
                 ->get();
-        $data['content'] = view('web.prayer.index', compact('resultsocial'));
+        $userName = env('WOOCOMMERCE_CONSUMER_KEY');
+        $password = env('WOOCOMMERCE_CONSUMER_SECRET');
+
+        $endpoint = 'https://christianityengaged.org/store/wp-json/wc/v2/products?category=50&consumer_key='.$userName.'&consumer_secret='.$password;
+
+        $ch = curl_init();
+        curl_setopt($ch, CURLOPT_URL, $endpoint);
+        curl_setopt($ch, CURLOPT_RETURNTRANSFER, 1);
+        curl_setopt($ch, CURLOPT_HTTPHEADER, array('Content-type: application/json'));
+        $r = curl_exec($ch);
+        curl_close($ch); 
+        $products = json_decode($r, true);
+        $data['content'] = view('web.prayer.index', compact('resultsocial', 'products'));
         return view('layouts.web-template', $data);
     }
 
