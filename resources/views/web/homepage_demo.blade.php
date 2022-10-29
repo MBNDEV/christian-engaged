@@ -154,7 +154,7 @@
 
     <div class="clearfix"></div>
 
-    <section class="shop-instagram" style="padding: 20px 0 0!important;">
+    <section class="shop-instagram" style="padding: 20px 0 20px 0!important;">
         <div class="container">
             <div class="row">
                 <div class="col-md-12 center">
@@ -169,6 +169,16 @@
         <div class="instagram-list">
             <ul id="instafeed">
             </ul>
+        </div>
+
+        <div class="clearfix"></div>
+
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12 center">
+                    <a href="https://www.instagram.com/christianity.engaged/" target="_blank" class="btn btn-primary">Follow Us</a>
+                </div>
+            </div>
         </div>
 
 
