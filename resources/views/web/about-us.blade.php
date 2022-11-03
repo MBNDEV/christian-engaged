@@ -119,13 +119,16 @@
 </section><!-- End leadership-wrap -->
 
 
+
+<?php } ?>
+
+
 @include('web.section-support')
 
 @include('web.section-donate')
     
 @include('web.featured_product') 
 
-<?php } ?>
 <section class="newsletter-wrap">
         <div class="container">
             <div class="row">

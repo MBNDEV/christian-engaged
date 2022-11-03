@@ -20,7 +20,7 @@
 
     <div class="col-sm-8 col-sm-offset-2 col-xs-12">
         <h1 style="color: #999; text-align: center;">Questions or Feedback?</h1>
-        <h3 style="margin-bottom: 20px; color: #999; text-align: center;">Please reach out with any questions or feedback</h3>
+        <h2 style="margin-bottom: 20px; color: #999; text-align: center;">Please reach out with any questions or feedback</h2>
       @if(Session::has('message'))
       <div class="alert alert-success" style="margin-top: 20px; text-align: center;">{{ Session::get('message') }}</div>
       @endif
