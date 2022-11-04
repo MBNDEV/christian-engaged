@@ -16,6 +16,7 @@
                 </div>
                 <div class="flexslider carousel">
                     <ul class="slides">
+                        @if($products)
                         <?php foreach ($products as $product) { ?>
                             <li>
                                 <figure>
@@ -53,6 +54,7 @@
                             <?php
                         }
                         ?>
+                        @endif
                     </ul>
                 </div>
                 <div class="shadow bottom">

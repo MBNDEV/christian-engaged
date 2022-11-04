@@ -5,9 +5,7 @@
        <img src="{{ asset('images/contact-hero.png') }} " alt="Video">    
         <figcaption>             
           <div class="content">                 
-            <h1><?=($contact_us->address!='') ? $contact_us->address: 'Contact Us'?></h1>                 
-            <h4><?=($contact_us->address_line_2!='') ? $contact_us->address_line_2: ''?></h4>   
-            <img src="{{ asset('images/symbol.png') }}" width="104" height="104" class="hero-logo" />          
+           
           </div>         
         </figcaption>     
       </figure> 
@@ -19,8 +17,8 @@
   <div class="row">
 
     <div class="col-sm-8 col-sm-offset-2 col-xs-12">
-        <h1 style="color: #999; text-align: center;">Questions or Feedback?</h1>
-        <h2 style="margin-bottom: 20px; color: #999; text-align: center;">Please reach out with any questions or feedback</h2>
+        <h1 style="color: #999; text-align: center;">We would love to hear your feedback or answer any questions you may have.</h1>
+        <!-- <h2 style="margin-bottom: 20px; color: #999; text-align: center;">Please reach out with any questions or feedback</h2> -->
       @if(Session::has('message'))
       <div class="alert alert-success" style="margin-top: 20px; text-align: center;">{{ Session::get('message') }}</div>
       @endif

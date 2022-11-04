@@ -28,7 +28,7 @@
                         </a>
                     </li>
                     <li>
-                        <a href="{{url('store')}}">
+                        <a href="{{url('contact')}}">
                             <span class="sponsoring-icon icon"></span>
                             <h3>Sponsoring </h3>
                             <h4>a video</h4>
