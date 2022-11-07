@@ -86,10 +86,10 @@
         <!-- End -->
       
         <!-- Live Key -->
-        <script src="https://www.google.com/recaptcha/api.js?render=6LfBP0EaAAAAAKKc-f-ruMKEwl2lzcvG7UWKWMZH"></script>
+        <script src="https://www.google.com/recaptcha/api.js?render=6LfZ0ukiAAAAAMg9rvtF1k4kOvxSjcfrEnNT2mZC"></script>
         <script>
             grecaptcha.ready(function () {
-                grecaptcha.execute('6LfBP0EaAAAAAKKc-f-ruMKEwl2lzcvG7UWKWMZH', {action: 'contact/save'}).then(function (token) {
+                grecaptcha.execute('6LfZ0ukiAAAAAMg9rvtF1k4kOvxSjcfrEnNT2mZC', {action: 'contact/save'}).then(function (token) {
                     if (token) {
                         //console.log(token);
                         document.getElementById('recaptcha').value = token;
