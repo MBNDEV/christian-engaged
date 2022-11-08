@@ -92,7 +92,7 @@
                
             </h2>
             <h3>
-                {!! \Illuminate\Support\Str::words($newvideo->video_description, 30, ' ...')  !!}
+                {!! \Illuminate\Support\Str::words($newvideo->video_description, 250, ' ...')  !!}
                     
             </h3>
             <div class="donate-btn">
