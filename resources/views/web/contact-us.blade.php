@@ -17,7 +17,7 @@
   <div class="row">
 
     <div class="col-sm-8 col-sm-offset-2 col-xs-12">
-        <h1 style="color: #999; text-align: center;">We would love to hear your feedback or answer any questions you may have.</h1>
+        <h2 style="color: #5d5d5d; text-align: center;">We would love to hear your feedback or answer any questions you may have.</h2>
         <!-- <h2 style="margin-bottom: 20px; color: #999; text-align: center;">Please reach out with any questions or feedback</h2> -->
       @if(Session::has('message'))
       <div class="alert alert-success" style="margin-top: 20px; text-align: center;">{{ Session::get('message') }}</div>
@@ -136,29 +136,11 @@
         </ul>
     </section> -->
 
-    @include('web.section-donate')
+   
 
     @include('web.product_wraper') 
 
-    <section class="newsletter-wrap">
-        <div class="container">
-            <div class="row">
-            <div class="col-sm-12 col-md-12">
-                <h3>We invite you join our newsletter to be notified when we release new videos.</h3>
-                    <h3>You can also <a href="javascript:void(0)">subscribe</a> and click the bell notification on YouTube.</h3>
 
-                    <ul>
-                        <li>
-                            <a class="join-btn btn btn-primary" data-toggle="modal" data-target="#newsletter">JOIN</a>
-                        </li>
-                        <li>
-                            <a class="join-btn btn btn-primary" href="https://www.youtube.com/ChristianityEngaged" target="_blank"><img src="/images/yt-w.png" class="sub-img" />SUBSCRIBE</a>
-                        </li>
-                    </ul>
-                </div>
-            </div>
-        </div>
-    </section><!-- End newsletter-wrap -->
 </div>
 
 <script src="{{ asset ("js/homepage.js") }}"></script>

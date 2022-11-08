@@ -7,9 +7,9 @@
                 <h1>
                     <?php echo ($section1Amenities) ? $section1Amenities->heading:'--'; ?>
                 </h1>
-                <h4>
+                <h3>
                     <?php echo ($section1Amenities) ? $section1Amenities->short_description:'--'; ?>
-                </h4>
+                </h3>
                 
             <img src="{{ asset('images/symbol.png') }}" width="104" height="104" class="hero-logo" /> 
             </div>
@@ -23,9 +23,9 @@
             <h2>
                 Introducing Christianity Engaged
             </h2>
-            <h4>
+            <h3>
                 This one-minute video shares our mission and the focus of our Christian video and social media ministries.
-            </h4>
+            </h3>
             <div class="donate-btn">
                 <a class="btn btn-info" href="{{url('/videos/Our-Vision')}}">WATCH NOW</a>
             </div>
@@ -49,7 +49,9 @@
                 <h2>
                     <?php echo ($section2Amenities) ? $section2Amenities->title:'--'; ?>
                 </h2>
+                <h3>
                 <?php echo ($section2Amenities) ? $section2Amenities->description:'--'; ?>
+                </h3>
             </div>
         </div>
     </div>
@@ -62,16 +64,16 @@
 <section class="global-wrap">
     <div class="table">
         <div class="table-cell">
-            <img src="{{ asset('images/global-bg.jpg') }}">
+            <img src="{{ asset('images/globe.png') }}">
         </div>
         <div class="table-cell">
             <div class="content">
                 <h2>
                     <?php echo ($section3Amenities) ? $section3Amenities->heading:'--'; ?>
                 </h2>
-                <p>
+                <h3>
                     <?php echo ($section3Amenities) ? $section3Amenities->description:'--'; ?>
-                </p>
+                </h3>
                 <a href="{{url('/donate/')}}" class="btn btn-default">HOW TO HELP</a>
             </div>
         </div>
@@ -122,7 +124,11 @@
 
 <?php } ?>
 
-
+<style>
+.mission-wrap {
+    background: #fff!important;
+}
+</style>
 @include('web.section-support')
 
 @include('web.section-donate')

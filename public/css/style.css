@@ -11641,8 +11641,9 @@ input[type="button"] {
 .videos-wrap figcaption {
   display: table-cell;
   margin: 0px;
-  padding: 0 6% 3% 8%;
+  padding: 0 4%;
   width: 50%;
+  vertical-align: middle;
 }
 @media (max-width: 991px) {
   .videos-wrap figcaption {
@@ -11659,7 +11660,8 @@ input[type="button"] {
   background: #337ab7;
   color: #fff;
   display: table;
-  padding: 25px 20px 15px;
+  padding: 15px;
+  margin-bottom: 4%;
 }
 @media (max-width: 767px) {
   .videos-wrap figcaption h1 {
@@ -11705,6 +11707,11 @@ input[type="button"] {
   width: 50%;
   vertical-align: middle;
 }
+
+.powervideo-wrap figcaption h2 {
+  color: #337ab7;
+}
+
 @media (max-width: 767px) {
   .powervideo-wrap figure {
     width: 100%;
@@ -11737,7 +11744,7 @@ input[type="button"] {
 }
 .powervideo-wrap figcaption h3 {
   margin-bottom: 0;
-  color: #999;
+  color: #5d5d5d;
   font-weight: 300;
   line-height: 40px;
 }
@@ -11842,7 +11849,7 @@ input[type="button"] {
   text-align: center;
   cursor: pointer;
   transition: 0.5s;
-  border: 2px solid #e3e3e3;
+  /* border: 2px solid #e3e3e3; */
   position: relative;
 }
 .mission-wrap ul li a {
@@ -12018,6 +12025,7 @@ input[type="button"] {
   margin: auto 0;
   font-weight: 300;
   line-height: 45px;
+  color: #5d5d5d;
 }
 
 .slider-inner-2 {
@@ -12297,13 +12305,13 @@ input[type="button"] {
   margin: 0;
 }
 .product-wrap h1 {
-  color: #999;
+  color: #5d5d5d;
 }
 .product-wrap h1 span {
   color: #337ab7;
 }
 .product-wrap h3 {
-  color: #999;
+  color: #5d5d5d;
   font-weight: 300;
 }
 @media (max-width: 1280px) {
@@ -12922,8 +12930,8 @@ input[type="button"] {
   }
 }
 .contact-wrap h2 {
-  color: #242424;
-  font-weight: 600;
+  color: #5d5d5d;
+  font-weight: 300;
   margin-bottom: 40px;
 }
 .contact-wrap form {
@@ -13213,6 +13221,14 @@ input[type="button"] {
   padding: 20px 6% 20px 8%;
   width: 45%;
 }
+
+.intro-wrap .table .table-cell:first-child h3 {
+  margin-bottom: 20px;
+  color: #fff;
+  font-weight: 300;
+  line-height: 30px;
+} 
+
 @media (max-width: 991px) {
   .intro-wrap .table .table-cell:first-child {
     padding: 20px 4% 20px 4%;
@@ -13314,8 +13330,7 @@ input[type="button"] {
 }
 .global-wrap p {
   color: #fff;
-  font-size: 18px;
-  line-height: 30px;
+  line-height: 40px;
 }
 @media (max-width: 767px) {
   .global-wrap p {
@@ -13350,9 +13365,8 @@ input[type="button"] {
   margin-bottom: 20px;
 }
 .worldchange-wrap p {
-  font-size: 18px;
   font-weight: 300;
-  line-height: 30px;
+  line-height: 40px;
 }
 .worldchange-wrap p:last-child {
   margin-bottom: 0;
@@ -13370,7 +13384,7 @@ input[type="button"] {
   margin: 0px auto;
   color: #fff;
   text-align: center;
-  background: #337ab7;
+  background: #286da9;
   width: 100%;
   padding: 30px 0;
 }

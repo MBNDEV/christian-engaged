@@ -11,41 +11,12 @@
     </figure>
 </section><!-- End .shop-banner -->
 
-<div class="clearfix"></div>
-
-<section class="shop-top">
-    <div class="container">
-        <div class="row">
-            <div class="col-md-12 center">
-                <div class="table">
-                    <div class="table-cell">
-                        <ul>
-                            <li><a href="https://www.youtube.com/ChristianityEngaged" target="_blank"><i class="fa fa-youtube"></i></a></li>
-                            <li><a href="https://www.instagram.com/christianity.engaged" target="_blank"><i class="fa fa-instagram"></i></a></li>
-                            <li><a href="https://www.facebook.com/ChristianityEngaged" target="_blank"><i class="fa fa-facebook"></i></a></li>
-                            <li><a href="https://www.linkedin.com/company/christianity-engaged" target="_blank"><i class="fa fa-linkedin"></i></a></li>
-                            <li><a href="https://twitter.com/CEvideos" target="_blank"><i class="fa fa-twitter"></i></a></li>
-                        </ul>
-                    </div>
-                    <div class="table-cell">
-                        <h4>
-                            Connect with us on social media for updates on videos, encouraging Bible verses, challenging thoughts 
-                            and more. Also, subscribe to our YouTube channel and click the bell icon to be notified when we release 
-                            new videos. 
-                        </h4>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-</section><!-- End .shop-top -->
-
 
 <div class="clearfix"></div>
 
-<section class="shop-instagram" style="padding: 20px 0 20px 0!important;">
+<section class="shop-instagram" style="padding: 25px 0 20px 0!important;">
     <div class="container">
-        <div class="row">
+        <div class="row" style="margin-bottom: 5px;">
             <div class="col-md-12 center">
                 <h2>
                     <span>Christianity Engaged <img src="{{ asset('images/instagram-logo.png') }}" alt="Instagram" /></span>
@@ -73,7 +44,30 @@
 
 </section><!-- End .shop-top -->
 
-@include('web.section-social')
+<section class="social-media">
+        <div class="container">
+            <div class="row">
+                <div class="col-12">
+                <div class="social-inner">
+                    <div class="line-h">
+                        <span>
+                            <ul>
+                                <li><a href="https://www.youtube.com/ChristianityEngaged" target="_blank"><div class="yt-img"></div></a></li>
+                                <li><a href="https://www.facebook.com/ChristianityEngaged" target="_blank"><div class="fb-img"></div></a></li>
+                                <li><a href="https://twitter.com/CEvideos" target="_blank"><div class="tw-img"></div></a></li>
+                                <li><a href="https://www.linkedin.com/company/christianity-engaged" target="_blank"><div class="linkedin-img"></div></a></li>
+                                <li><a href="https://www.instagram.com/christianity.engaged" target="_blank"><div class="ig-img"></div></a></li>
+                            </ul>
+                        </span>
+                    </div>
+                    
+                    <h3>When you follow us on social media and share our posts with your friends, you help us reach more people all over the world with a powerful message of hope. Subscribe to our YouTube channel and click the bell to be notified when we release new videos.</h3>
+                </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
 @include('web.section-donate')
 
 

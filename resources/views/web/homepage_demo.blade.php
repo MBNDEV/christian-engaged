@@ -113,8 +113,9 @@
             </a>
          </figure>
         <figcaption>
+            <h2>Engaging with Jesus</h2>
             <h3>
-            We are a Christian video production studio and online ministry that shares the Gospel of Jesus Christ and encourages believers all over the world.
+            <p>We are a Christian video production studio and online ministry that shares the Gospel of Jesus Christ and encourages believers all over the world.</p>
             </h3>
             <div class="donate-btn">
                 <a class="btn btn-primary" href="{{url('/about')}}">ABOUT US</a>
@@ -154,7 +155,7 @@
 
     <div class="clearfix"></div>
 
-    <section class="shop-instagram" style="padding: 20px 0 20px 0!important;">
+    <section class="shop-instagram" style="padding: 25px 0 25px 0!important;">
         <div class="container">
             <div class="row">
                 <div class="col-md-12 center">
