@@ -96,7 +96,7 @@
                     
             </h3>
             <div class="donate-btn">
-                <a class="btn btn-info" href="{{url('/videos/'.$newvideo->seo_slug)}}">WATCH NOW</a>
+                <a class="btn btn-primary" href="{{url('/videos/'.$newvideo->seo_slug)}}">WATCH NOW</a>
             </div>
         </figcaption>
         <figure>
@@ -155,7 +155,7 @@
 
     <div class="clearfix"></div>
 
-    <section class="shop-instagram" style="padding: 30px 0 30px 0!important;">
+    <section class="shop-instagram" style="padding: 40px 0 40px 0!important;">
         <div class="container">
             <div class="row">
                 <div class="col-md-12 center">
