@@ -155,7 +155,7 @@
 
     <div class="clearfix"></div>
 
-    <section class="shop-instagram" style="padding: 40px 0 40px 0!important;">
+    <section class="shop-instagram" style="padding: 30px 0 20px 0!important;">
         <div class="container">
             <div class="row">
                 <div class="col-md-12 center">
