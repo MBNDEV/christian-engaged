@@ -1,6 +1,6 @@
 <section class="shop-banner">
     <figure>
-        <img src="{{ asset('images/social.png') }}" alt="" />
+        <img src="{{ asset('images/social-2.png') }}" alt="" />
         <figcaption>
             <h1>
                 CONNECT
