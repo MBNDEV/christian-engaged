@@ -5,7 +5,7 @@
             <div class="content">
                 <h1><?php echo ($videoamenity) ? $videoamenity->heading : ''; ?></h1>
                 <h4>
-                    <?php echo ($videoamenity) ? $videoamenity->short_description : ''; ?>
+                    <?php //echo ($videoamenity) ? $videoamenity->short_description : ''; ?>
                 </h4>
                 
             <img src="{{ asset('images/symbol.png') }}" width="104" height="104" class="hero-logo" /> 
