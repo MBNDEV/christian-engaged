@@ -6,7 +6,6 @@
         <figcaption>             
           <div class="content">                 
             <h1><?=($contact_us->address!='') ? $contact_us->address: 'Contact Us'?></h1>                 
-            <h4><?=($contact_us->address_line_2!='') ? $contact_us->address_line_2: ''?></h4>   
             <img src="{{ asset('images/symbol.png') }}" width="104" height="104" class="hero-logo" />
           </div>         
         </figcaption>     
