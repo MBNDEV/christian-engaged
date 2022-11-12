@@ -2,11 +2,13 @@
     <figure>
         <img src="{{ asset('images/social-2.png') }}" alt="" />
         <figcaption>
-            <h1>
-                CONNECT
-            </h1>
-            
-            <img src="{{ asset('images/symbol.png') }}" width="104" height="104" class="hero-logo" /> 
+            <div class="content">    
+                <h1>
+                    CONNECT
+                </h1>
+                
+                <img src="{{ asset('images/symbol.png') }}" width="104" height="104" class="hero-logo" /> 
+            </div>
         </figcaption>
     </figure>
 </section><!-- End .shop-banner -->
