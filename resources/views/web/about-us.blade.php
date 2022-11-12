@@ -7,9 +7,9 @@
                 <h1>
                     <?php echo ($section1Amenities) ? $section1Amenities->heading:'--'; ?>
                 </h1>
-                <h3>
-                    <?php echo ($section1Amenities) ? $section1Amenities->short_description:'--'; ?>
-                </h3>
+                <!-- <h3>
+                    <?php //echo ($section1Amenities) ? $section1Amenities->short_description:'--'; ?>
+                </h3> -->
                 
             <img src="{{ asset('images/symbol.png') }}" width="104" height="104" class="hero-logo" /> 
             </div>
