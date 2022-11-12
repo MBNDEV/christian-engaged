@@ -13146,6 +13146,7 @@ input[type="button"] {
   text-align: center;
   width: 100%;
 }
+
 .banner figure figcaption .content h1 {
   color: #fff;
   font-size: 110px;
@@ -15722,7 +15723,6 @@ label.css-labell {
   color: #fff;
   font-weight: 700;
   font-size: 110px;
-  line-height: 90px;
   margin-bottom: 0;
 }
 @media (max-width: 1500px) {
