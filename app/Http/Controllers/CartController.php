@@ -813,7 +813,7 @@ class CartController extends Controller {
         // $encrypt="eyJpdiI6IjRZK1N0bDlReDZ2Q0JJeXAwSnY1cFE9PSIsInZhbHVlIjoiSXY5NTIwQzE0a0lTUVFwUUVXYzFNUT09IiwibWFjIjoiYmQ5YzU4ZWZiNTZjM2Y3Nzk0Mzg2NjIyN2UxMDU2NDY5ZjViMzdkYWZhOWU2MjVhOGJjMTZkZmJmMzNlMDY3ZCJ9";
         $encrypt = Crypt::encryptString($donationGoal->id);
 
-        $data['content'] = view('web.make-donation', compact('id', 'countryList', 'encrypt'));
+        $data['content'] = view('web.make-donation', compact('countryList', 'encrypt'));
         return view('layouts.web-template', $data);
     }
 

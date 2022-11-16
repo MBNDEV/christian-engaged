@@ -15,9 +15,9 @@
         <div class="row">
             <div class="col-md-12">
                 <!-- <h1>Donate</h1> -->
-                <p class="content">
+                <h2 style="color: #337ab7; text-align: center;">
                     Our videos are free to view, but not free to produce. <br>Your generous donation today helps fund the production of new videos. 
-                </p>
+                </h2>
                 <div class="tab" role="tabpanel">
                     <ul class="nav nav-tabs" role="tablist" id='donationTabs'>
                         <li role="presentation" class="active donation-active" data-rel='1'>

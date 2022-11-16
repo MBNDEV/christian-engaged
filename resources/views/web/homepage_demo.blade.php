@@ -113,10 +113,9 @@
             </a>
          </figure>
         <figcaption>
-            <h2>Engaging with Jesus</h2>
-            <h3>
-            <p>We are a Christian video production studio and online ministry that shares the Gospel of Jesus Christ and encourages believers all over the world.</p>
-            </h3>
+            <h2>
+            We are a Christian video production studio and online ministry that shares the Gospel of Jesus Christ and encourages believers all over the world.
+            </h2>
             <div class="donate-btn">
                 <a class="btn btn-primary" href="{{url('/about')}}">ABOUT US</a>
             </div>
