@@ -198,37 +198,37 @@
             <ul class="slides">
                 <li>
                     <a href="https://christianityengaged.org/videos/Top-10-Reasons-to-Believe-in-Jesus">
-                        <img src="/images/slider/img1.png" />
+                        <img src="/images/slider/img1.png" style="width: 100%;"/>
                     </a>
                 </li>
                 <li>
                     <a href="https://christianityengaged.org/videos/bible-overview">
-                        <img src="/images/slider/img2.png" />
+                        <img src="/images/slider/img2.png" style="width: 100%;" />
                     </a>
                 </li>
                 <li>
                     <a href="https://christianityengaged.org/videos/5FingerPrayer">
-                        <img src="/images/slider/img3.png" />
+                        <img src="/images/slider/img3.png" style="width: 100%;" />
                     </a>
                 </li>
                 <li>
                     <a href="https://christianityengaged.org/videos/have-your-children-left-the-faith">
-                        <img src="/images/slider/img4.png" />
+                        <img src="/images/slider/img4.png" style="width: 100%;" />
                     </a>
                 </li>
                 <li>
                     <a href="https://christianityengaged.org/videos/evil-and-suffering">
-                        <img src="/images/slider/img5.png" />
+                        <img src="/images/slider/img5.png" style="width: 100%;" />
                     </a>
                 </li>
                 <li>
                     <a href="https://christianityengaged.org/videos/bible-overview">
-                        <img src="/images/slider/img6.png" />
+                        <img src="/images/slider/img6.png" style="width: 100%;" />
                     </a>
                 </li>
                 <li>
                     <a href="https://christianityengaged.org/videos/bible-overview">
-                        <img src="/images/slider/img7.png" />
+                        <img src="/images/slider/img7.png" style="width: 100%;" />
                     </a>
                 </li>
             </ul>
