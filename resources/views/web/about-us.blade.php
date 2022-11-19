@@ -64,7 +64,7 @@
 <section class="global-wrap">
     <div class="table">
         <div class="table-cell">
-            <img src="{{ asset('images/globe-2.png') }}">
+            <img src="{{ asset('images/global-bg-1.jpg') }}">
         </div>
         <div class="table-cell">
             <div class="content">
