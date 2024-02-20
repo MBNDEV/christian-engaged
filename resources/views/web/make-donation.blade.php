@@ -398,7 +398,9 @@
     </div>
     <div class="container">
         <div class="donate-way">
+            <div class="heading">
             <h3>Other Ways to Give:</h3>
+            </div>
             <div class="col-lg-6 text-center">
                 <a href="https://www.paypal.com/paypalme/ChristianityEngaged" target="_blank">
                     <img src="/images/donate-pp.png" />    
@@ -413,7 +415,7 @@
             <h4>Mail a Check to:</h4>
             <div class="col-lg-12 address-section">
                 <div class="address-box">
-                    <img src="/images/address-icon.png" class="img-responsive" /> <p>Christianity Engaged, 2600 East Springfield Place Unit 73, Chandler, AZ 85284</p>
+                    <img src="/images/address-icon.png" class="img-responsive" /> <p>Christianity Engaged, 2600 East Springfield Place Unit 73, Chandler, AZ 85286</p>
                 </div>
 
                 <hr />
@@ -430,8 +432,6 @@
     }
 
     .donate-way h3 {
-        color: #000000;
-        font-size: 26px;
         text-align: center;
         margin-bottom: 20px;
     }
@@ -439,6 +439,7 @@
     .donate-way img {
         margin-bottom: 30px;
         cursor: pointer;
+        max-width: 320px;
     }
 
     .donate-way h4 {
