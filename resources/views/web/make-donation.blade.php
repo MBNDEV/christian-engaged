@@ -396,8 +396,106 @@
             </div>
         </div>
     </div>
-</section>
+    <div class="container">
+        <div class="donate-way">
+            <h3>Other Ways to Give:</h3>
+            <div class="col-lg-6 text-center">
+                <a href="https://www.paypal.com/paypalme/ChristianityEngaged">
+                    <img src="/images/donate-pp.png" />    
+                </a>
+            </div>
+            <div class="col-lg-6 text-center">
+                <a href="https://www.venmo.com/ChristianityEngaged">
+                    <img src="/images/venmo.png" />
+                </a>
+            </div>
 
+            <h4>Mail a Check to:</h4>
+            <div class="col-lg-12 address-section">
+                <div class="address-box">
+                    <img src="/images/address-icon.png" class="img-responsive" /> <p>Christianity Engaged, 2600 East Springfield Place Unit 73, Chandler, AZ 85284</p>
+                </div>
+
+                <hr />
+
+                <p>You can also give through a donor-advised fund such as the National Christian Foundation</p>
+                <a href="https://www.ncfgiving.com/">https://www.ncfgiving.com/</a>
+            </div>
+        </div>
+    </div>
+</section>
+<style>
+    .donate-way {
+        max-width: 700px;
+        margin: 20px auto;
+    }
+
+    .donate-way h3 {
+        color: #000000;
+        font-size: 26px;
+        text-align: center;
+        margin-bottom: 20px;
+    }
+
+    .donate-way img {
+        margin-bottom: 30px;
+        cursor: pointer;
+    }
+
+    .donate-way h4 {
+        color: #347AB7;
+        font-size: 20px;
+        text-align: center;
+        margin-top: 10px;
+    }
+
+    .address-box {
+        display: flex; 
+        gap: 12px;
+        margin: 0 auto;
+        max-width: 600px;
+        text-align: center;
+    }
+
+    .address-box p {
+        font-size: 18px;
+        padding: 5px 0;
+    }
+
+    .address-section {
+        text-align: center;
+    }
+
+    .address-section p, .address-section a {
+        text-align: center;
+        font-size: 18px;
+    }
+
+    .address-section hr {
+        width: 100%;
+        border-top: 1px solid #23AAE1;
+        margin-top: 0!important;
+
+    }
+
+    @media screen and (max-width: 767px) {
+        .donate-way {
+            max-width: 100%;
+        }
+
+        .address-box {
+            max-width: 500px;
+        }
+        .address-box p {
+            font-size: 14px;
+        }
+
+        .address-box img {
+            max-width: 30px;
+        }
+    }
+
+</style>
 <script>
 <?php if(env('APP_ENV') == 'local' || env('APP_ENV') == 'staging'){ ?>
    STRIPE_PK = '{{ env('STRIPE_TEST_PK') }}';
