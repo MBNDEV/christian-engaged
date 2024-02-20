@@ -432,6 +432,7 @@
     }
 
     .donate-way h3 {
+        color: #464646;
         text-align: center;
         margin-bottom: 20px;
     }
