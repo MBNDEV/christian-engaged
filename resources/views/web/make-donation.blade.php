@@ -418,8 +418,7 @@
 
                 <hr />
 
-                <p>You can also give through a donor-advised fund such as the National Christian Foundation</p>
-                <a href="https://www.ncfgiving.com/" target="_blank">https://www.ncfgiving.com/</a>
+                <p>You can also give through a donor-advised fund such as the <a href="https://www.ncfgiving.com/" target="_blank">National Christian Foundation</a></p>
             </div>
         </div>
     </div>
