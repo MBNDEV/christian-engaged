@@ -400,12 +400,12 @@
         <div class="donate-way">
             <h3>Other Ways to Give:</h3>
             <div class="col-lg-6 text-center">
-                <a href="https://www.paypal.com/paypalme/ChristianityEngaged">
+                <a href="https://www.paypal.com/paypalme/ChristianityEngaged" target="_blank">
                     <img src="/images/donate-pp.png" />    
                 </a>
             </div>
             <div class="col-lg-6 text-center">
-                <a href="https://www.venmo.com/ChristianityEngaged">
+                <a href="https://www.venmo.com/ChristianityEngaged" target="_blank">
                     <img src="/images/venmo.png" />
                 </a>
             </div>
@@ -419,7 +419,7 @@
                 <hr />
 
                 <p>You can also give through a donor-advised fund such as the National Christian Foundation</p>
-                <a href="https://www.ncfgiving.com/">https://www.ncfgiving.com/</a>
+                <a href="https://www.ncfgiving.com/" target="_blank">https://www.ncfgiving.com/</a>
             </div>
         </div>
     </div>
